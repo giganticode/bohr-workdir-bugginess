@@ -1,0 +1,554 @@
+stages:
+  ApplyHeuristics:
+    do:
+      cmd: bohr porcelain apply-heuristics "${item.task}" --heuristic-group "${item.heuristic_group}"
+        --dataset "${item.dataset}"
+      deps:
+      - cloned-bohr/heuristics/${item.heuristic_group}
+      - cached-datasets/${item.dataset}.pkl
+      metrics:
+      - runs/${item.task}/${item.dataset}/partial_heuristic_matrices/${item.heuristic_group}/heuristic_metrics.json:
+          cache: false
+      outs:
+      - runs/${item.task}/${item.dataset}/partial_heuristic_matrices/${item.heuristic_group}/heuristic_matrix.pkl
+      params:
+      - bohr.py:
+        - BOHR_FRAMEWORK_VERSION
+    foreach:
+    - dataset: bohr.200k_commits
+      heuristic_group: bugginess/bug_if_sstub.py
+      task: bugginess
+    - dataset: bohr.200k_commits
+      heuristic_group: bugginess/conventional_commit_regex.py
+      task: bugginess
+    - dataset: bohr.200k_commits
+      heuristic_group: bugginess/versionbump/contains_ruby_version_file.py
+      task: bugginess
+    - dataset: bohr.200k_commits
+      heuristic_group: bugginess/versionbump/version_regex2.py
+      task: bugginess
+    - dataset: bohr.200k_commits
+      heuristic_group: bugginess/versionbump/dependency_bump_keywords_lookup_in_message.py
+      task: bugginess
+    - dataset: bohr.200k_commits
+      heuristic_group: bugginess/versionbump/version_regex3.py
+      task: bugginess
+    - dataset: bohr.200k_commits
+      heuristic_group: bugginess/versionbump/contains_digit_replacement_change.py
+      task: bugginess
+    - dataset: bohr.200k_commits
+      heuristic_group: bugginess/versionbump/version_regex.py
+      task: bugginess
+    - dataset: bohr.200k_commits
+      heuristic_group: bugginess/versionbump/version_bump_keywords_lookup_in_message.py
+      task: bugginess
+    - dataset: bohr.200k_commits
+      heuristic_group: bugginess/versionbump/maven_plugin_version_bump.py
+      task: bugginess
+    - dataset: bohr.200k_commits
+      heuristic_group: bugginess/versionbump/contains_python_version_file.py
+      task: bugginess
+    - dataset: bohr.200k_commits
+      heuristic_group: bugginess/versionbump/contains_package_lock_file.py
+      task: bugginess
+    - dataset: bohr.200k_commits
+      heuristic_group: bugginess/filemetrics/bugless_if_at_least_5_added_files.py
+      task: bugginess
+    - dataset: bohr.200k_commits
+      heuristic_group: bugginess/filemetrics/all_files_test_add.py
+      task: bugginess
+    - dataset: bohr.200k_commits
+      heuristic_group: bugginess/filemetrics/bugless_if_not_code_files.py
+      task: bugginess
+    - dataset: bohr.200k_commits
+      heuristic_group: bugginess/filemetrics/bugless_if_many_files_changes.py
+      task: bugginess
+    - dataset: bohr.200k_commits
+      heuristic_group: bugginess/filemetrics/bugless_if_at_least_2_removed_files.py
+      task: bugginess
+    - dataset: bohr.200k_commits
+      heuristic_group: bugginess/filemetrics/all_files_test_fix.py
+      task: bugginess
+    - dataset: bohr.200k_commits
+      heuristic_group: bugginess/filemetrics/refactoring_if_at_least_2_renamed.py
+      task: bugginess
+    - dataset: bohr.200k_commits
+      heuristic_group: bugginess/filemetrics/buggless_if_many_lines_changed.py
+      task: bugginess
+    - dataset: bohr.200k_commits
+      heuristic_group: bugginess/filemetrics/no_files_have_modified_status.py
+      task: bugginess
+    - dataset: bohr.200k_commits
+      heuristic_group: bugginess/sstubs/commit_explorer_output_init.py
+      task: bugginess
+    - dataset: bohr.200k_commits
+      heuristic_group: bugginess/sstubs/commit_explorer_output_refactoring_miner.py
+      task: bugginess
+    - dataset: bohr.200k_commits
+      heuristic_group: bugginess/sstubs/commit_explorer_output_merge.py
+      task: bugginess
+    - dataset: bohr.200k_commits
+      heuristic_group: bugginess/wip/removed_todo.py
+      task: bugginess
+    - dataset: bohr.200k_commits
+      heuristic_group: bugginess/wip/wip_keyword_in_message.py
+      task: bugginess
+    - dataset: bohr.200k_commits
+      heuristic_group: bugginess/wip/removed_fixme.py
+      task: bugginess
+    - dataset: bohr.200k_commits
+      heuristic_group: bugginess/keywords/bug_keywords_lookup_in_issue_body.py
+      task: bugginess
+    - dataset: bohr.200k_commits
+      heuristic_group: bugginess/keywords/bugless_keywords_lookup_in_issue_label.py
+      task: bugginess
+    - dataset: bohr.200k_commits
+      heuristic_group: bugginess/keywords/init_commit_message_keywords.py
+      task: bugginess
+    - dataset: bohr.200k_commits
+      heuristic_group: bugginess/keywords/bug_keywords_lookup_in_clean_message.py
+      task: bugginess
+    - dataset: bohr.200k_commits
+      heuristic_group: bugginess/keywords/version_in_message.py
+      task: bugginess
+    - dataset: bohr.200k_commits
+      heuristic_group: bugginess/keywords/buggless_keywords_lookup_in_clean_message.py
+      task: bugginess
+    - dataset: bohr.200k_commits
+      heuristic_group: bugginess/keywords/github_ref_in_message.py
+      task: bugginess
+    - dataset: bohr.200k_commits
+      heuristic_group: bugginess/keywords/buggless_keywords_lookup_in_message.py
+      task: bugginess
+    - dataset: bohr.200k_commits
+      heuristic_group: bugginess/keywords/bugless_keywords_lookup_in_issue_body.py
+      task: bugginess
+    - dataset: bohr.200k_commits
+      heuristic_group: bugginess/keywords/bug_keywords_lookup_in_message.py
+      task: bugginess
+    - dataset: bohr.200k_commits
+      heuristic_group: bugginess/keywords/bug_keywords_lookup_in_issue_label.py
+      task: bugginess
+    - dataset: manual_labels.levin
+      heuristic_group: bugginess/bug_if_sstub.py
+      task: bugginess
+    - dataset: manual_labels.levin
+      heuristic_group: bugginess/conventional_commit_regex.py
+      task: bugginess
+    - dataset: manual_labels.levin
+      heuristic_group: bugginess/versionbump/contains_ruby_version_file.py
+      task: bugginess
+    - dataset: manual_labels.levin
+      heuristic_group: bugginess/versionbump/version_regex2.py
+      task: bugginess
+    - dataset: manual_labels.levin
+      heuristic_group: bugginess/versionbump/dependency_bump_keywords_lookup_in_message.py
+      task: bugginess
+    - dataset: manual_labels.levin
+      heuristic_group: bugginess/versionbump/version_regex3.py
+      task: bugginess
+    - dataset: manual_labels.levin
+      heuristic_group: bugginess/versionbump/contains_digit_replacement_change.py
+      task: bugginess
+    - dataset: manual_labels.levin
+      heuristic_group: bugginess/versionbump/version_regex.py
+      task: bugginess
+    - dataset: manual_labels.levin
+      heuristic_group: bugginess/versionbump/version_bump_keywords_lookup_in_message.py
+      task: bugginess
+    - dataset: manual_labels.levin
+      heuristic_group: bugginess/versionbump/maven_plugin_version_bump.py
+      task: bugginess
+    - dataset: manual_labels.levin
+      heuristic_group: bugginess/versionbump/contains_python_version_file.py
+      task: bugginess
+    - dataset: manual_labels.levin
+      heuristic_group: bugginess/versionbump/contains_package_lock_file.py
+      task: bugginess
+    - dataset: manual_labels.levin
+      heuristic_group: bugginess/filemetrics/bugless_if_at_least_5_added_files.py
+      task: bugginess
+    - dataset: manual_labels.levin
+      heuristic_group: bugginess/filemetrics/all_files_test_add.py
+      task: bugginess
+    - dataset: manual_labels.levin
+      heuristic_group: bugginess/filemetrics/bugless_if_not_code_files.py
+      task: bugginess
+    - dataset: manual_labels.levin
+      heuristic_group: bugginess/filemetrics/bugless_if_many_files_changes.py
+      task: bugginess
+    - dataset: manual_labels.levin
+      heuristic_group: bugginess/filemetrics/bugless_if_at_least_2_removed_files.py
+      task: bugginess
+    - dataset: manual_labels.levin
+      heuristic_group: bugginess/filemetrics/all_files_test_fix.py
+      task: bugginess
+    - dataset: manual_labels.levin
+      heuristic_group: bugginess/filemetrics/refactoring_if_at_least_2_renamed.py
+      task: bugginess
+    - dataset: manual_labels.levin
+      heuristic_group: bugginess/filemetrics/buggless_if_many_lines_changed.py
+      task: bugginess
+    - dataset: manual_labels.levin
+      heuristic_group: bugginess/filemetrics/no_files_have_modified_status.py
+      task: bugginess
+    - dataset: manual_labels.levin
+      heuristic_group: bugginess/sstubs/commit_explorer_output_init.py
+      task: bugginess
+    - dataset: manual_labels.levin
+      heuristic_group: bugginess/sstubs/commit_explorer_output_refactoring_miner.py
+      task: bugginess
+    - dataset: manual_labels.levin
+      heuristic_group: bugginess/sstubs/commit_explorer_output_merge.py
+      task: bugginess
+    - dataset: manual_labels.levin
+      heuristic_group: bugginess/wip/removed_todo.py
+      task: bugginess
+    - dataset: manual_labels.levin
+      heuristic_group: bugginess/wip/wip_keyword_in_message.py
+      task: bugginess
+    - dataset: manual_labels.levin
+      heuristic_group: bugginess/wip/removed_fixme.py
+      task: bugginess
+    - dataset: manual_labels.levin
+      heuristic_group: bugginess/keywords/bug_keywords_lookup_in_issue_body.py
+      task: bugginess
+    - dataset: manual_labels.levin
+      heuristic_group: bugginess/keywords/bugless_keywords_lookup_in_issue_label.py
+      task: bugginess
+    - dataset: manual_labels.levin
+      heuristic_group: bugginess/keywords/init_commit_message_keywords.py
+      task: bugginess
+    - dataset: manual_labels.levin
+      heuristic_group: bugginess/keywords/bug_keywords_lookup_in_clean_message.py
+      task: bugginess
+    - dataset: manual_labels.levin
+      heuristic_group: bugginess/keywords/version_in_message.py
+      task: bugginess
+    - dataset: manual_labels.levin
+      heuristic_group: bugginess/keywords/buggless_keywords_lookup_in_clean_message.py
+      task: bugginess
+    - dataset: manual_labels.levin
+      heuristic_group: bugginess/keywords/github_ref_in_message.py
+      task: bugginess
+    - dataset: manual_labels.levin
+      heuristic_group: bugginess/keywords/buggless_keywords_lookup_in_message.py
+      task: bugginess
+    - dataset: manual_labels.levin
+      heuristic_group: bugginess/keywords/bugless_keywords_lookup_in_issue_body.py
+      task: bugginess
+    - dataset: manual_labels.levin
+      heuristic_group: bugginess/keywords/bug_keywords_lookup_in_message.py
+      task: bugginess
+    - dataset: manual_labels.levin
+      heuristic_group: bugginess/keywords/bug_keywords_lookup_in_issue_label.py
+      task: bugginess
+    - dataset: manual_labels.berger
+      heuristic_group: bugginess/bug_if_sstub.py
+      task: bugginess
+    - dataset: manual_labels.berger
+      heuristic_group: bugginess/conventional_commit_regex.py
+      task: bugginess
+    - dataset: manual_labels.berger
+      heuristic_group: bugginess/versionbump/contains_ruby_version_file.py
+      task: bugginess
+    - dataset: manual_labels.berger
+      heuristic_group: bugginess/versionbump/version_regex2.py
+      task: bugginess
+    - dataset: manual_labels.berger
+      heuristic_group: bugginess/versionbump/dependency_bump_keywords_lookup_in_message.py
+      task: bugginess
+    - dataset: manual_labels.berger
+      heuristic_group: bugginess/versionbump/version_regex3.py
+      task: bugginess
+    - dataset: manual_labels.berger
+      heuristic_group: bugginess/versionbump/contains_digit_replacement_change.py
+      task: bugginess
+    - dataset: manual_labels.berger
+      heuristic_group: bugginess/versionbump/version_regex.py
+      task: bugginess
+    - dataset: manual_labels.berger
+      heuristic_group: bugginess/versionbump/version_bump_keywords_lookup_in_message.py
+      task: bugginess
+    - dataset: manual_labels.berger
+      heuristic_group: bugginess/versionbump/maven_plugin_version_bump.py
+      task: bugginess
+    - dataset: manual_labels.berger
+      heuristic_group: bugginess/versionbump/contains_python_version_file.py
+      task: bugginess
+    - dataset: manual_labels.berger
+      heuristic_group: bugginess/versionbump/contains_package_lock_file.py
+      task: bugginess
+    - dataset: manual_labels.berger
+      heuristic_group: bugginess/filemetrics/bugless_if_at_least_5_added_files.py
+      task: bugginess
+    - dataset: manual_labels.berger
+      heuristic_group: bugginess/filemetrics/all_files_test_add.py
+      task: bugginess
+    - dataset: manual_labels.berger
+      heuristic_group: bugginess/filemetrics/bugless_if_not_code_files.py
+      task: bugginess
+    - dataset: manual_labels.berger
+      heuristic_group: bugginess/filemetrics/bugless_if_many_files_changes.py
+      task: bugginess
+    - dataset: manual_labels.berger
+      heuristic_group: bugginess/filemetrics/bugless_if_at_least_2_removed_files.py
+      task: bugginess
+    - dataset: manual_labels.berger
+      heuristic_group: bugginess/filemetrics/all_files_test_fix.py
+      task: bugginess
+    - dataset: manual_labels.berger
+      heuristic_group: bugginess/filemetrics/refactoring_if_at_least_2_renamed.py
+      task: bugginess
+    - dataset: manual_labels.berger
+      heuristic_group: bugginess/filemetrics/buggless_if_many_lines_changed.py
+      task: bugginess
+    - dataset: manual_labels.berger
+      heuristic_group: bugginess/filemetrics/no_files_have_modified_status.py
+      task: bugginess
+    - dataset: manual_labels.berger
+      heuristic_group: bugginess/sstubs/commit_explorer_output_init.py
+      task: bugginess
+    - dataset: manual_labels.berger
+      heuristic_group: bugginess/sstubs/commit_explorer_output_refactoring_miner.py
+      task: bugginess
+    - dataset: manual_labels.berger
+      heuristic_group: bugginess/sstubs/commit_explorer_output_merge.py
+      task: bugginess
+    - dataset: manual_labels.berger
+      heuristic_group: bugginess/wip/removed_todo.py
+      task: bugginess
+    - dataset: manual_labels.berger
+      heuristic_group: bugginess/wip/wip_keyword_in_message.py
+      task: bugginess
+    - dataset: manual_labels.berger
+      heuristic_group: bugginess/wip/removed_fixme.py
+      task: bugginess
+    - dataset: manual_labels.berger
+      heuristic_group: bugginess/keywords/bug_keywords_lookup_in_issue_body.py
+      task: bugginess
+    - dataset: manual_labels.berger
+      heuristic_group: bugginess/keywords/bugless_keywords_lookup_in_issue_label.py
+      task: bugginess
+    - dataset: manual_labels.berger
+      heuristic_group: bugginess/keywords/init_commit_message_keywords.py
+      task: bugginess
+    - dataset: manual_labels.berger
+      heuristic_group: bugginess/keywords/bug_keywords_lookup_in_clean_message.py
+      task: bugginess
+    - dataset: manual_labels.berger
+      heuristic_group: bugginess/keywords/version_in_message.py
+      task: bugginess
+    - dataset: manual_labels.berger
+      heuristic_group: bugginess/keywords/buggless_keywords_lookup_in_clean_message.py
+      task: bugginess
+    - dataset: manual_labels.berger
+      heuristic_group: bugginess/keywords/github_ref_in_message.py
+      task: bugginess
+    - dataset: manual_labels.berger
+      heuristic_group: bugginess/keywords/buggless_keywords_lookup_in_message.py
+      task: bugginess
+    - dataset: manual_labels.berger
+      heuristic_group: bugginess/keywords/bugless_keywords_lookup_in_issue_body.py
+      task: bugginess
+    - dataset: manual_labels.berger
+      heuristic_group: bugginess/keywords/bug_keywords_lookup_in_message.py
+      task: bugginess
+    - dataset: manual_labels.berger
+      heuristic_group: bugginess/keywords/bug_keywords_lookup_in_issue_label.py
+      task: bugginess
+    - dataset: manual_labels.herzig
+      heuristic_group: bugginess/bug_if_sstub.py
+      task: bugginess
+    - dataset: manual_labels.herzig
+      heuristic_group: bugginess/conventional_commit_regex.py
+      task: bugginess
+    - dataset: manual_labels.herzig
+      heuristic_group: bugginess/versionbump/contains_ruby_version_file.py
+      task: bugginess
+    - dataset: manual_labels.herzig
+      heuristic_group: bugginess/versionbump/version_regex2.py
+      task: bugginess
+    - dataset: manual_labels.herzig
+      heuristic_group: bugginess/versionbump/dependency_bump_keywords_lookup_in_message.py
+      task: bugginess
+    - dataset: manual_labels.herzig
+      heuristic_group: bugginess/versionbump/version_regex3.py
+      task: bugginess
+    - dataset: manual_labels.herzig
+      heuristic_group: bugginess/versionbump/contains_digit_replacement_change.py
+      task: bugginess
+    - dataset: manual_labels.herzig
+      heuristic_group: bugginess/versionbump/version_regex.py
+      task: bugginess
+    - dataset: manual_labels.herzig
+      heuristic_group: bugginess/versionbump/version_bump_keywords_lookup_in_message.py
+      task: bugginess
+    - dataset: manual_labels.herzig
+      heuristic_group: bugginess/versionbump/maven_plugin_version_bump.py
+      task: bugginess
+    - dataset: manual_labels.herzig
+      heuristic_group: bugginess/versionbump/contains_python_version_file.py
+      task: bugginess
+    - dataset: manual_labels.herzig
+      heuristic_group: bugginess/versionbump/contains_package_lock_file.py
+      task: bugginess
+    - dataset: manual_labels.herzig
+      heuristic_group: bugginess/filemetrics/bugless_if_at_least_5_added_files.py
+      task: bugginess
+    - dataset: manual_labels.herzig
+      heuristic_group: bugginess/filemetrics/all_files_test_add.py
+      task: bugginess
+    - dataset: manual_labels.herzig
+      heuristic_group: bugginess/filemetrics/bugless_if_not_code_files.py
+      task: bugginess
+    - dataset: manual_labels.herzig
+      heuristic_group: bugginess/filemetrics/bugless_if_many_files_changes.py
+      task: bugginess
+    - dataset: manual_labels.herzig
+      heuristic_group: bugginess/filemetrics/bugless_if_at_least_2_removed_files.py
+      task: bugginess
+    - dataset: manual_labels.herzig
+      heuristic_group: bugginess/filemetrics/all_files_test_fix.py
+      task: bugginess
+    - dataset: manual_labels.herzig
+      heuristic_group: bugginess/filemetrics/refactoring_if_at_least_2_renamed.py
+      task: bugginess
+    - dataset: manual_labels.herzig
+      heuristic_group: bugginess/filemetrics/buggless_if_many_lines_changed.py
+      task: bugginess
+    - dataset: manual_labels.herzig
+      heuristic_group: bugginess/filemetrics/no_files_have_modified_status.py
+      task: bugginess
+    - dataset: manual_labels.herzig
+      heuristic_group: bugginess/sstubs/commit_explorer_output_init.py
+      task: bugginess
+    - dataset: manual_labels.herzig
+      heuristic_group: bugginess/sstubs/commit_explorer_output_refactoring_miner.py
+      task: bugginess
+    - dataset: manual_labels.herzig
+      heuristic_group: bugginess/sstubs/commit_explorer_output_merge.py
+      task: bugginess
+    - dataset: manual_labels.herzig
+      heuristic_group: bugginess/wip/removed_todo.py
+      task: bugginess
+    - dataset: manual_labels.herzig
+      heuristic_group: bugginess/wip/wip_keyword_in_message.py
+      task: bugginess
+    - dataset: manual_labels.herzig
+      heuristic_group: bugginess/wip/removed_fixme.py
+      task: bugginess
+    - dataset: manual_labels.herzig
+      heuristic_group: bugginess/keywords/bug_keywords_lookup_in_issue_body.py
+      task: bugginess
+    - dataset: manual_labels.herzig
+      heuristic_group: bugginess/keywords/bugless_keywords_lookup_in_issue_label.py
+      task: bugginess
+    - dataset: manual_labels.herzig
+      heuristic_group: bugginess/keywords/init_commit_message_keywords.py
+      task: bugginess
+    - dataset: manual_labels.herzig
+      heuristic_group: bugginess/keywords/bug_keywords_lookup_in_clean_message.py
+      task: bugginess
+    - dataset: manual_labels.herzig
+      heuristic_group: bugginess/keywords/version_in_message.py
+      task: bugginess
+    - dataset: manual_labels.herzig
+      heuristic_group: bugginess/keywords/buggless_keywords_lookup_in_clean_message.py
+      task: bugginess
+    - dataset: manual_labels.herzig
+      heuristic_group: bugginess/keywords/github_ref_in_message.py
+      task: bugginess
+    - dataset: manual_labels.herzig
+      heuristic_group: bugginess/keywords/buggless_keywords_lookup_in_message.py
+      task: bugginess
+    - dataset: manual_labels.herzig
+      heuristic_group: bugginess/keywords/bugless_keywords_lookup_in_issue_body.py
+      task: bugginess
+    - dataset: manual_labels.herzig
+      heuristic_group: bugginess/keywords/bug_keywords_lookup_in_message.py
+      task: bugginess
+    - dataset: manual_labels.herzig
+      heuristic_group: bugginess/keywords/bug_keywords_lookup_in_issue_label.py
+      task: bugginess
+  CombineHeuristics:
+    do:
+      cmd: bohr porcelain apply-heuristics "${item.task}" --dataset "${item.dataset}"
+      deps:
+      - runs/${item.task}/${item.dataset}/partial_heuristic_matrices
+      metrics:
+      - runs/${item.task}/${item.dataset}/analysis.json:
+          cache: false
+      - runs/${item.task}/${item.dataset}/heuristic_metrics.json:
+          cache: false
+      outs:
+      - runs/${item.task}/${item.dataset}/heuristic_matrix.pkl
+      params:
+      - bohr.py:
+        - HEURISTICS_CLASSIFIER
+      - bohr.py:
+        - BOHR_FRAMEWORK_VERSION
+    foreach:
+    - dataset: bohr.200k_commits
+      task: bugginess
+    - dataset: manual_labels.levin
+      task: bugginess
+    - dataset: manual_labels.berger
+      task: bugginess
+    - dataset: manual_labels.herzig
+      task: bugginess
+  LabelDataset:
+    do:
+      cmd: bohr porcelain label-dataset "${item.task}" "${item.dataset}"
+      deps:
+      - runs/${item.task}/${item.dataset}/heuristic_matrix.pkl
+      - runs/${item.task}/label_model.pkl
+      metrics: []
+      outs:
+      - runs/${item.task}/${item.dataset}/labeled.csv
+      params:
+      - bohr.py:
+        - BOHR_FRAMEWORK_VERSION
+    foreach:
+    - dataset: bohr.200k_commits
+      task: bugginess
+    - dataset: manual_labels.levin
+      task: bugginess
+    - dataset: manual_labels.berger
+      task: bugginess
+    - dataset: manual_labels.herzig
+      task: bugginess
+  LoadDatasets:
+    do:
+      cmd: bohr porcelain load-dataset "${item}"
+      deps: []
+      metrics: []
+      outs:
+      - /Users/hlib/dev/bohr-workdir-bugginess/cached-datasets/${item}.pkl
+      params:
+      - bohr.py:
+        - BOHR_FRAMEWORK_VERSION
+    foreach:
+    - manual_labels.levin
+    - bohr.200k_commits
+    - manual_labels.berger
+    - manual_labels.herzig
+  TrainLabelModel@bugginess:
+    do:
+      cmd: bohr porcelain train-label-model bugginess
+      deps:
+      - runs/bugginess/bohr.200k_commits/heuristic_matrix.pkl
+      - runs/bugginess/manual_labels.levin/heuristic_matrix.pkl
+      - runs/bugginess/manual_labels.berger/heuristic_matrix.pkl
+      - runs/bugginess/manual_labels.herzig/heuristic_matrix.pkl
+      metrics:
+      - runs/bugginess/label_model_metrics.json:
+          cache: false
+      outs:
+      - runs/bugginess/label_model.pkl
+      - runs/bugginess/label_model_weights.csv
+      params:
+      - bohr.py:
+        - BOHR_FRAMEWORK_VERSION
+    foreach:
+    - 0

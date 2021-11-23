@@ -1,0 +1,7 @@
+[core]
+    remote = squirrel-http
+    check_update = false
+['remote "squirrel"']
+    url = ssh://squirrel.inf.unibz.it/data/bohr_dvc_storage
+['remote "squirrel-http"']
+    url = http://squirrel.inf.unibz.it:8180
