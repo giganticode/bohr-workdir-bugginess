@@ -6,3 +6,5 @@
     user = hbabii
 ['remote "squirrel-http"']
     url = http://squirrel.inf.unibz.it:8180
+['remote "dagshub"']
+    url = https://dagshub.com/hlibbabii/bohr-workdir-bugginess.dvc
