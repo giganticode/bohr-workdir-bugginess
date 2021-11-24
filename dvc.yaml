@@ -529,9 +529,9 @@ stages:
       - bohr.py:
         - BOHR_FRAMEWORK_VERSION
     foreach:
+    - manual_labels.berger
     - manual_labels.levin
     - bohr.200k_commits
-    - manual_labels.berger
     - manual_labels.herzig
   TrainLabelModel@bugginess:
     do:

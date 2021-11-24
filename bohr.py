@@ -3,7 +3,7 @@ from bohrlabels.labels import CommitLabel
 from bohrapi.core import Dataset, Task, Workspace
 
 
-HEURISTICS_CLASSIFIER = '.' # run all heuristics
+HEURISTICS_CLASSIFIER = 'bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py' # run all heuristics
 BOHR_FRAMEWORK_VERSION = '0.5.0rc0'
 
 commits_200k = Dataset(id='bohr.200k_commits', top_artifact=Commit,)
