@@ -18,7 +18,7 @@ levin = Dataset(id='manual_labels.levin',
 
 herzig = Dataset(id='manual_labels.herzig',
                  top_artifact=Commit,
-                 get_bohr_label_for_datapoint=lambda c: (CommitLabel.BugFix if c.raw_data['manual_labels']['herzig']['bug'] == 1 else CommitLabel.NonBugFix))
+                 get_bohr_label_for_datapoint=lambda c: (CommitLabel.BugFix if c.raw_data['manual_labels']['herzig']['CLASSIFIED'] == 'BUG' else CommitLabel.NonBugFix))
 
 bugginess = Task(name='bugginess', author='hlib', description='bug or not', top_artifact=Commit,
                  labels=[CommitLabel.NonBugFix, CommitLabel.BugFix],

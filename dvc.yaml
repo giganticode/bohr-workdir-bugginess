@@ -530,9 +530,9 @@ stages:
         - BOHR_FRAMEWORK_VERSION
     foreach:
     - manual_labels.levin
-    - bohr.200k_commits
-    - manual_labels.berger
     - manual_labels.herzig
+    - manual_labels.berger
+    - bohr.200k_commits
   TrainLabelModel@bugginess:
     do:
       cmd: bohr porcelain train-label-model bugginess
