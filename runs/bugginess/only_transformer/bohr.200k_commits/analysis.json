@@ -1,0 +1,71 @@
+{
+    "Conflicts": {
+        "all_files_test_add": 2.4225040940319188e-05,
+        "all_files_test_fix": 0.0,
+        "buggless_if_many_lines_changed": 0.0008236513919708525,
+        "bugless_if_at_least_2_removed_files": 0.005155088712099924,
+        "bugless_if_at_least_5_added_files": 0.006293665636294925,
+        "bugless_if_many_files_changes": 0.008968110156106164,
+        "bugless_if_not_code_files": 0.05101309121212415,
+        "fine_grained_changes_transformer": 0.07656566439597283,
+        "no_files_have_modified_status": 0.018982742080834118,
+        "refactoring_if_at_least_2_renamed": 0.003347900657952112
+    },
+    "Coverage": {
+        "all_files_test_add": 0.0012015620306398318,
+        "all_files_test_fix": 4.845008188063838e-06,
+        "buggless_if_many_lines_changed": 0.002054283471739067,
+        "bugless_if_at_least_2_removed_files": 0.019462397891452436,
+        "bugless_if_at_least_5_added_files": 0.029380129652419113,
+        "bugless_if_many_files_changes": 0.046657428851054755,
+        "bugless_if_not_code_files": 0.17097549394858477,
+        "fine_grained_changes_transformer": 1.0,
+        "no_files_have_modified_status": 0.04822721150398744,
+        "refactoring_if_at_least_2_renamed": 0.012606711305342105
+    },
+    "Overlaps": {
+        "all_files_test_add": 0.0012015620306398318,
+        "all_files_test_fix": 4.845008188063838e-06,
+        "buggless_if_many_lines_changed": 0.002054283471739067,
+        "bugless_if_at_least_2_removed_files": 0.019462397891452436,
+        "bugless_if_at_least_5_added_files": 0.029380129652419113,
+        "bugless_if_many_files_changes": 0.046657428851054755,
+        "bugless_if_not_code_files": 0.17097549394858477,
+        "fine_grained_changes_transformer": 0.2552980164536478,
+        "no_files_have_modified_status": 0.04822721150398744,
+        "refactoring_if_at_least_2_renamed": 0.012606711305342105
+    },
+    "Polarity": {
+        "all_files_test_add": [
+            0
+        ],
+        "all_files_test_fix": [
+            0
+        ],
+        "buggless_if_many_lines_changed": [
+            0
+        ],
+        "bugless_if_at_least_2_removed_files": [
+            0
+        ],
+        "bugless_if_at_least_5_added_files": [
+            0
+        ],
+        "bugless_if_many_files_changes": [
+            0
+        ],
+        "bugless_if_not_code_files": [
+            0
+        ],
+        "fine_grained_changes_transformer": [
+            0,
+            1
+        ],
+        "no_files_have_modified_status": [
+            0
+        ],
+        "refactoring_if_at_least_2_renamed": [
+            0
+        ]
+    }
+}

@@ -1,0 +1,103 @@
+{
+    "Conflicts": {
+        "all_files_test_add": 0.0,
+        "all_files_test_fix": 0.0,
+        "buggless_if_many_lines_changed": 0.04612706701479547,
+        "bugless_if_at_least_2_removed_files": 0.0008703220191470844,
+        "bugless_if_at_least_5_added_files": 0.004351610095735422,
+        "bugless_if_many_files_changes": 0.011314186248912098,
+        "bugless_if_not_code_files": 0.0,
+        "fine_grained_changes_transformer": 0.04699738903394256,
+        "no_files_have_modified_status": 0.0,
+        "refactoring_if_at_least_2_renamed": 0.0026109660574412533
+    },
+    "Correct": {
+        "all_files_test_add": 1,
+        "all_files_test_fix": 1,
+        "buggless_if_many_lines_changed": 220,
+        "bugless_if_at_least_2_removed_files": 9,
+        "bugless_if_at_least_5_added_files": 26,
+        "bugless_if_many_files_changes": 55,
+        "bugless_if_not_code_files": 0,
+        "fine_grained_changes_transformer": 687,
+        "no_files_have_modified_status": 0,
+        "refactoring_if_at_least_2_renamed": 16
+    },
+    "Coverage": {
+        "all_files_test_add": 0.0008703220191470844,
+        "all_files_test_fix": 0.0008703220191470844,
+        "buggless_if_many_lines_changed": 0.26457789382071367,
+        "bugless_if_at_least_2_removed_files": 0.010443864229765013,
+        "bugless_if_at_least_5_added_files": 0.02959094865100087,
+        "bugless_if_many_files_changes": 0.05918189730200174,
+        "bugless_if_not_code_files": 0.0,
+        "fine_grained_changes_transformer": 1.0,
+        "no_files_have_modified_status": 0.0,
+        "refactoring_if_at_least_2_renamed": 0.01392515230635335
+    },
+    "Emp. Acc.": {
+        "all_files_test_add": 1.0,
+        "all_files_test_fix": 1.0,
+        "buggless_if_many_lines_changed": 0.7236842105263158,
+        "bugless_if_at_least_2_removed_files": 0.75,
+        "bugless_if_at_least_5_added_files": 0.7647058823529411,
+        "bugless_if_many_files_changes": 0.8088235294117647,
+        "bugless_if_not_code_files": 0.0,
+        "fine_grained_changes_transformer": 0.597911227154047,
+        "no_files_have_modified_status": 0.0,
+        "refactoring_if_at_least_2_renamed": 1.0
+    },
+    "Incorrect": {
+        "all_files_test_add": 0,
+        "all_files_test_fix": 0,
+        "buggless_if_many_lines_changed": 84,
+        "bugless_if_at_least_2_removed_files": 3,
+        "bugless_if_at_least_5_added_files": 8,
+        "bugless_if_many_files_changes": 13,
+        "bugless_if_not_code_files": 0,
+        "fine_grained_changes_transformer": 462,
+        "no_files_have_modified_status": 0,
+        "refactoring_if_at_least_2_renamed": 0
+    },
+    "Overlaps": {
+        "all_files_test_add": 0.0008703220191470844,
+        "all_files_test_fix": 0.0008703220191470844,
+        "buggless_if_many_lines_changed": 0.26457789382071367,
+        "bugless_if_at_least_2_removed_files": 0.010443864229765013,
+        "bugless_if_at_least_5_added_files": 0.02959094865100087,
+        "bugless_if_many_files_changes": 0.05918189730200174,
+        "bugless_if_not_code_files": 0.0,
+        "fine_grained_changes_transformer": 0.26979982593559615,
+        "no_files_have_modified_status": 0.0,
+        "refactoring_if_at_least_2_renamed": 0.01392515230635335
+    },
+    "Polarity": {
+        "all_files_test_add": [
+            0
+        ],
+        "all_files_test_fix": [
+            0
+        ],
+        "buggless_if_many_lines_changed": [
+            0
+        ],
+        "bugless_if_at_least_2_removed_files": [
+            0
+        ],
+        "bugless_if_at_least_5_added_files": [
+            0
+        ],
+        "bugless_if_many_files_changes": [
+            0
+        ],
+        "bugless_if_not_code_files": [],
+        "fine_grained_changes_transformer": [
+            0,
+            1
+        ],
+        "no_files_have_modified_status": [],
+        "refactoring_if_at_least_2_renamed": [
+            0
+        ]
+    }
+}
