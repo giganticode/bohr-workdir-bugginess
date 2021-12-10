@@ -6587,14 +6587,14 @@ stages:
       "bugginess/sstubs/commit_explorer_output_init.py" --dataset "manual_labels.levin"
     deps:
     - path: cached-datasets/manual_labels.levin.pkl
-      md5: a21f47e760ca72c6eac703800240e82c
-      size: 38670233
+      md5: 37192ad50c5714a27cc3602b08099355
+      size: 38725725
     - path: cloned-bohr/heuristics/bugginess/sstubs/commit_explorer_output_init.py
       md5: 2b9b4ebb2b554e03671d5b46f6c4ea56
       size: 518
     - path: runs/__heuristics/manual_labels.levin/bugginess/sstubs/commit_explorer_output_init.py/heuristic_matrix.pkl
-      md5: 8832171ad35df768cd1711be7637e87a
-      size: 9973
+      md5: f498cb90074bfdef60d28096fbfbd16b
+      size: 9951
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc0
@@ -6641,14 +6641,14 @@ stages:
       "bugginess/filemetrics/all_files_test_add.py" --dataset "manual_labels.herzig"
     deps:
     - path: cached-datasets/manual_labels.herzig.pkl
-      md5: ee0fe8dce03674e0876abc15bc81f038
-      size: 284541630
+      md5: 8c1ba18b124f76f66d3f6082ecb874d7
+      size: 284788582
     - path: cloned-bohr/heuristics/bugginess/filemetrics/all_files_test_add.py
       md5: 5b56250431bb0d0393d5562c86483e6c
       size: 786
     - path: runs/__heuristics/manual_labels.herzig/bugginess/filemetrics/all_files_test_add.py/heuristic_matrix.pkl
-      md5: 12e38ad9e998ba8dcd8676691eded758
-      size: 41940
+      md5: a5dc29c7e46ae2dfd1d147f25eb2c51c
+      size: 41918
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc0
@@ -6678,14 +6678,14 @@ stages:
       "bugginess/filemetrics/all_files_test_add.py" --dataset "manual_labels.berger"
     deps:
     - path: cached-datasets/manual_labels.berger.pkl
-      md5: d3dbcfd350107a5e3afeb7b5d6b6c20b
-      size: 25380979
+      md5: d15da958ee82397d81604886976d5665
+      size: 25398921
     - path: cloned-bohr/heuristics/bugginess/filemetrics/all_files_test_add.py
       md5: 5b56250431bb0d0393d5562c86483e6c
       size: 786
     - path: runs/__heuristics/manual_labels.berger/bugginess/filemetrics/all_files_test_add.py/heuristic_matrix.pkl
-      md5: 9dedb9501617cc6330e177df87e62f99
-      size: 3772
+      md5: 1f004a5b613de9d41cd705da33d283d9
+      size: 3750
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc0
@@ -6838,14 +6838,14 @@ stages:
       "bugginess/filemetrics/all_files_test_fix.py" --dataset "manual_labels.levin"
     deps:
     - path: cached-datasets/manual_labels.levin.pkl
-      md5: a21f47e760ca72c6eac703800240e82c
-      size: 38670233
+      md5: 37192ad50c5714a27cc3602b08099355
+      size: 38725725
     - path: cloned-bohr/heuristics/bugginess/filemetrics/all_files_test_fix.py
       md5: 320e7977918d1a3e54e3832dc5859799
       size: 682
     - path: runs/__heuristics/manual_labels.levin/bugginess/filemetrics/all_files_test_fix.py/heuristic_matrix.pkl
-      md5: 0fe2c7d30601d33b5d38c9899419a1bb
-      size: 9964
+      md5: b3781c0e803747542d959941edabd55c
+      size: 9942
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc0
@@ -6892,14 +6892,14 @@ stages:
       "bugginess/keywords/version_in_message.py" --dataset "manual_labels.herzig"
     deps:
     - path: cached-datasets/manual_labels.herzig.pkl
-      md5: ee0fe8dce03674e0876abc15bc81f038
-      size: 284541630
+      md5: 8c1ba18b124f76f66d3f6082ecb874d7
+      size: 284788582
     - path: cloned-bohr/heuristics/bugginess/keywords/version_in_message.py
       md5: 80d02f9e4b665477a3fd00da56e8e869
       size: 401
     - path: runs/__heuristics/manual_labels.herzig/bugginess/keywords/version_in_message.py/heuristic_matrix.pkl
-      md5: 7371c6282df4ff1065707e29e6fb62f9
-      size: 41940
+      md5: a88c948f3e159805ea6011542a5a4617
+      size: 41918
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc0
@@ -7182,14 +7182,14 @@ stages:
       "bugginess/bug_if_sstub.py" --dataset "manual_labels.herzig"
     deps:
     - path: cached-datasets/manual_labels.herzig.pkl
-      md5: ee0fe8dce03674e0876abc15bc81f038
-      size: 284541630
+      md5: 8c1ba18b124f76f66d3f6082ecb874d7
+      size: 284788582
     - path: cloned-bohr/heuristics/bugginess/bug_if_sstub.py
       md5: 9ee224adde00be52a736adf2e1b22b32
       size: 390
     - path: runs/__heuristics/manual_labels.herzig/bugginess/bug_if_sstub.py/heuristic_matrix.pkl
-      md5: f739dec57a115b531bcc25097ccf1f8d
-      size: 41951
+      md5: f65d7e71d8fde54ea53b7ba5514baae8
+      size: 41929
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc0
@@ -8089,14 +8089,14 @@ stages:
       "bugginess/versionbump/contains_package_lock_file.py" --dataset "bohr.200k_commits"
     deps:
     - path: cached-datasets/bohr.200k_commits.pkl
-      md5: 6783f8c3205c8719655012faa36f5b8c
-      size: 2610222781
+      md5: 2dedf8e97558234fc0e8ebdc85c8267b
+      size: 2619123175
     - path: cloned-bohr/heuristics/bugginess/versionbump/contains_package_lock_file.py
       md5: 3cf0426635b3e4d66508ec1f34c35bbf
       size: 452
     - path: runs/__heuristics/bohr.200k_commits/bugginess/versionbump/contains_package_lock_file.py/heuristic_matrix.pkl
-      md5: b790ee3b8d14c7117acf689ea20261f6
-      size: 1651977
+      md5: e0d3cb27f8572cc12fb62c1b4aa43dfa
+      size: 1651955
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc0
@@ -9428,14 +9428,14 @@ stages:
       "bugginess/versionbump/maven_plugin_version_bump.py" --dataset "bohr.200k_commits"
     deps:
     - path: cached-datasets/bohr.200k_commits.pkl
-      md5: 6783f8c3205c8719655012faa36f5b8c
-      size: 2610222781
+      md5: 2dedf8e97558234fc0e8ebdc85c8267b
+      size: 2619123175
     - path: cloned-bohr/heuristics/bugginess/versionbump/maven_plugin_version_bump.py
       md5: 6d1070cc2ffe75b031004118fff10d84
       size: 376
     - path: runs/__heuristics/bohr.200k_commits/bugginess/versionbump/maven_plugin_version_bump.py/heuristic_matrix.pkl
-      md5: ea8ea18d0ddb37ee8d4990007acd72db
-      size: 1651976
+      md5: 87c4b2f0dbe19b049d5a75daf7036770
+      size: 1651954
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc0
@@ -9448,14 +9448,14 @@ stages:
       "bugginess/keywords/bug_keywords_lookup_in_message.py" --dataset "manual_labels.herzig"
     deps:
     - path: cached-datasets/manual_labels.herzig.pkl
-      md5: ee0fe8dce03674e0876abc15bc81f038
-      size: 284541630
+      md5: 8c1ba18b124f76f66d3f6082ecb874d7
+      size: 284788582
     - path: cloned-bohr/heuristics/bugginess/keywords/bug_keywords_lookup_in_message.py
       md5: b68d96806180214829f17731b27126ce
       size: 1585
     - path: runs/__heuristics/manual_labels.herzig/bugginess/keywords/bug_keywords_lookup_in_message.py/heuristic_matrix.pkl
-      md5: bb1ee903b3ea7491951e2bf194e9dd7f
-      size: 1978328
+      md5: d5196f1bd21c55e16072d232b7c1836a
+      size: 1978211
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc0
@@ -9468,14 +9468,14 @@ stages:
       "bugginess/wip/removed_fixme.py" --dataset "manual_labels.levin"
     deps:
     - path: cached-datasets/manual_labels.levin.pkl
-      md5: a21f47e760ca72c6eac703800240e82c
-      size: 38670233
+      md5: 37192ad50c5714a27cc3602b08099355
+      size: 38725725
     - path: cloned-bohr/heuristics/bugginess/wip/removed_fixme.py
       md5: 9a3fab2ebb210e5bcd9f95a2004cf208
       size: 784
     - path: runs/__heuristics/manual_labels.levin/bugginess/wip/removed_fixme.py/heuristic_matrix.pkl
-      md5: 944163be602377f77d62141ca73c1e82
-      size: 9959
+      md5: 654d3d20d03f17cff98f91b5cb292026
+      size: 9937
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc0
@@ -9488,14 +9488,14 @@ stages:
       "bugginess/keywords/version_in_message.py" --dataset "manual_labels.berger"
     deps:
     - path: cached-datasets/manual_labels.berger.pkl
-      md5: d3dbcfd350107a5e3afeb7b5d6b6c20b
-      size: 25380979
+      md5: d15da958ee82397d81604886976d5665
+      size: 25398921
     - path: cloned-bohr/heuristics/bugginess/keywords/version_in_message.py
       md5: 80d02f9e4b665477a3fd00da56e8e869
       size: 401
     - path: runs/__heuristics/manual_labels.berger/bugginess/keywords/version_in_message.py/heuristic_matrix.pkl
-      md5: 9fbc9c42d007a2f552a64331aa95eced
-      size: 3772
+      md5: f7647a1c0ad7a5f9bd207dd707633e07
+      size: 3750
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc0
@@ -9528,14 +9528,14 @@ stages:
       "bugginess/versionbump/version_regex3.py" --dataset "manual_labels.levin"
     deps:
     - path: cached-datasets/manual_labels.levin.pkl
-      md5: a21f47e760ca72c6eac703800240e82c
-      size: 38670233
+      md5: 37192ad50c5714a27cc3602b08099355
+      size: 38725725
     - path: cloned-bohr/heuristics/bugginess/versionbump/version_regex3.py
       md5: c8b889a7477a8e9f221b3b1de2db5740
       size: 408
     - path: runs/__heuristics/manual_labels.levin/bugginess/versionbump/version_regex3.py/heuristic_matrix.pkl
-      md5: 27def725917890b67c6146d26bb774ce
-      size: 9960
+      md5: 5db117282029b574c18d5c24593384bf
+      size: 9938
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc0
@@ -9568,14 +9568,14 @@ stages:
       "bugginess/conventional_commit_regex.py" --dataset "manual_labels.berger"
     deps:
     - path: cached-datasets/manual_labels.berger.pkl
-      md5: d3dbcfd350107a5e3afeb7b5d6b6c20b
-      size: 25380979
+      md5: d15da958ee82397d81604886976d5665
+      size: 25398921
     - path: cloned-bohr/heuristics/bugginess/conventional_commit_regex.py
       md5: a5ec15e40c1ee774fcd13a0000778858
       size: 2101
     - path: runs/__heuristics/manual_labels.berger/bugginess/conventional_commit_regex.py/heuristic_matrix.pkl
-      md5: 539064aaf6b78b6fae75d4065abf733d
-      size: 3779
+      md5: 39da0533a258ea75c9740ec74576589c
+      size: 3757
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc0
@@ -9588,14 +9588,14 @@ stages:
       "bugginess/wip/wip_keyword_in_message.py" --dataset "bohr.200k_commits"
     deps:
     - path: cached-datasets/bohr.200k_commits.pkl
-      md5: 6783f8c3205c8719655012faa36f5b8c
-      size: 2610222781
+      md5: 2dedf8e97558234fc0e8ebdc85c8267b
+      size: 2619123175
     - path: cloned-bohr/heuristics/bugginess/wip/wip_keyword_in_message.py
       md5: 1597b0ef2df9a5d32bc7e58235ef881c
       size: 342
     - path: runs/__heuristics/bohr.200k_commits/bugginess/wip/wip_keyword_in_message.py/heuristic_matrix.pkl
-      md5: e402a61bdbe18793d6fadd9595d57620
-      size: 1651973
+      md5: f5beb1ca42a220314b7483ecd923ba83
+      size: 1651951
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc0
@@ -9648,14 +9648,14 @@ stages:
       "bugginess/filemetrics/bugless_if_at_least_5_added_files.py" --dataset "manual_labels.levin"
     deps:
     - path: cached-datasets/manual_labels.levin.pkl
-      md5: a21f47e760ca72c6eac703800240e82c
-      size: 38670233
+      md5: 37192ad50c5714a27cc3602b08099355
+      size: 38725725
     - path: cloned-bohr/heuristics/bugginess/filemetrics/bugless_if_at_least_5_added_files.py
       md5: d7219806858c57cea7def5a503fedb14
       size: 458
     - path: runs/__heuristics/manual_labels.levin/bugginess/filemetrics/bugless_if_at_least_5_added_files.py/heuristic_matrix.pkl
-      md5: b09e4fce02eab612806cf51fd5ce678c
-      size: 9979
+      md5: 3c600120f7cbfa80bd420213de46cee3
+      size: 9957
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc0
@@ -9749,34 +9749,34 @@ stages:
       "bugginess/filemetrics/buggless_if_many_lines_changed.py" --dataset "bohr.200k_commits"
     deps:
     - path: cached-datasets/bohr.200k_commits.pkl
-      md5: 6783f8c3205c8719655012faa36f5b8c
-      size: 2610222781
+      md5: 2dedf8e97558234fc0e8ebdc85c8267b
+      size: 2619123175
     - path: cloned-bohr/heuristics/bugginess/filemetrics/buggless_if_many_lines_changed.py
       md5: c03f71bc9cab09bd7063d078c9dd7b13
       size: 438
     - path: runs/__heuristics/bohr.200k_commits/bugginess/filemetrics/buggless_if_many_lines_changed.py/heuristic_matrix.pkl
-      md5: f44975a81697d9ea2d59925e50f57f4e
-      size: 1651981
+      md5: 40b7066170c0663af6a818b938558164
+      size: 1651959
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc0
     outs:
     - path: runs/__single_heuristic_metrics/bugginess/bohr.200k_commits/bugginess/filemetrics/buggless_if_many_lines_changed.py/heuristic_metrics.json
-      md5: 0947281679e086f4874f87ef09e4636f
-      size: 35
+      md5: 25306656b8266b552fa07bfae9626ff2
+      size: 34
   ComputeSingleHeuristic@bugginess__manual_labels.berger__bugginess/versionbump/contains_python_version_file.py:
     cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
       "bugginess/versionbump/contains_python_version_file.py" --dataset "manual_labels.berger"
     deps:
     - path: cached-datasets/manual_labels.berger.pkl
-      md5: d3dbcfd350107a5e3afeb7b5d6b6c20b
-      size: 25380979
+      md5: d15da958ee82397d81604886976d5665
+      size: 25398921
     - path: cloned-bohr/heuristics/bugginess/versionbump/contains_python_version_file.py
       md5: 3db64aa2fd115182b9b2437941b10628
       size: 452
     - path: runs/__heuristics/manual_labels.berger/bugginess/versionbump/contains_python_version_file.py/heuristic_matrix.pkl
-      md5: 2c44f2247971699b1887f03bd2f674ef
-      size: 3782
+      md5: 3ecd438b74e21991606d7a14b38b659c
+      size: 3760
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc0
@@ -9911,14 +9911,14 @@ stages:
       "bugginess/filemetrics/bugless_if_many_files_changes.py" --dataset "manual_labels.berger"
     deps:
     - path: cached-datasets/manual_labels.berger.pkl
-      md5: d3dbcfd350107a5e3afeb7b5d6b6c20b
-      size: 25380979
+      md5: d15da958ee82397d81604886976d5665
+      size: 25398921
     - path: cloned-bohr/heuristics/bugginess/filemetrics/bugless_if_many_files_changes.py
       md5: 3ef24fb213ba54caa265773f6f9cebdc
       size: 375
     - path: runs/__heuristics/manual_labels.berger/bugginess/filemetrics/bugless_if_many_files_changes.py/heuristic_matrix.pkl
-      md5: 02f2681968b12a30627594b168a7c89c
-      size: 3783
+      md5: ef708775a4e54650ec710e8a8455438b
+      size: 3761
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc0
@@ -9951,14 +9951,14 @@ stages:
       "bugginess/keywords/bug_keywords_lookup_in_clean_message.py" --dataset "manual_labels.berger"
     deps:
     - path: cached-datasets/manual_labels.berger.pkl
-      md5: d3dbcfd350107a5e3afeb7b5d6b6c20b
-      size: 25380979
+      md5: d15da958ee82397d81604886976d5665
+      size: 25398921
     - path: cloned-bohr/heuristics/bugginess/keywords/bug_keywords_lookup_in_clean_message.py
       md5: d7bc9d92649002e0a741e5788695e062
       size: 1836
     - path: runs/__heuristics/manual_labels.berger/bugginess/keywords/bug_keywords_lookup_in_clean_message.py/heuristic_matrix.pkl
-      md5: 61fc86997845ba6b9a873ae5c61cf2b8
-      size: 146552
+      md5: 2e3e1d429798d5c713aebd33fe4810a6
+      size: 146435
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc0
@@ -10051,14 +10051,14 @@ stages:
       "bugginess/wip/removed_fixme.py" --dataset "manual_labels.berger"
     deps:
     - path: cached-datasets/manual_labels.berger.pkl
-      md5: d3dbcfd350107a5e3afeb7b5d6b6c20b
-      size: 25380979
+      md5: d15da958ee82397d81604886976d5665
+      size: 25398921
     - path: cloned-bohr/heuristics/bugginess/wip/removed_fixme.py
       md5: 9a3fab2ebb210e5bcd9f95a2004cf208
       size: 784
     - path: runs/__heuristics/manual_labels.berger/bugginess/wip/removed_fixme.py/heuristic_matrix.pkl
-      md5: b53c7fe39b750106a1145dabf34199ec
-      size: 3767
+      md5: 24f0b2a7e04ecba408489845737eb880
+      size: 3745
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc0
@@ -10092,14 +10092,14 @@ stages:
       "manual_labels.levin"
     deps:
     - path: cached-datasets/manual_labels.levin.pkl
-      md5: a21f47e760ca72c6eac703800240e82c
-      size: 38670233
+      md5: 37192ad50c5714a27cc3602b08099355
+      size: 38725725
     - path: cloned-bohr/heuristics/bugginess/versionbump/dependency_bump_keywords_lookup_in_message.py
       md5: f56c2882564181d5372dc34dde0a49ef
       size: 582
     - path: runs/__heuristics/manual_labels.levin/bugginess/versionbump/dependency_bump_keywords_lookup_in_message.py/heuristic_matrix.pkl
-      md5: 5aa3e5d5127167b7da9c4df5c4ac4ab5
-      size: 9994
+      md5: 5f1806ed0862518712c210b4c99ab905
+      size: 9972
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc0
@@ -10132,14 +10132,14 @@ stages:
       "bugginess/filemetrics/refactoring_if_at_least_2_renamed.py" --dataset "manual_labels.levin"
     deps:
     - path: cached-datasets/manual_labels.levin.pkl
-      md5: a21f47e760ca72c6eac703800240e82c
-      size: 38670233
+      md5: 37192ad50c5714a27cc3602b08099355
+      size: 38725725
     - path: cloned-bohr/heuristics/bugginess/filemetrics/refactoring_if_at_least_2_renamed.py
       md5: b53510dd828e3a3a9813997c9187200a
       size: 468
     - path: runs/__heuristics/manual_labels.levin/bugginess/filemetrics/refactoring_if_at_least_2_renamed.py/heuristic_matrix.pkl
-      md5: dec9ebfb28b36be1a1884b0252c99e4b
-      size: 9979
+      md5: 50a66629d3a3c5a79ca0bd31c516ca66
+      size: 9957
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc0
@@ -10152,14 +10152,14 @@ stages:
       "bugginess/versionbump/version_regex2.py" --dataset "bohr.200k_commits"
     deps:
     - path: cached-datasets/bohr.200k_commits.pkl
-      md5: 6783f8c3205c8719655012faa36f5b8c
-      size: 2610222781
+      md5: 2dedf8e97558234fc0e8ebdc85c8267b
+      size: 2619123175
     - path: cloned-bohr/heuristics/bugginess/versionbump/version_regex2.py
       md5: 64651116851d15e23dae5dc9e2ed32ee
       size: 416
     - path: runs/__heuristics/bohr.200k_commits/bugginess/versionbump/version_regex2.py/heuristic_matrix.pkl
-      md5: d10cee827c80794023dfca016ad8c14b
-      size: 1651965
+      md5: 8871e7fb7d306d3874eb3b066740958d
+      size: 1651943
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc0
@@ -10193,14 +10193,14 @@ stages:
       "manual_labels.berger"
     deps:
     - path: cached-datasets/manual_labels.berger.pkl
-      md5: d3dbcfd350107a5e3afeb7b5d6b6c20b
-      size: 25380979
+      md5: d15da958ee82397d81604886976d5665
+      size: 25398921
     - path: cloned-bohr/heuristics/bugginess/versionbump/dependency_bump_keywords_lookup_in_message.py
       md5: f56c2882564181d5372dc34dde0a49ef
       size: 582
     - path: runs/__heuristics/manual_labels.berger/bugginess/versionbump/dependency_bump_keywords_lookup_in_message.py/heuristic_matrix.pkl
-      md5: 4828e72a22c5940c7b2357dfa72a65c8
-      size: 3802
+      md5: 1e4d70411092f09d25ddddf3a50bb512
+      size: 3780
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc0
@@ -10213,14 +10213,14 @@ stages:
       "bugginess/conventional_commit_regex.py" --dataset "manual_labels.herzig"
     deps:
     - path: cached-datasets/manual_labels.herzig.pkl
-      md5: ee0fe8dce03674e0876abc15bc81f038
-      size: 284541630
+      md5: 8c1ba18b124f76f66d3f6082ecb874d7
+      size: 284788582
     - path: cloned-bohr/heuristics/bugginess/conventional_commit_regex.py
       md5: a5ec15e40c1ee774fcd13a0000778858
       size: 2101
     - path: runs/__heuristics/manual_labels.herzig/bugginess/conventional_commit_regex.py/heuristic_matrix.pkl
-      md5: 431b049bc1eb118b5e1f33cdf0f643c3
-      size: 41947
+      md5: 65a93f9813e5baebd52f1797f303c172
+      size: 41925
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc0
@@ -10338,14 +10338,14 @@ stages:
       "bugginess/keywords/bugless_keywords_lookup_in_issue_label.py" --dataset "manual_labels.herzig"
     deps:
     - path: cached-datasets/manual_labels.herzig.pkl
-      md5: ee0fe8dce03674e0876abc15bc81f038
-      size: 284541630
+      md5: 8c1ba18b124f76f66d3f6082ecb874d7
+      size: 284788582
     - path: cloned-bohr/heuristics/bugginess/keywords/bugless_keywords_lookup_in_issue_label.py
       md5: 51c0b441a48cf3d53e96c3c86d119959
       size: 608
     - path: runs/__heuristics/manual_labels.herzig/bugginess/keywords/bugless_keywords_lookup_in_issue_label.py/heuristic_matrix.pkl
-      md5: 09436144fc1e9716e05b4340ddfa9445
-      size: 248010
+      md5: 50ed159fafe90b16f148bfc240a64c30
+      size: 247977
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc0
@@ -10358,14 +10358,14 @@ stages:
       "bugginess/filemetrics/bugless_if_at_least_2_removed_files.py" --dataset "bohr.200k_commits"
     deps:
     - path: cached-datasets/bohr.200k_commits.pkl
-      md5: 6783f8c3205c8719655012faa36f5b8c
-      size: 2610222781
+      md5: 2dedf8e97558234fc0e8ebdc85c8267b
+      size: 2619123175
     - path: cloned-bohr/heuristics/bugginess/filemetrics/bugless_if_at_least_2_removed_files.py
       md5: 10087bbb593c4b85b7d547d4587e81fb
       size: 468
     - path: runs/__heuristics/bohr.200k_commits/bugginess/filemetrics/bugless_if_at_least_2_removed_files.py/heuristic_matrix.pkl
-      md5: 5c1a5326abfff56cc2b94c80c1f067c6
-      size: 1651986
+      md5: 31932e131eb3f5591844313b230a7d32
+      size: 1651964
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc0
@@ -10438,14 +10438,14 @@ stages:
       "bugginess/versionbump/contains_ruby_version_file.py" --dataset "manual_labels.berger"
     deps:
     - path: cached-datasets/manual_labels.berger.pkl
-      md5: d3dbcfd350107a5e3afeb7b5d6b6c20b
-      size: 25380979
+      md5: d15da958ee82397d81604886976d5665
+      size: 25398921
     - path: cloned-bohr/heuristics/bugginess/versionbump/contains_ruby_version_file.py
       md5: e1e953135428528bef17db29ad1850ac
       size: 448
     - path: runs/__heuristics/manual_labels.berger/bugginess/versionbump/contains_ruby_version_file.py/heuristic_matrix.pkl
-      md5: 34c3767c97a4a9c98e432d71ec5884bd
-      size: 3780
+      md5: 1996cb363438f73553d219d4ceadf089
+      size: 3758
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc0
@@ -10518,14 +10518,14 @@ stages:
       "bugginess/filemetrics/bugless_if_at_least_2_removed_files.py" --dataset "manual_labels.levin"
     deps:
     - path: cached-datasets/manual_labels.levin.pkl
-      md5: a21f47e760ca72c6eac703800240e82c
-      size: 38670233
+      md5: 37192ad50c5714a27cc3602b08099355
+      size: 38725725
     - path: cloned-bohr/heuristics/bugginess/filemetrics/bugless_if_at_least_2_removed_files.py
       md5: 10087bbb593c4b85b7d547d4587e81fb
       size: 468
     - path: runs/__heuristics/manual_labels.levin/bugginess/filemetrics/bugless_if_at_least_2_removed_files.py/heuristic_matrix.pkl
-      md5: 134bc8532e6fa59d9618e6949287dcc3
-      size: 9981
+      md5: 1def159acbbfc0818cd715f26872d243
+      size: 9959
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc0
@@ -10538,14 +10538,14 @@ stages:
       "bugginess/filemetrics/all_files_test_add.py" --dataset "bohr.200k_commits"
     deps:
     - path: cached-datasets/bohr.200k_commits.pkl
-      md5: 6783f8c3205c8719655012faa36f5b8c
-      size: 2610222781
+      md5: 2dedf8e97558234fc0e8ebdc85c8267b
+      size: 2619123175
     - path: cloned-bohr/heuristics/bugginess/filemetrics/all_files_test_add.py
       md5: 5b56250431bb0d0393d5562c86483e6c
       size: 786
     - path: runs/__heuristics/bohr.200k_commits/bugginess/filemetrics/all_files_test_add.py/heuristic_matrix.pkl
-      md5: 7d57191a8c80586716d157e685982514
-      size: 1651969
+      md5: 3af48074d1e0d3e2de7e9928f33c7db4
+      size: 1651947
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc0
@@ -10639,14 +10639,14 @@ stages:
       "bugginess/wip/removed_fixme.py" --dataset "bohr.200k_commits"
     deps:
     - path: cached-datasets/bohr.200k_commits.pkl
-      md5: 6783f8c3205c8719655012faa36f5b8c
-      size: 2610222781
+      md5: 2dedf8e97558234fc0e8ebdc85c8267b
+      size: 2619123175
     - path: cloned-bohr/heuristics/bugginess/wip/removed_fixme.py
       md5: 9a3fab2ebb210e5bcd9f95a2004cf208
       size: 784
     - path: runs/__heuristics/bohr.200k_commits/bugginess/wip/removed_fixme.py/heuristic_matrix.pkl
-      md5: 5ee5cf589d5188446bfa27b709110bae
-      size: 1651964
+      md5: ec2652492d24b36c4c526055d3fb2fd4
+      size: 1651942
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc0
@@ -10679,14 +10679,14 @@ stages:
       "bugginess/keywords/buggless_keywords_lookup_in_message.py" --dataset "manual_labels.berger"
     deps:
     - path: cached-datasets/manual_labels.berger.pkl
-      md5: d3dbcfd350107a5e3afeb7b5d6b6c20b
-      size: 25380979
+      md5: d15da958ee82397d81604886976d5665
+      size: 25398921
     - path: cloned-bohr/heuristics/bugginess/keywords/buggless_keywords_lookup_in_message.py
       md5: 5bebce43372bb7508d6208dbf38c137b
       size: 2397
     - path: runs/__heuristics/manual_labels.berger/bugginess/keywords/buggless_keywords_lookup_in_message.py/heuristic_matrix.pkl
-      md5: a7e8c8846db51758d88932587c31e413
-      size: 295200
+      md5: b0c21d32b0f510606d40bba31859ff08
+      size: 294985
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc0
@@ -10739,14 +10739,14 @@ stages:
       "bugginess/versionbump/version_regex.py" --dataset "manual_labels.berger"
     deps:
     - path: cached-datasets/manual_labels.berger.pkl
-      md5: d3dbcfd350107a5e3afeb7b5d6b6c20b
-      size: 25380979
+      md5: d15da958ee82397d81604886976d5665
+      size: 25398921
     - path: cloned-bohr/heuristics/bugginess/versionbump/version_regex.py
       md5: df7bab733b5a55e0e27846a36c2234f7
       size: 472
     - path: runs/__heuristics/manual_labels.berger/bugginess/versionbump/version_regex.py/heuristic_matrix.pkl
-      md5: 62715292579a6a9434e38e54c404aecd
-      size: 3767
+      md5: 5164fc572776b95f2ac50529a4a92a5f
+      size: 3745
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc0
@@ -10760,14 +10760,14 @@ stages:
       "manual_labels.herzig"
     deps:
     - path: cached-datasets/manual_labels.herzig.pkl
-      md5: ee0fe8dce03674e0876abc15bc81f038
-      size: 284541630
+      md5: 8c1ba18b124f76f66d3f6082ecb874d7
+      size: 284788582
     - path: cloned-bohr/heuristics/bugginess/versionbump/version_bump_keywords_lookup_in_message.py
       md5: 20094ae7abb52aac94f627d5502f7cce
       size: 752
     - path: runs/__heuristics/manual_labels.herzig/bugginess/versionbump/version_bump_keywords_lookup_in_message.py/heuristic_matrix.pkl
-      md5: aeca111031aac19339b693249d6249b4
-      size: 330476
+      md5: 0dce8c194aa4f22ac0cc7741ff0810dd
+      size: 330439
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc0
@@ -12406,3 +12406,766 @@ stages:
     - path: runs/bugginess/keywords_filemetrics_transformer/manual_labels.herzig/labeled.csv
       md5: 9ec4bb7d1dbfaf5dd9aaed05e2d10a2b
       size: 1395208
+  ComputeSingleHeuristic@bugginess__manual_labels.berger__bugginess/keywords/buggless_keywords_lookup_in_clean_message.py:
+    cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
+      "bugginess/keywords/buggless_keywords_lookup_in_clean_message.py" --dataset
+      "manual_labels.berger"
+    deps:
+    - path: cached-datasets/manual_labels.berger.pkl
+      md5: d15da958ee82397d81604886976d5665
+      size: 25398921
+    - path: cloned-bohr/heuristics/bugginess/keywords/buggless_keywords_lookup_in_clean_message.py
+      md5: 0c45f658172e4a219c43751c66c146db
+      size: 2650
+    - path: runs/__heuristics/manual_labels.berger/bugginess/keywords/buggless_keywords_lookup_in_clean_message.py/heuristic_matrix.pkl
+      md5: f89633779339d3bdd1be8016c48dbbea
+      size: 295567
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc0
+    outs:
+    - path: runs/__single_heuristic_metrics/bugginess/manual_labels.berger/bugginess/keywords/buggless_keywords_lookup_in_clean_message.py/heuristic_metrics.json
+      md5: 947b51b8ccb0fca75dff578c8429fc3b
+      size: 87
+  ComputeSingleHeuristic@bugginess__bohr.200k_commits__bugginess/keywords/bug_keywords_lookup_in_message.py:
+    cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
+      "bugginess/keywords/bug_keywords_lookup_in_message.py" --dataset "bohr.200k_commits"
+    deps:
+    - path: cached-datasets/bohr.200k_commits.pkl
+      md5: 2dedf8e97558234fc0e8ebdc85c8267b
+      size: 2619123175
+    - path: cloned-bohr/heuristics/bugginess/keywords/bug_keywords_lookup_in_message.py
+      md5: b68d96806180214829f17731b27126ce
+      size: 1585
+    - path: runs/__heuristics/bohr.200k_commits/bugginess/keywords/bug_keywords_lookup_in_message.py/heuristic_matrix.pkl
+      md5: 0849e4e89492b0ccd308d94ff6b13c79
+      size: 79258983
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc0
+    outs:
+    - path: runs/__single_heuristic_metrics/bugginess/bohr.200k_commits/bugginess/keywords/bug_keywords_lookup_in_message.py/heuristic_metrics.json
+      md5: 67994518cb67d6e8179b364ef65f4cfb
+      size: 32
+  ComputeSingleHeuristic@bugginess__manual_labels.berger__bugginess/keywords/github_ref_in_message.py:
+    cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
+      "bugginess/keywords/github_ref_in_message.py" --dataset "manual_labels.berger"
+    deps:
+    - path: cached-datasets/manual_labels.berger.pkl
+      md5: d15da958ee82397d81604886976d5665
+      size: 25398921
+    - path: cloned-bohr/heuristics/bugginess/keywords/github_ref_in_message.py
+      md5: c4b109a853bad0220bfd600c7b60961f
+      size: 843
+    - path: runs/__heuristics/manual_labels.berger/bugginess/keywords/github_ref_in_message.py/heuristic_matrix.pkl
+      md5: 1808b0e250daba55bbc8e9a34ad05be7
+      size: 3753
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc0
+    outs:
+    - path: runs/__single_heuristic_metrics/bugginess/manual_labels.berger/bugginess/keywords/github_ref_in_message.py/heuristic_metrics.json
+      md5: a4d1d09df7ab084e63444e9e360c4dbe
+      size: 57
+  ComputeSingleHeuristic@bugginess__bohr.200k_commits__bugginess/filemetrics/all_files_test_fix.py:
+    cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
+      "bugginess/filemetrics/all_files_test_fix.py" --dataset "bohr.200k_commits"
+    deps:
+    - path: cached-datasets/bohr.200k_commits.pkl
+      md5: 2dedf8e97558234fc0e8ebdc85c8267b
+      size: 2619123175
+    - path: cloned-bohr/heuristics/bugginess/filemetrics/all_files_test_fix.py
+      md5: 320e7977918d1a3e54e3832dc5859799
+      size: 682
+    - path: runs/__heuristics/bohr.200k_commits/bugginess/filemetrics/all_files_test_fix.py/heuristic_matrix.pkl
+      md5: 47384ab869c09d6af59e621d360c7b90
+      size: 1651947
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc0
+    outs:
+    - path: runs/__single_heuristic_metrics/bugginess/bohr.200k_commits/bugginess/filemetrics/all_files_test_fix.py/heuristic_metrics.json
+      md5: 4705ba77f1725f7c7ae4011963242986
+      size: 35
+  ComputeSingleHeuristic@bugginess__bohr.200k_commits__bugginess/versionbump/contains_digit_replacement_change.py:
+    cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
+      "bugginess/versionbump/contains_digit_replacement_change.py" --dataset "bohr.200k_commits"
+    deps:
+    - path: cached-datasets/bohr.200k_commits.pkl
+      md5: 2dedf8e97558234fc0e8ebdc85c8267b
+      size: 2619123175
+    - path: cloned-bohr/heuristics/bugginess/versionbump/contains_digit_replacement_change.py
+      md5: 4757ba69d3dbf78893ada464908597d3
+      size: 682
+    - path: runs/__heuristics/bohr.200k_commits/bugginess/versionbump/contains_digit_replacement_change.py/heuristic_matrix.pkl
+      md5: 35009f2fe74161f1b70c4ffd993a3e16
+      size: 1651962
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc0
+    outs:
+    - path: runs/__single_heuristic_metrics/bugginess/bohr.200k_commits/bugginess/versionbump/contains_digit_replacement_change.py/heuristic_metrics.json
+      md5: 953b44d7ddbf538060ad2a4f1d474831
+      size: 36
+  ComputeSingleHeuristic@bugginess__manual_labels.levin__bugginess/keywords/bugless_keywords_lookup_in_issue_body.py:
+    cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
+      "bugginess/keywords/bugless_keywords_lookup_in_issue_body.py" --dataset "manual_labels.levin"
+    deps:
+    - path: cached-datasets/manual_labels.levin.pkl
+      md5: 37192ad50c5714a27cc3602b08099355
+      size: 38725725
+    - path: cloned-bohr/heuristics/bugginess/keywords/bugless_keywords_lookup_in_issue_body.py
+      md5: 52f04f7c7f37758c886d5dc1b89fa358
+      size: 2402
+    - path: runs/__heuristics/manual_labels.levin/bugginess/keywords/bugless_keywords_lookup_in_issue_body.py/heuristic_matrix.pkl
+      md5: d960f38c832f81fa6e0170fb2b6e6b60
+      size: 895900
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc0
+    outs:
+    - path: runs/__single_heuristic_metrics/bugginess/manual_labels.levin/bugginess/keywords/bugless_keywords_lookup_in_issue_body.py/heuristic_metrics.json
+      md5: a4d1d09df7ab084e63444e9e360c4dbe
+      size: 57
+  ComputeSingleHeuristic@bugginess__manual_labels.levin__bugginess/filemetrics/buggless_if_many_lines_changed.py:
+    cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
+      "bugginess/filemetrics/buggless_if_many_lines_changed.py" --dataset "manual_labels.levin"
+    deps:
+    - path: cached-datasets/manual_labels.levin.pkl
+      md5: 37192ad50c5714a27cc3602b08099355
+      size: 38725725
+    - path: cloned-bohr/heuristics/bugginess/filemetrics/buggless_if_many_lines_changed.py
+      md5: c03f71bc9cab09bd7063d078c9dd7b13
+      size: 438
+    - path: runs/__heuristics/manual_labels.levin/bugginess/filemetrics/buggless_if_many_lines_changed.py/heuristic_matrix.pkl
+      md5: 548ffa2aae4788db92c3f32ec5250cb9
+      size: 9954
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc0
+    outs:
+    - path: runs/__single_heuristic_metrics/bugginess/manual_labels.levin/bugginess/filemetrics/buggless_if_many_lines_changed.py/heuristic_metrics.json
+      md5: 8baa03aad67ef0aff45c9472f9a29780
+      size: 88
+  ComputeSingleHeuristic@bugginess__manual_labels.herzig__bugginess/filemetrics/bugless_if_at_least_2_removed_files.py:
+    cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
+      "bugginess/filemetrics/bugless_if_at_least_2_removed_files.py" --dataset "manual_labels.herzig"
+    deps:
+    - path: cached-datasets/manual_labels.herzig.pkl
+      md5: 8c1ba18b124f76f66d3f6082ecb874d7
+      size: 284788582
+    - path: cloned-bohr/heuristics/bugginess/filemetrics/bugless_if_at_least_2_removed_files.py
+      md5: 10087bbb593c4b85b7d547d4587e81fb
+      size: 468
+    - path: runs/__heuristics/manual_labels.herzig/bugginess/filemetrics/bugless_if_at_least_2_removed_files.py/heuristic_matrix.pkl
+      md5: cd2a467428939d2b845ebfdad96b6862
+      size: 41935
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc0
+    outs:
+    - path: runs/__single_heuristic_metrics/bugginess/manual_labels.herzig/bugginess/filemetrics/bugless_if_at_least_2_removed_files.py/heuristic_metrics.json
+      md5: 43b46013e882b643becb36b3988eeaef
+      size: 89
+  ComputeSingleHeuristic@bugginess__manual_labels.levin__bugginess/versionbump/contains_python_version_file.py:
+    cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
+      "bugginess/versionbump/contains_python_version_file.py" --dataset "manual_labels.levin"
+    deps:
+    - path: cached-datasets/manual_labels.levin.pkl
+      md5: 37192ad50c5714a27cc3602b08099355
+      size: 38725725
+    - path: cloned-bohr/heuristics/bugginess/versionbump/contains_python_version_file.py
+      md5: 3db64aa2fd115182b9b2437941b10628
+      size: 452
+    - path: runs/__heuristics/manual_labels.levin/bugginess/versionbump/contains_python_version_file.py/heuristic_matrix.pkl
+      md5: a46ae65365a31fb339ab04c95a17bf57
+      size: 9952
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc0
+    outs:
+    - path: runs/__single_heuristic_metrics/bugginess/manual_labels.levin/bugginess/versionbump/contains_python_version_file.py/heuristic_metrics.json
+      md5: a4d1d09df7ab084e63444e9e360c4dbe
+      size: 57
+  ComputeSingleHeuristic@bugginess__manual_labels.berger__bugginess/filemetrics/bugless_if_not_code_files.py:
+    cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
+      "bugginess/filemetrics/bugless_if_not_code_files.py" --dataset "manual_labels.berger"
+    deps:
+    - path: cached-datasets/manual_labels.berger.pkl
+      md5: d15da958ee82397d81604886976d5665
+      size: 25398921
+    - path: cloned-bohr/heuristics/bugginess/filemetrics/bugless_if_not_code_files.py
+      md5: 2014b9056eda22a40693cbca9166ea34
+      size: 814
+    - path: runs/__heuristics/manual_labels.berger/bugginess/filemetrics/bugless_if_not_code_files.py/heuristic_matrix.pkl
+      md5: c4a4930c9449d7eef9119fe18806a4df
+      size: 3757
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc0
+    outs:
+    - path: runs/__single_heuristic_metrics/bugginess/manual_labels.berger/bugginess/filemetrics/bugless_if_not_code_files.py/heuristic_metrics.json
+      md5: a4d1d09df7ab084e63444e9e360c4dbe
+      size: 57
+  ComputeSingleHeuristic@bugginess__manual_labels.levin__bugginess/keywords/version_in_message.py:
+    cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
+      "bugginess/keywords/version_in_message.py" --dataset "manual_labels.levin"
+    deps:
+    - path: cached-datasets/manual_labels.levin.pkl
+      md5: 37192ad50c5714a27cc3602b08099355
+      size: 38725725
+    - path: cloned-bohr/heuristics/bugginess/keywords/version_in_message.py
+      md5: 80d02f9e4b665477a3fd00da56e8e869
+      size: 401
+    - path: runs/__heuristics/manual_labels.levin/bugginess/keywords/version_in_message.py/heuristic_matrix.pkl
+      md5: 7ca5ebc37cf2138d82ed14563cc05112
+      size: 9942
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc0
+    outs:
+    - path: runs/__single_heuristic_metrics/bugginess/manual_labels.levin/bugginess/keywords/version_in_message.py/heuristic_metrics.json
+      md5: b39834b221794798ee9d1e1de2caad7f
+      size: 90
+  ComputeSingleHeuristic@bugginess__manual_labels.levin__bugginess/keywords/github_ref_in_message.py:
+    cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
+      "bugginess/keywords/github_ref_in_message.py" --dataset "manual_labels.levin"
+    deps:
+    - path: cached-datasets/manual_labels.levin.pkl
+      md5: 37192ad50c5714a27cc3602b08099355
+      size: 38725725
+    - path: cloned-bohr/heuristics/bugginess/keywords/github_ref_in_message.py
+      md5: c4b109a853bad0220bfd600c7b60961f
+      size: 843
+    - path: runs/__heuristics/manual_labels.levin/bugginess/keywords/github_ref_in_message.py/heuristic_matrix.pkl
+      md5: ef6f12e63ce9fbe4a28b35fb7e0563ff
+      size: 9945
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc0
+    outs:
+    - path: runs/__single_heuristic_metrics/bugginess/manual_labels.levin/bugginess/keywords/github_ref_in_message.py/heuristic_metrics.json
+      md5: a4d1d09df7ab084e63444e9e360c4dbe
+      size: 57
+  ComputeSingleHeuristic@bugginess__bohr.200k_commits__bugginess/sstubs/commit_explorer_output_init.py:
+    cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
+      "bugginess/sstubs/commit_explorer_output_init.py" --dataset "bohr.200k_commits"
+    deps:
+    - path: cached-datasets/bohr.200k_commits.pkl
+      md5: 2dedf8e97558234fc0e8ebdc85c8267b
+      size: 2619123175
+    - path: cloned-bohr/heuristics/bugginess/sstubs/commit_explorer_output_init.py
+      md5: 2b9b4ebb2b554e03671d5b46f6c4ea56
+      size: 518
+    - path: runs/__heuristics/bohr.200k_commits/bugginess/sstubs/commit_explorer_output_init.py/heuristic_matrix.pkl
+      md5: 20ca3f9bb16f5e26d080d1a4197f360b
+      size: 1651956
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc0
+    outs:
+    - path: runs/__single_heuristic_metrics/bugginess/bohr.200k_commits/bugginess/sstubs/commit_explorer_output_init.py/heuristic_metrics.json
+      md5: ad585812cc43d96dfe476a7b393c9593
+      size: 34
+  ComputeSingleHeuristic@bugginess__manual_labels.herzig__bugginess/keywords/bug_keywords_lookup_in_clean_message.py:
+    cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
+      "bugginess/keywords/bug_keywords_lookup_in_clean_message.py" --dataset "manual_labels.herzig"
+    deps:
+    - path: cached-datasets/manual_labels.herzig.pkl
+      md5: 8c1ba18b124f76f66d3f6082ecb874d7
+      size: 284788582
+    - path: cloned-bohr/heuristics/bugginess/keywords/bug_keywords_lookup_in_clean_message.py
+      md5: d7bc9d92649002e0a741e5788695e062
+      size: 1836
+    - path: runs/__heuristics/manual_labels.herzig/bugginess/keywords/bug_keywords_lookup_in_clean_message.py/heuristic_matrix.pkl
+      md5: 5d74ca2195b6638cc55a37f6a40e4973
+      size: 1978499
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc0
+    outs:
+    - path: runs/__single_heuristic_metrics/bugginess/manual_labels.herzig/bugginess/keywords/bug_keywords_lookup_in_clean_message.py/heuristic_metrics.json
+      md5: 79a0a265b9b689231e426ae543304c0f
+      size: 88
+  ComputeSingleHeuristic@bugginess__manual_labels.herzig__bugginess/sstubs/commit_explorer_output_init.py:
+    cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
+      "bugginess/sstubs/commit_explorer_output_init.py" --dataset "manual_labels.herzig"
+    deps:
+    - path: cached-datasets/manual_labels.herzig.pkl
+      md5: 8c1ba18b124f76f66d3f6082ecb874d7
+      size: 284788582
+    - path: cloned-bohr/heuristics/bugginess/sstubs/commit_explorer_output_init.py
+      md5: 2b9b4ebb2b554e03671d5b46f6c4ea56
+      size: 518
+    - path: runs/__heuristics/manual_labels.herzig/bugginess/sstubs/commit_explorer_output_init.py/heuristic_matrix.pkl
+      md5: d9a32edbe6620904a71bec4b16dc7d8d
+      size: 41927
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc0
+    outs:
+    - path: runs/__single_heuristic_metrics/bugginess/manual_labels.herzig/bugginess/sstubs/commit_explorer_output_init.py/heuristic_metrics.json
+      md5: a4d1d09df7ab084e63444e9e360c4dbe
+      size: 57
+  ComputeSingleHeuristic@bugginess__manual_labels.herzig__bugginess/versionbump/version_regex3.py:
+    cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
+      "bugginess/versionbump/version_regex3.py" --dataset "manual_labels.herzig"
+    deps:
+    - path: cached-datasets/manual_labels.herzig.pkl
+      md5: 8c1ba18b124f76f66d3f6082ecb874d7
+      size: 284788582
+    - path: cloned-bohr/heuristics/bugginess/versionbump/version_regex3.py
+      md5: c8b889a7477a8e9f221b3b1de2db5740
+      size: 408
+    - path: runs/__heuristics/manual_labels.herzig/bugginess/versionbump/version_regex3.py/heuristic_matrix.pkl
+      md5: 31867c3202ab18116eb715f3082006c2
+      size: 41914
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc0
+    outs:
+    - path: runs/__single_heuristic_metrics/bugginess/manual_labels.herzig/bugginess/versionbump/version_regex3.py/heuristic_metrics.json
+      md5: a4d1d09df7ab084e63444e9e360c4dbe
+      size: 57
+  ComputeSingleHeuristic@bugginess__manual_labels.berger__bugginess/sstubs/commit_explorer_output_init.py:
+    cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
+      "bugginess/sstubs/commit_explorer_output_init.py" --dataset "manual_labels.berger"
+    deps:
+    - path: cached-datasets/manual_labels.berger.pkl
+      md5: d15da958ee82397d81604886976d5665
+      size: 25398921
+    - path: cloned-bohr/heuristics/bugginess/sstubs/commit_explorer_output_init.py
+      md5: 2b9b4ebb2b554e03671d5b46f6c4ea56
+      size: 518
+    - path: runs/__heuristics/manual_labels.berger/bugginess/sstubs/commit_explorer_output_init.py/heuristic_matrix.pkl
+      md5: b0e67f5530704317eba450708d3b6d05
+      size: 3759
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc0
+    outs:
+    - path: runs/__single_heuristic_metrics/bugginess/manual_labels.berger/bugginess/sstubs/commit_explorer_output_init.py/heuristic_metrics.json
+      md5: f702393415906bf58afe0d69a1e11704
+      size: 75
+  ComputeSingleHeuristic@bugginess__manual_labels.herzig__bugginess/filemetrics/bugless_if_many_files_changes.py:
+    cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
+      "bugginess/filemetrics/bugless_if_many_files_changes.py" --dataset "manual_labels.herzig"
+    deps:
+    - path: cached-datasets/manual_labels.herzig.pkl
+      md5: 8c1ba18b124f76f66d3f6082ecb874d7
+      size: 284788582
+    - path: cloned-bohr/heuristics/bugginess/filemetrics/bugless_if_many_files_changes.py
+      md5: 3ef24fb213ba54caa265773f6f9cebdc
+      size: 375
+    - path: runs/__heuristics/manual_labels.herzig/bugginess/filemetrics/bugless_if_many_files_changes.py/heuristic_matrix.pkl
+      md5: 8686861a86ebbf02e9c25978d9280905
+      size: 41929
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc0
+    outs:
+    - path: runs/__single_heuristic_metrics/bugginess/manual_labels.herzig/bugginess/filemetrics/bugless_if_many_files_changes.py/heuristic_metrics.json
+      md5: bc276d843e3cced3bf1586ed8caf976e
+      size: 88
+  ComputeSingleHeuristic@bugginess__manual_labels.berger__bugginess/keywords/bug_keywords_lookup_in_issue_body.py:
+    cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
+      "bugginess/keywords/bug_keywords_lookup_in_issue_body.py" --dataset "manual_labels.berger"
+    deps:
+    - path: cached-datasets/manual_labels.berger.pkl
+      md5: d15da958ee82397d81604886976d5665
+      size: 25398921
+    - path: cloned-bohr/heuristics/bugginess/keywords/bug_keywords_lookup_in_issue_body.py
+      md5: 70dea368e622c65852ab0572e4af975d
+      size: 1590
+    - path: runs/__heuristics/manual_labels.berger/bugginess/keywords/bug_keywords_lookup_in_issue_body.py/heuristic_matrix.pkl
+      md5: f72e30dba183973e4be2ea55c6cb403c
+      size: 146291
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc0
+    outs:
+    - path: runs/__single_heuristic_metrics/bugginess/manual_labels.berger/bugginess/keywords/bug_keywords_lookup_in_issue_body.py/heuristic_metrics.json
+      md5: a4d1d09df7ab084e63444e9e360c4dbe
+      size: 57
+  ComputeSingleHeuristic@bugginess__manual_labels.levin__bugginess/versionbump/contains_ruby_version_file.py:
+    cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
+      "bugginess/versionbump/contains_ruby_version_file.py" --dataset "manual_labels.levin"
+    deps:
+    - path: cached-datasets/manual_labels.levin.pkl
+      md5: 37192ad50c5714a27cc3602b08099355
+      size: 38725725
+    - path: cloned-bohr/heuristics/bugginess/versionbump/contains_ruby_version_file.py
+      md5: e1e953135428528bef17db29ad1850ac
+      size: 448
+    - path: runs/__heuristics/manual_labels.levin/bugginess/versionbump/contains_ruby_version_file.py/heuristic_matrix.pkl
+      md5: 1805e3834103e15df289d5c10f848190
+      size: 9950
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc0
+    outs:
+    - path: runs/__single_heuristic_metrics/bugginess/manual_labels.levin/bugginess/versionbump/contains_ruby_version_file.py/heuristic_metrics.json
+      md5: a4d1d09df7ab084e63444e9e360c4dbe
+      size: 57
+  ComputeSingleHeuristic@bugginess__bohr.200k_commits__bugginess/filemetrics/bugless_if_not_code_files.py:
+    cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
+      "bugginess/filemetrics/bugless_if_not_code_files.py" --dataset "bohr.200k_commits"
+    deps:
+    - path: cached-datasets/bohr.200k_commits.pkl
+      md5: 2dedf8e97558234fc0e8ebdc85c8267b
+      size: 2619123175
+    - path: cloned-bohr/heuristics/bugginess/filemetrics/bugless_if_not_code_files.py
+      md5: 2014b9056eda22a40693cbca9166ea34
+      size: 814
+    - path: runs/__heuristics/bohr.200k_commits/bugginess/filemetrics/bugless_if_not_code_files.py/heuristic_matrix.pkl
+      md5: 34e6af24d63576aa92d84302f0c0749c
+      size: 1651954
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc0
+    outs:
+    - path: runs/__single_heuristic_metrics/bugginess/bohr.200k_commits/bugginess/filemetrics/bugless_if_not_code_files.py/heuristic_metrics.json
+      md5: dbac10e16a556457d12f5c0d37fb7c9c
+      size: 33
+  ComputeSingleHeuristic@bugginess__bohr.200k_commits__bugginess/sstubs/commit_explorer_output_merge.py:
+    cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
+      "bugginess/sstubs/commit_explorer_output_merge.py" --dataset "bohr.200k_commits"
+    deps:
+    - path: cached-datasets/bohr.200k_commits.pkl
+      md5: 2dedf8e97558234fc0e8ebdc85c8267b
+      size: 2619123175
+    - path: cloned-bohr/heuristics/bugginess/sstubs/commit_explorer_output_merge.py
+      md5: 5f714a44f5807da4312f74e79cdeba07
+      size: 507
+    - path: runs/__heuristics/bohr.200k_commits/bugginess/sstubs/commit_explorer_output_merge.py/heuristic_matrix.pkl
+      md5: 8f97db06dbaa5164b25a188f357d9b46
+      size: 1651957
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc0
+    outs:
+    - path: runs/__single_heuristic_metrics/bugginess/bohr.200k_commits/bugginess/sstubs/commit_explorer_output_merge.py/heuristic_metrics.json
+      md5: 2dbae65433b06298a989242df39c8a91
+      size: 33
+  ComputeSingleHeuristic@bugginess__manual_labels.herzig__bugginess/wip/removed_fixme.py:
+    cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
+      "bugginess/wip/removed_fixme.py" --dataset "manual_labels.herzig"
+    deps:
+    - path: cached-datasets/manual_labels.herzig.pkl
+      md5: 8c1ba18b124f76f66d3f6082ecb874d7
+      size: 284788582
+    - path: cloned-bohr/heuristics/bugginess/wip/removed_fixme.py
+      md5: 9a3fab2ebb210e5bcd9f95a2004cf208
+      size: 784
+    - path: runs/__heuristics/manual_labels.herzig/bugginess/wip/removed_fixme.py/heuristic_matrix.pkl
+      md5: fb91d67c5459e5e81e7bebdadb5fe569
+      size: 41913
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc0
+    outs:
+    - path: runs/__single_heuristic_metrics/bugginess/manual_labels.herzig/bugginess/wip/removed_fixme.py/heuristic_metrics.json
+      md5: 5602f77c454914677a02032907b3f1c4
+      size: 89
+  ComputeSingleHeuristic@bugginess__manual_labels.levin__bugginess/sstubs/commit_explorer_output_merge.py:
+    cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
+      "bugginess/sstubs/commit_explorer_output_merge.py" --dataset "manual_labels.levin"
+    deps:
+    - path: cached-datasets/manual_labels.levin.pkl
+      md5: 37192ad50c5714a27cc3602b08099355
+      size: 38725725
+    - path: cloned-bohr/heuristics/bugginess/sstubs/commit_explorer_output_merge.py
+      md5: 5f714a44f5807da4312f74e79cdeba07
+      size: 507
+    - path: runs/__heuristics/manual_labels.levin/bugginess/sstubs/commit_explorer_output_merge.py/heuristic_matrix.pkl
+      md5: 7b207974e2a8d33c6e8071ebc748b85c
+      size: 9952
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc0
+    outs:
+    - path: runs/__single_heuristic_metrics/bugginess/manual_labels.levin/bugginess/sstubs/commit_explorer_output_merge.py/heuristic_metrics.json
+      md5: a4d1d09df7ab084e63444e9e360c4dbe
+      size: 57
+  ComputeSingleHeuristic@bugginess__bohr.200k_commits__bugginess/keywords/bug_keywords_lookup_in_clean_message.py:
+    cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
+      "bugginess/keywords/bug_keywords_lookup_in_clean_message.py" --dataset "bohr.200k_commits"
+    deps:
+    - path: cached-datasets/bohr.200k_commits.pkl
+      md5: 2dedf8e97558234fc0e8ebdc85c8267b
+      size: 2619123175
+    - path: cloned-bohr/heuristics/bugginess/keywords/bug_keywords_lookup_in_clean_message.py
+      md5: d7bc9d92649002e0a741e5788695e062
+      size: 1836
+    - path: runs/__heuristics/bohr.200k_commits/bugginess/keywords/bug_keywords_lookup_in_clean_message.py/heuristic_matrix.pkl
+      md5: 7551e066c2958bdf3d89f4fde8d4cd95
+      size: 79259271
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc0
+    outs:
+    - path: runs/__single_heuristic_metrics/bugginess/bohr.200k_commits/bugginess/keywords/bug_keywords_lookup_in_clean_message.py/heuristic_metrics.json
+      md5: 982ff2d56fbfacca5636c771c78ef75f
+      size: 32
+  ComputeSingleHeuristic@bugginess__manual_labels.berger__bugginess/versionbump/version_bump_keywords_lookup_in_message.py:
+    cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
+      "bugginess/versionbump/version_bump_keywords_lookup_in_message.py" --dataset
+      "manual_labels.berger"
+    deps:
+    - path: cached-datasets/manual_labels.berger.pkl
+      md5: d15da958ee82397d81604886976d5665
+      size: 25398921
+    - path: cloned-bohr/heuristics/bugginess/versionbump/version_bump_keywords_lookup_in_message.py
+      md5: 20094ae7abb52aac94f627d5502f7cce
+      size: 752
+    - path: runs/__heuristics/manual_labels.berger/bugginess/versionbump/version_bump_keywords_lookup_in_message.py/heuristic_matrix.pkl
+      md5: 40aa3ed6ae8ee4add24cc90e3d26487f
+      size: 25086
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc0
+    outs:
+    - path: runs/__single_heuristic_metrics/bugginess/manual_labels.berger/bugginess/versionbump/version_bump_keywords_lookup_in_message.py/heuristic_metrics.json
+      md5: 4feebd26e10361198b3330cfbc3f02c9
+      size: 89
+  ComputeSingleHeuristic@bugginess__manual_labels.berger__bugginess/versionbump/contains_package_lock_file.py:
+    cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
+      "bugginess/versionbump/contains_package_lock_file.py" --dataset "manual_labels.berger"
+    deps:
+    - path: cached-datasets/manual_labels.berger.pkl
+      md5: d15da958ee82397d81604886976d5665
+      size: 25398921
+    - path: cloned-bohr/heuristics/bugginess/versionbump/contains_package_lock_file.py
+      md5: 3cf0426635b3e4d66508ec1f34c35bbf
+      size: 452
+    - path: runs/__heuristics/manual_labels.berger/bugginess/versionbump/contains_package_lock_file.py/heuristic_matrix.pkl
+      md5: d0647f0fef533ad0b7e9d25fd5ef02b3
+      size: 3758
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc0
+    outs:
+    - path: runs/__single_heuristic_metrics/bugginess/manual_labels.berger/bugginess/versionbump/contains_package_lock_file.py/heuristic_metrics.json
+      md5: a4d1d09df7ab084e63444e9e360c4dbe
+      size: 57
+  ComputeSingleHeuristic@bugginess__manual_labels.berger__bugginess/versionbump/version_regex3.py:
+    cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
+      "bugginess/versionbump/version_regex3.py" --dataset "manual_labels.berger"
+    deps:
+    - path: cached-datasets/manual_labels.berger.pkl
+      md5: d15da958ee82397d81604886976d5665
+      size: 25398921
+    - path: cloned-bohr/heuristics/bugginess/versionbump/version_regex3.py
+      md5: c8b889a7477a8e9f221b3b1de2db5740
+      size: 408
+    - path: runs/__heuristics/manual_labels.berger/bugginess/versionbump/version_regex3.py/heuristic_matrix.pkl
+      md5: 4dedf9dfe33fbb2a95830a64b1ff505a
+      size: 3746
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc0
+    outs:
+    - path: runs/__single_heuristic_metrics/bugginess/manual_labels.berger/bugginess/versionbump/version_regex3.py/heuristic_metrics.json
+      md5: a4d1d09df7ab084e63444e9e360c4dbe
+      size: 57
+  ComputeSingleHeuristic@bugginess__manual_labels.berger__bugginess/keywords/init_commit_message_keywords.py:
+    cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
+      "bugginess/keywords/init_commit_message_keywords.py" --dataset "manual_labels.berger"
+    deps:
+    - path: cached-datasets/manual_labels.berger.pkl
+      md5: d15da958ee82397d81604886976d5665
+      size: 25398921
+    - path: cloned-bohr/heuristics/bugginess/keywords/init_commit_message_keywords.py
+      md5: 907117e806cd2c29d5ce24c2ac813d80
+      size: 595
+    - path: runs/__heuristics/manual_labels.berger/bugginess/keywords/init_commit_message_keywords.py/heuristic_matrix.pkl
+      md5: 4e753912914044bcd1eb19eb9c17be01
+      size: 9839
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc0
+    outs:
+    - path: runs/__single_heuristic_metrics/bugginess/manual_labels.berger/bugginess/keywords/init_commit_message_keywords.py/heuristic_metrics.json
+      md5: 71aea3a60296119297af75be8a82bdbc
+      size: 74
+  ComputeSingleHeuristic@bugginess__manual_labels.berger__bugginess/keywords/bugless_keywords_lookup_in_issue_label.py:
+    cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
+      "bugginess/keywords/bugless_keywords_lookup_in_issue_label.py" --dataset "manual_labels.berger"
+    deps:
+    - path: cached-datasets/manual_labels.berger.pkl
+      md5: d15da958ee82397d81604886976d5665
+      size: 25398921
+    - path: cloned-bohr/heuristics/bugginess/keywords/bugless_keywords_lookup_in_issue_label.py
+      md5: 51c0b441a48cf3d53e96c3c86d119959
+      size: 608
+    - path: runs/__heuristics/manual_labels.berger/bugginess/keywords/bugless_keywords_lookup_in_issue_label.py/heuristic_matrix.pkl
+      md5: 799ff36f21c2752691dbcc1d542b44a4
+      size: 18960
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc0
+    outs:
+    - path: runs/__single_heuristic_metrics/bugginess/manual_labels.berger/bugginess/keywords/bugless_keywords_lookup_in_issue_label.py/heuristic_metrics.json
+      md5: a4d1d09df7ab084e63444e9e360c4dbe
+      size: 57
+  ComputeSingleHeuristic@bugginess__manual_labels.herzig__bugginess/wip/removed_todo.py:
+    cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
+      "bugginess/wip/removed_todo.py" --dataset "manual_labels.herzig"
+    deps:
+    - path: cached-datasets/manual_labels.herzig.pkl
+      md5: 8c1ba18b124f76f66d3f6082ecb874d7
+      size: 284788582
+    - path: cloned-bohr/heuristics/bugginess/wip/removed_todo.py
+      md5: 721a8b43d79a4a24568fcff5ab846bb1
+      size: 544
+    - path: runs/__heuristics/manual_labels.herzig/bugginess/wip/removed_todo.py/heuristic_matrix.pkl
+      md5: d9a8f6e1e4c7dfc6d7c6521c4147fe92
+      size: 41912
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc0
+    outs:
+    - path: runs/__single_heuristic_metrics/bugginess/manual_labels.herzig/bugginess/wip/removed_todo.py/heuristic_metrics.json
+      md5: b571e25e84ab9566fef2e62e545dec2d
+      size: 74
+  ComputeSingleHeuristic@bugginess__manual_labels.herzig__bugginess/sstubs/commit_explorer_output_merge.py:
+    cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
+      "bugginess/sstubs/commit_explorer_output_merge.py" --dataset "manual_labels.herzig"
+    deps:
+    - path: cached-datasets/manual_labels.herzig.pkl
+      md5: 8c1ba18b124f76f66d3f6082ecb874d7
+      size: 284788582
+    - path: cloned-bohr/heuristics/bugginess/sstubs/commit_explorer_output_merge.py
+      md5: 5f714a44f5807da4312f74e79cdeba07
+      size: 507
+    - path: runs/__heuristics/manual_labels.herzig/bugginess/sstubs/commit_explorer_output_merge.py/heuristic_matrix.pkl
+      md5: a5afc8d53eeff6b191b3462eced69d2b
+      size: 41928
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc0
+    outs:
+    - path: runs/__single_heuristic_metrics/bugginess/manual_labels.herzig/bugginess/sstubs/commit_explorer_output_merge.py/heuristic_metrics.json
+      md5: a4d1d09df7ab084e63444e9e360c4dbe
+      size: 57
+  ComputeSingleHeuristic@bugginess__manual_labels.berger__bugginess/keywords/bug_keywords_lookup_in_message.py:
+    cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
+      "bugginess/keywords/bug_keywords_lookup_in_message.py" --dataset "manual_labels.berger"
+    deps:
+    - path: cached-datasets/manual_labels.berger.pkl
+      md5: d15da958ee82397d81604886976d5665
+      size: 25398921
+    - path: cloned-bohr/heuristics/bugginess/keywords/bug_keywords_lookup_in_message.py
+      md5: b68d96806180214829f17731b27126ce
+      size: 1585
+    - path: runs/__heuristics/manual_labels.berger/bugginess/keywords/bug_keywords_lookup_in_message.py/heuristic_matrix.pkl
+      md5: d993930aa0052d5c8863a19c26a6ee26
+      size: 146147
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc0
+    outs:
+    - path: runs/__single_heuristic_metrics/bugginess/manual_labels.berger/bugginess/keywords/bug_keywords_lookup_in_message.py/heuristic_metrics.json
+      md5: 4550d2887d51f63f68507aa36bc8d168
+      size: 87
+  ComputeSingleHeuristic@bugginess__bohr.200k_commits__bugginess/bug_if_sstub.py:
+    cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
+      "bugginess/bug_if_sstub.py" --dataset "bohr.200k_commits"
+    deps:
+    - path: cached-datasets/bohr.200k_commits.pkl
+      md5: 2dedf8e97558234fc0e8ebdc85c8267b
+      size: 2619123175
+    - path: cloned-bohr/heuristics/bugginess/bug_if_sstub.py
+      md5: 9ee224adde00be52a736adf2e1b22b32
+      size: 390
+    - path: runs/__heuristics/bohr.200k_commits/bugginess/bug_if_sstub.py/heuristic_matrix.pkl
+      md5: d9c36656113f74448f01392c6d18d956
+      size: 1651958
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc0
+    outs:
+    - path: runs/__single_heuristic_metrics/bugginess/bohr.200k_commits/bugginess/bug_if_sstub.py/heuristic_metrics.json
+      md5: 3de52b0ea76e11d05b577db8a4e7dc25
+      size: 35
+  ComputeSingleHeuristic@bugginess__bohr.200k_commits__bugginess/versionbump/version_regex3.py:
+    cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
+      "bugginess/versionbump/version_regex3.py" --dataset "bohr.200k_commits"
+    deps:
+    - path: cached-datasets/bohr.200k_commits.pkl
+      md5: 2dedf8e97558234fc0e8ebdc85c8267b
+      size: 2619123175
+    - path: cloned-bohr/heuristics/bugginess/versionbump/version_regex3.py
+      md5: c8b889a7477a8e9f221b3b1de2db5740
+      size: 408
+    - path: runs/__heuristics/bohr.200k_commits/bugginess/versionbump/version_regex3.py/heuristic_matrix.pkl
+      md5: ec42409384440e95c741c1f1b0603dd4
+      size: 1651943
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc0
+    outs:
+    - path: runs/__single_heuristic_metrics/bugginess/bohr.200k_commits/bugginess/versionbump/version_regex3.py/heuristic_metrics.json
+      md5: d54a4ed47bd5ce7ed49f6c131f566c51
+      size: 35
+  ComputeSingleHeuristic@bugginess__manual_labels.herzig__bugginess/keywords/bug_keywords_lookup_in_issue_label.py:
+    cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
+      "bugginess/keywords/bug_keywords_lookup_in_issue_label.py" --dataset "manual_labels.herzig"
+    deps:
+    - path: cached-datasets/manual_labels.herzig.pkl
+      md5: 8c1ba18b124f76f66d3f6082ecb874d7
+      size: 284788582
+    - path: cloned-bohr/heuristics/bugginess/keywords/bug_keywords_lookup_in_issue_label.py
+      md5: 6f8a61d2877133dc0e4af0a82ab3226d
+      size: 561
+    - path: runs/__heuristics/manual_labels.herzig/bugginess/keywords/bug_keywords_lookup_in_issue_label.py/heuristic_matrix.pkl
+      md5: f00cf4603f633cce981f7b6e28b32a56
+      size: 165535
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc0
+    outs:
+    - path: runs/__single_heuristic_metrics/bugginess/manual_labels.herzig/bugginess/keywords/bug_keywords_lookup_in_issue_label.py/heuristic_metrics.json
+      md5: a4d1d09df7ab084e63444e9e360c4dbe
+      size: 57
+  ComputeSingleHeuristic@bugginess__bohr.200k_commits__bugginess/keywords/buggless_keywords_lookup_in_clean_message.py:
+    cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
+      "bugginess/keywords/buggless_keywords_lookup_in_clean_message.py" --dataset
+      "bohr.200k_commits"
+    deps:
+    - path: cached-datasets/bohr.200k_commits.pkl
+      md5: 2dedf8e97558234fc0e8ebdc85c8267b
+      size: 2619123175
+    - path: cloned-bohr/heuristics/bugginess/keywords/buggless_keywords_lookup_in_clean_message.py
+      md5: 0c45f658172e4a219c43751c66c146db
+      size: 2650
+    - path: runs/__heuristics/bohr.200k_commits/bugginess/keywords/buggless_keywords_lookup_in_clean_message.py/heuristic_matrix.pkl
+      md5: 105451229b4491f3e78081ae4c469cc2
+      size: 160169419
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc0
+    outs:
+    - path: runs/__single_heuristic_metrics/bugginess/bohr.200k_commits/bugginess/keywords/buggless_keywords_lookup_in_clean_message.py/heuristic_metrics.json
+      md5: 69d880be69270512523a16fc88ee53b2
+      size: 32
+  ComputeSingleHeuristic@bugginess__manual_labels.berger__bugginess/filemetrics/bugless_if_at_least_5_added_files.py:
+    cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
+      "bugginess/filemetrics/bugless_if_at_least_5_added_files.py" --dataset "manual_labels.berger"
+    deps:
+    - path: cached-datasets/manual_labels.berger.pkl
+      md5: d15da958ee82397d81604886976d5665
+      size: 25398921
+    - path: cloned-bohr/heuristics/bugginess/filemetrics/bugless_if_at_least_5_added_files.py
+      md5: d7219806858c57cea7def5a503fedb14
+      size: 458
+    - path: runs/__heuristics/manual_labels.berger/bugginess/filemetrics/bugless_if_at_least_5_added_files.py/heuristic_matrix.pkl
+      md5: ac2c2f1ddcad149d6741c65cdbd4b964
+      size: 3765
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc0
+    outs:
+    - path: runs/__single_heuristic_metrics/bugginess/manual_labels.berger/bugginess/filemetrics/bugless_if_at_least_5_added_files.py/heuristic_metrics.json
+      md5: 2bdae3a66e8aca7e154d54fc37a0d1fb
+      size: 74
