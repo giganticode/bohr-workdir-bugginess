@@ -27,8 +27,7 @@ exp = Experiment('only_keywords', bugginess,
                                        f'@dddbe7ba63a14c718d08e7c88b166f90980fec05')
 
 exp2 = Experiment('keywords_and_file_metrics', bugginess,
-                 heuristics_classifier=f'bugginess/filemetrics:'
-                                       f'bugginess/keywords/bug_keywords_lookup_in_message.py:'
+                 heuristics_classifier=f'bugginess/keywords/bug_keywords_lookup_in_message.py:'
                                        f'bugginess/keywords/buggless_keywords_lookup_in_message.py:'
                                        f'bugginess/keywords/bug_keywords_lookup_in_issue_body.py:'
                                        f'bugginess/keywords/bugless_keywords_lookup_in_issue_body.py:'

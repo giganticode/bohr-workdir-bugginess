@@ -1323,9 +1323,9 @@ stages:
       - bohr.lock:
         - bohr_runtime_version
     foreach:
-    - manual_labels.levin
-    - bohr.200k_commits
     - manual_labels.berger
+    - bohr.200k_commits
+    - manual_labels.levin
     - manual_labels.herzig
   TrainLabelModel@filemetrics_and_transformer:
     do:

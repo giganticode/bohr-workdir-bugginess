@@ -1,10 +1,10 @@
 ,j,Polarity,Coverage,Overlaps,Conflicts,Correct,Incorrect,Emp. Acc.
-bugless_if_at_least_5_added_files,0,[0],0.024,0.021333333333333333,0.0,8,1,0.8888888888888888
-all_files_test_add,1,[0],0.013333333333333334,0.008,0.0,5,0,1.0
-bugless_if_not_code_files,2,[],0.0,0.0,0.0,0,0,0.0
-bugless_if_many_files_changes,3,[0],0.042666666666666665,0.042666666666666665,0.0,15,1,0.9375
-bugless_if_at_least_2_removed_files,4,[0],0.016,0.016,0.0,5,1,0.8333333333333333
-all_files_test_fix,5,[0],0.005333333333333333,0.0,0.0,2,0,1.0
-refactoring_if_at_least_2_renamed,6,[0],0.008,0.008,0.0,3,0,1.0
-buggless_if_many_lines_changed,7,[0],0.224,0.050666666666666665,0.0,70,14,0.8333333333333333
-no_files_have_modified_status,8,[0],0.021333333333333333,0.021333333333333333,0.0,8,0,1.0
+all_files_test_add,0,[0],0.013333333333333334,0.008,0.0,5,0,1.0
+all_files_test_fix,1,[0],0.005333333333333333,0.0,0.0,2,0,1.0
+buggless_if_many_lines_changed,2,[0],0.224,0.050666666666666665,0.0,70,14,0.8333333333333333
+bugless_if_at_least_2_removed_files,3,[0],0.016,0.016,0.0,5,1,0.8333333333333333
+bugless_if_at_least_5_added_files,4,[0],0.024,0.021333333333333333,0.0,8,1,0.8888888888888888
+bugless_if_many_files_changes,5,[0],0.042666666666666665,0.042666666666666665,0.0,15,1,0.9375
+bugless_if_not_code_files,6,[],0.0,0.0,0.0,0,0,0.0
+no_files_have_modified_status,7,[0],0.021333333333333333,0.021333333333333333,0.0,8,0,1.0
+refactoring_if_at_least_2_renamed,8,[0],0.008,0.008,0.0,3,0,1.0
