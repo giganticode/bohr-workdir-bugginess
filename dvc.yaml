@@ -4954,8 +4954,8 @@ stages:
       deps: []
       metrics: []
       outs:
-      - /Users/hlib/dev/bohr-workdir-bugginess/cached-datasets/${item}.jsonl
-      - /Users/hlib/dev/bohr-workdir-bugginess/cached-datasets/${item}.jsonl.metadata.json:
+      - cached-datasets/${item}.jsonl
+      - cached-datasets/${item}.jsonl.metadata.json:
           cache: false
       params:
       - bohr.lock:
