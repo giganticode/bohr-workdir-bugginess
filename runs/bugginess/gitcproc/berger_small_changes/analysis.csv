@@ -1,0 +1,11 @@
+,j,Polarity,Coverage,Overlaps,Conflicts,Correct,Incorrect,Emp. Acc.
+gitcproc_buggless_no_keywords_matched,0,[0],0.533678756476684,0.0,0.0,82,21,0.7961165048543689
+gitcproc_message_keyword_bug,1,[1],0.06735751295336788,0.05699481865284974,0.0,10,3,0.7692307692307692
+gitcproc_message_keyword_fix,2,[1],0.44041450777202074,0.11917098445595854,0.0,71,14,0.8352941176470587
+gitcproc_message_keyword_issu,3,[1],0.06735751295336788,0.06217616580310881,0.0,9,4,0.6923076923076923
+gitcproc_message_keyword_mistak,4,[],0.0,0.0,0.0,0,0,0.0
+gitcproc_message_keyword_incorrect,5,[],0.0,0.0,0.0,0,0,0.0
+gitcproc_message_keyword_fault,6,[1],0.0051813471502590676,0.0051813471502590676,0.0,1,0,1.0
+gitcproc_message_keyword_defect,7,[],0.0,0.0,0.0,0,0,0.0
+gitcproc_message_keyword_flaw,8,[],0.0,0.0,0.0,0,0,0.0
+gitcproc_message_keyword_type,9,[1],0.031088082901554404,0.02072538860103627,0.0,5,1,0.8333333333333333

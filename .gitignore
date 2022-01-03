@@ -8,7 +8,7 @@ bohr-worddir.egg-info
 
 .bohr/local.config
 
-/cached-datasets
+/cached-datasets/*.jsonl
 /cloned-bohr
 
 **/heuristic_matrix.pkl

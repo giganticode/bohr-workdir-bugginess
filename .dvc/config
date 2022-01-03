@@ -1,5 +1,5 @@
 [core]
-    remote = squirrel
+    remote = squirrel-http
     check_update = false
 ['remote "squirrel"']
     url = ssh://squirrel.inf.unibz.it/data/bohr_dvc_storage

@@ -1,0 +1,280 @@
+{
+    "Conflicts": {
+        "all_files_test_add": 0.002277904328018223,
+        "all_files_test_fix": 0.0011389521640091116,
+        "bug_message_keyword_combined_bad": 0.0193621867881549,
+        "bug_message_keyword_combined_broken": 0.03416856492027335,
+        "bug_message_keyword_combined_bug": 0.23348519362186787,
+        "bug_message_keyword_combined_bugfix": 0.3416856492027335,
+        "bug_message_keyword_combined_close": 0.0011389521640091116,
+        "bug_message_keyword_combined_correct": 0.029612756264236904,
+        "bug_message_keyword_combined_disabl": 0.030751708428246014,
+        "buggless_if_many_lines_changed": 0.02847380410022779,
+        "bugless_if_at_least_2_removed_files": 0.00683371298405467,
+        "bugless_if_at_least_5_added_files": 0.0056947608200455585,
+        "bugless_if_many_files_changes": 0.01366742596810934,
+        "bugless_if_not_code_files": 0.39863325740318906,
+        "bugless_message_keyword_combined_abil": 0.023917995444191344,
+        "bugless_message_keyword_combined_ad": 0.09681093394077449,
+        "bugless_message_keyword_combined_addit": 0.029612756264236904,
+        "bugless_message_keyword_combined_allow": 0.05011389521640091,
+        "bugless_message_keyword_combined_bump": 0.01366742596810934,
+        "bugless_message_keyword_combined_clean": 0.04441913439635535,
+        "bugless_message_keyword_combined_doc": 0.04441913439635535,
+        "bugless_message_keyword_combined_remov": 0.0193621867881549,
+        "bugless_message_keyword_combined_test": 0.012528473804100227,
+        "bugless_message_keyword_combined_updat": 0.017084282460136675,
+        "fine_grained_changes_transformer_70": 0.06150341685649203,
+        "fine_grained_changes_transformer_80": 0.10364464692482915,
+        "fine_grained_changes_transformer_90": 0.1366742596810934,
+        "no_files_have_modified_status": 0.0011389521640091116,
+        "refactoring_if_at_least_2_renamed": 0.003416856492027335
+    },
+    "Correct": {
+        "all_files_test_add": 5,
+        "all_files_test_fix": 1,
+        "bug_message_keyword_combined_bad": 18,
+        "bug_message_keyword_combined_broken": 23,
+        "bug_message_keyword_combined_bug": 142,
+        "bug_message_keyword_combined_bugfix": 232,
+        "bug_message_keyword_combined_close": 2,
+        "bug_message_keyword_combined_correct": 15,
+        "bug_message_keyword_combined_disabl": 10,
+        "buggless_if_many_lines_changed": 87,
+        "bugless_if_at_least_2_removed_files": 28,
+        "bugless_if_at_least_5_added_files": 27,
+        "bugless_if_many_files_changes": 60,
+        "bugless_if_not_code_files": 287,
+        "bugless_message_keyword_combined_abil": 41,
+        "bugless_message_keyword_combined_ad": 153,
+        "bugless_message_keyword_combined_addit": 43,
+        "bugless_message_keyword_combined_allow": 77,
+        "bugless_message_keyword_combined_bump": 41,
+        "bugless_message_keyword_combined_clean": 98,
+        "bugless_message_keyword_combined_doc": 58,
+        "bugless_message_keyword_combined_remov": 44,
+        "bugless_message_keyword_combined_test": 19,
+        "bugless_message_keyword_combined_updat": 31,
+        "fine_grained_changes_transformer_70": 47,
+        "fine_grained_changes_transformer_80": 109,
+        "fine_grained_changes_transformer_90": 174,
+        "no_files_have_modified_status": 41,
+        "refactoring_if_at_least_2_renamed": 18
+    },
+    "Coverage": {
+        "all_files_test_add": 0.00683371298405467,
+        "all_files_test_fix": 0.002277904328018223,
+        "bug_message_keyword_combined_bad": 0.022779043280182234,
+        "bug_message_keyword_combined_broken": 0.04441913439635535,
+        "bug_message_keyword_combined_bug": 0.244874715261959,
+        "bug_message_keyword_combined_bugfix": 0.3724373576309795,
+        "bug_message_keyword_combined_close": 0.002277904328018223,
+        "bug_message_keyword_combined_correct": 0.03530751708428246,
+        "bug_message_keyword_combined_disabl": 0.03189066059225513,
+        "buggless_if_many_lines_changed": 0.11389521640091116,
+        "bugless_if_at_least_2_removed_files": 0.03530751708428246,
+        "bugless_if_at_least_5_added_files": 0.03530751708428246,
+        "bugless_if_many_files_changes": 0.07403189066059225,
+        "bugless_if_not_code_files": 0.5933940774487472,
+        "bugless_message_keyword_combined_abil": 0.05466970387243736,
+        "bugless_message_keyword_combined_ad": 0.23006833712984054,
+        "bugless_message_keyword_combined_addit": 0.07517084282460136,
+        "bugless_message_keyword_combined_allow": 0.11161731207289294,
+        "bugless_message_keyword_combined_bump": 0.05580865603644647,
+        "bugless_message_keyword_combined_clean": 0.11845102505694761,
+        "bugless_message_keyword_combined_doc": 0.08086560364464693,
+        "bugless_message_keyword_combined_remov": 0.06264236902050115,
+        "bugless_message_keyword_combined_test": 0.03189066059225513,
+        "bugless_message_keyword_combined_updat": 0.04214123006833713,
+        "fine_grained_changes_transformer_70": 0.08769931662870159,
+        "fine_grained_changes_transformer_80": 0.16856492027334852,
+        "fine_grained_changes_transformer_90": 0.2608200455580866,
+        "no_files_have_modified_status": 0.05466970387243736,
+        "refactoring_if_at_least_2_renamed": 0.02164009111617312
+    },
+    "Emp. Acc.": {
+        "all_files_test_add": 0.8333333333333333,
+        "all_files_test_fix": 0.5,
+        "bug_message_keyword_combined_bad": 0.9,
+        "bug_message_keyword_combined_broken": 0.5897435897435898,
+        "bug_message_keyword_combined_bug": 0.6604651162790698,
+        "bug_message_keyword_combined_bugfix": 0.709480122324159,
+        "bug_message_keyword_combined_close": 1.0,
+        "bug_message_keyword_combined_correct": 0.4838709677419355,
+        "bug_message_keyword_combined_disabl": 0.35714285714285715,
+        "buggless_if_many_lines_changed": 0.87,
+        "bugless_if_at_least_2_removed_files": 0.9032258064516129,
+        "bugless_if_at_least_5_added_files": 0.8709677419354839,
+        "bugless_if_many_files_changes": 0.9230769230769231,
+        "bugless_if_not_code_files": 0.5508637236084453,
+        "bugless_message_keyword_combined_abil": 0.8541666666666667,
+        "bugless_message_keyword_combined_ad": 0.7574257425742574,
+        "bugless_message_keyword_combined_addit": 0.6515151515151515,
+        "bugless_message_keyword_combined_allow": 0.7857142857142857,
+        "bugless_message_keyword_combined_bump": 0.8367346938775511,
+        "bugless_message_keyword_combined_clean": 0.9423076923076923,
+        "bugless_message_keyword_combined_doc": 0.8169014084507042,
+        "bugless_message_keyword_combined_remov": 0.8,
+        "bugless_message_keyword_combined_test": 0.6785714285714286,
+        "bugless_message_keyword_combined_updat": 0.8378378378378378,
+        "fine_grained_changes_transformer_70": 0.6103896103896104,
+        "fine_grained_changes_transformer_80": 0.7364864864864865,
+        "fine_grained_changes_transformer_90": 0.759825327510917,
+        "no_files_have_modified_status": 0.8541666666666667,
+        "refactoring_if_at_least_2_renamed": 0.9473684210526316
+    },
+    "Incorrect": {
+        "all_files_test_add": 1,
+        "all_files_test_fix": 1,
+        "bug_message_keyword_combined_bad": 2,
+        "bug_message_keyword_combined_broken": 16,
+        "bug_message_keyword_combined_bug": 73,
+        "bug_message_keyword_combined_bugfix": 95,
+        "bug_message_keyword_combined_close": 0,
+        "bug_message_keyword_combined_correct": 16,
+        "bug_message_keyword_combined_disabl": 18,
+        "buggless_if_many_lines_changed": 13,
+        "bugless_if_at_least_2_removed_files": 3,
+        "bugless_if_at_least_5_added_files": 4,
+        "bugless_if_many_files_changes": 5,
+        "bugless_if_not_code_files": 234,
+        "bugless_message_keyword_combined_abil": 7,
+        "bugless_message_keyword_combined_ad": 49,
+        "bugless_message_keyword_combined_addit": 23,
+        "bugless_message_keyword_combined_allow": 21,
+        "bugless_message_keyword_combined_bump": 8,
+        "bugless_message_keyword_combined_clean": 6,
+        "bugless_message_keyword_combined_doc": 13,
+        "bugless_message_keyword_combined_remov": 11,
+        "bugless_message_keyword_combined_test": 9,
+        "bugless_message_keyword_combined_updat": 6,
+        "fine_grained_changes_transformer_70": 30,
+        "fine_grained_changes_transformer_80": 39,
+        "fine_grained_changes_transformer_90": 55,
+        "no_files_have_modified_status": 7,
+        "refactoring_if_at_least_2_renamed": 1
+    },
+    "Overlaps": {
+        "all_files_test_add": 0.00683371298405467,
+        "all_files_test_fix": 0.002277904328018223,
+        "bug_message_keyword_combined_bad": 0.022779043280182234,
+        "bug_message_keyword_combined_broken": 0.04214123006833713,
+        "bug_message_keyword_combined_bug": 0.2437357630979499,
+        "bug_message_keyword_combined_bugfix": 0.357630979498861,
+        "bug_message_keyword_combined_close": 0.0011389521640091116,
+        "bug_message_keyword_combined_correct": 0.03189066059225513,
+        "bug_message_keyword_combined_disabl": 0.03189066059225513,
+        "buggless_if_many_lines_changed": 0.11047835990888383,
+        "bugless_if_at_least_2_removed_files": 0.03530751708428246,
+        "bugless_if_at_least_5_added_files": 0.03530751708428246,
+        "bugless_if_many_files_changes": 0.07061503416856492,
+        "bugless_if_not_code_files": 0.5626423690205011,
+        "bugless_message_keyword_combined_abil": 0.05239179954441914,
+        "bugless_message_keyword_combined_ad": 0.22323462414578588,
+        "bugless_message_keyword_combined_addit": 0.07403189066059225,
+        "bugless_message_keyword_combined_allow": 0.10933940774487472,
+        "bugless_message_keyword_combined_bump": 0.05580865603644647,
+        "bugless_message_keyword_combined_clean": 0.11161731207289294,
+        "bugless_message_keyword_combined_doc": 0.07972665148063782,
+        "bugless_message_keyword_combined_remov": 0.06150341685649203,
+        "bugless_message_keyword_combined_test": 0.03189066059225513,
+        "bugless_message_keyword_combined_updat": 0.04214123006833713,
+        "fine_grained_changes_transformer_70": 0.08769931662870159,
+        "fine_grained_changes_transformer_80": 0.15375854214123008,
+        "fine_grained_changes_transformer_90": 0.255125284738041,
+        "no_files_have_modified_status": 0.05466970387243736,
+        "refactoring_if_at_least_2_renamed": 0.02050113895216401
+    },
+    "Polarity": {
+        "all_files_test_add": [
+            0
+        ],
+        "all_files_test_fix": [
+            0
+        ],
+        "bug_message_keyword_combined_bad": [
+            1
+        ],
+        "bug_message_keyword_combined_broken": [
+            1
+        ],
+        "bug_message_keyword_combined_bug": [
+            1
+        ],
+        "bug_message_keyword_combined_bugfix": [
+            1
+        ],
+        "bug_message_keyword_combined_close": [
+            1
+        ],
+        "bug_message_keyword_combined_correct": [
+            1
+        ],
+        "bug_message_keyword_combined_disabl": [
+            1
+        ],
+        "buggless_if_many_lines_changed": [
+            0
+        ],
+        "bugless_if_at_least_2_removed_files": [
+            0
+        ],
+        "bugless_if_at_least_5_added_files": [
+            0
+        ],
+        "bugless_if_many_files_changes": [
+            0
+        ],
+        "bugless_if_not_code_files": [
+            0
+        ],
+        "bugless_message_keyword_combined_abil": [
+            0
+        ],
+        "bugless_message_keyword_combined_ad": [
+            0
+        ],
+        "bugless_message_keyword_combined_addit": [
+            0
+        ],
+        "bugless_message_keyword_combined_allow": [
+            0
+        ],
+        "bugless_message_keyword_combined_bump": [
+            0
+        ],
+        "bugless_message_keyword_combined_clean": [
+            0
+        ],
+        "bugless_message_keyword_combined_doc": [
+            0
+        ],
+        "bugless_message_keyword_combined_remov": [
+            0
+        ],
+        "bugless_message_keyword_combined_test": [
+            0
+        ],
+        "bugless_message_keyword_combined_updat": [
+            0
+        ],
+        "fine_grained_changes_transformer_70": [
+            0,
+            1
+        ],
+        "fine_grained_changes_transformer_80": [
+            0,
+            1
+        ],
+        "fine_grained_changes_transformer_90": [
+            0,
+            1
+        ],
+        "no_files_have_modified_status": [
+            0
+        ],
+        "refactoring_if_at_least_2_renamed": [
+            0
+        ]
+    }
+}

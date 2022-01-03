@@ -1,0 +1,106 @@
+{
+    "Conflicts": {
+        "gitcproc_buggless_no_keywords_matched": 0.0,
+        "gitcproc_message_keyword_bug": 0.0,
+        "gitcproc_message_keyword_defect": 0.0,
+        "gitcproc_message_keyword_fault": 0.0,
+        "gitcproc_message_keyword_fix": 0.0,
+        "gitcproc_message_keyword_flaw": 0.0,
+        "gitcproc_message_keyword_incorrect": 0.0,
+        "gitcproc_message_keyword_issu": 0.0,
+        "gitcproc_message_keyword_mistak": 0.0,
+        "gitcproc_message_keyword_type": 0.0
+    },
+    "Correct": {
+        "gitcproc_buggless_no_keywords_matched": 6990,
+        "gitcproc_message_keyword_bug": 399,
+        "gitcproc_message_keyword_defect": 7,
+        "gitcproc_message_keyword_fault": 1,
+        "gitcproc_message_keyword_fix": 2310,
+        "gitcproc_message_keyword_flaw": 0,
+        "gitcproc_message_keyword_incorrect": 36,
+        "gitcproc_message_keyword_issu": 371,
+        "gitcproc_message_keyword_mistak": 0,
+        "gitcproc_message_keyword_type": 103
+    },
+    "Coverage": {
+        "gitcproc_buggless_no_keywords_matched": 0.6850833708877873,
+        "gitcproc_message_keyword_bug": 0.04100946372239748,
+        "gitcproc_message_keyword_defect": 0.0007210455159981974,
+        "gitcproc_message_keyword_fault": 0.0004506534474988734,
+        "gitcproc_message_keyword_fix": 0.2643533123028391,
+        "gitcproc_message_keyword_flaw": 9.013068949977468e-05,
+        "gitcproc_message_keyword_incorrect": 0.003605227579990987,
+        "gitcproc_message_keyword_issu": 0.06056782334384858,
+        "gitcproc_message_keyword_mistak": 0.001081568273997296,
+        "gitcproc_message_keyword_type": 0.02568724650743578
+    },
+    "Emp. Acc.": {
+        "gitcproc_buggless_no_keywords_matched": 0.9196158400210499,
+        "gitcproc_message_keyword_bug": 0.8769230769230769,
+        "gitcproc_message_keyword_defect": 0.875,
+        "gitcproc_message_keyword_fault": 0.2,
+        "gitcproc_message_keyword_fix": 0.7875894988066825,
+        "gitcproc_message_keyword_flaw": 0.0,
+        "gitcproc_message_keyword_incorrect": 0.9,
+        "gitcproc_message_keyword_issu": 0.5520833333333334,
+        "gitcproc_message_keyword_mistak": 0.0,
+        "gitcproc_message_keyword_type": 0.36140350877192984
+    },
+    "Incorrect": {
+        "gitcproc_buggless_no_keywords_matched": 611,
+        "gitcproc_message_keyword_bug": 56,
+        "gitcproc_message_keyword_defect": 1,
+        "gitcproc_message_keyword_fault": 4,
+        "gitcproc_message_keyword_fix": 623,
+        "gitcproc_message_keyword_flaw": 1,
+        "gitcproc_message_keyword_incorrect": 4,
+        "gitcproc_message_keyword_issu": 301,
+        "gitcproc_message_keyword_mistak": 12,
+        "gitcproc_message_keyword_type": 182
+    },
+    "Overlaps": {
+        "gitcproc_buggless_no_keywords_matched": 0.0,
+        "gitcproc_message_keyword_bug": 0.029743127534925643,
+        "gitcproc_message_keyword_defect": 0.000270392068499324,
+        "gitcproc_message_keyword_fault": 0.000270392068499324,
+        "gitcproc_message_keyword_fix": 0.0704821991888238,
+        "gitcproc_message_keyword_flaw": 0.0,
+        "gitcproc_message_keyword_incorrect": 0.002794051374493015,
+        "gitcproc_message_keyword_issu": 0.03830554303740424,
+        "gitcproc_message_keyword_mistak": 0.0009914375844975213,
+        "gitcproc_message_keyword_type": 0.012257773771969356
+    },
+    "Polarity": {
+        "gitcproc_buggless_no_keywords_matched": [
+            0
+        ],
+        "gitcproc_message_keyword_bug": [
+            1
+        ],
+        "gitcproc_message_keyword_defect": [
+            1
+        ],
+        "gitcproc_message_keyword_fault": [
+            1
+        ],
+        "gitcproc_message_keyword_fix": [
+            1
+        ],
+        "gitcproc_message_keyword_flaw": [
+            1
+        ],
+        "gitcproc_message_keyword_incorrect": [
+            1
+        ],
+        "gitcproc_message_keyword_issu": [
+            1
+        ],
+        "gitcproc_message_keyword_mistak": [
+            1
+        ],
+        "gitcproc_message_keyword_type": [
+            1
+        ]
+    }
+}

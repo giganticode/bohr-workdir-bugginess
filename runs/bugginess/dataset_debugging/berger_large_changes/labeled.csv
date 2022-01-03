@@ -1,0 +1,385 @@
+sha,message,label,predicted,prob_CommitLabel.BugFix
+0fb7d36f4dbda94889528823cd2130a12e4664ca,"Separate printing context chain method into its own method
+change contextWorkingName to property workingName",CommitLabel.NonBugFix,-1,0.5
+172ae58a8b89e71b5100f6435139b303edd4dd5e,More cleanup and docs,CommitLabel.NonBugFix,0,0.03
+17f13f466f11f3b7990691a64764d2ad8f9f25a6,Support nested fields in embedded structs,CommitLabel.NonBugFix,0,0.29
+17ac53d63e0e0c4326d628f798207f4e2bf513a2,some cosmetic refactorings,CommitLabel.NonBugFix,1,0.73
+25d2a7a5c305b232a2d8fec3fa82f9e237fc4580,Allow callers to get data out in slices of pointers or values,CommitLabel.NonBugFix,0,0.2
+30b9871ceef52cd43b830c058a3a3d34c36eb742,"add input body filter
+http://rb.corp.taobao.com/r/22419/
+
+git-svn-id: http://code.taobao.org/svn/tengine/trunk@16 8a6cbc4f-5610-49f6-9325-3f9afe71ff98",CommitLabel.NonBugFix,0,0.23
+57c3226147127fc860fa7dec9ec60ec98bb01a79,PropEr now catches exits by default.,CommitLabel.NonBugFix,-1,0.5
+974fff51e0d0c98b667700d2c517af4d40a2adee,"Add lazyness to infix operators (* + - etc)
+
+In the test case I've replaced undefineds with a division by 0 due to
+undefined not being in scope. I have also tested this by replacing the 1
+and the 0 with undefined in the generated javascript and running it
+through node manually",CommitLabel.NonBugFix,0,0.18
+975a2fc86646f4afae2b8414a8457f5f52c935b5,"Make a global universeScope variable.
+
+Also fixes all TODOs regarding ""return the real built-in type"" thing.",CommitLabel.NonBugFix,0,0.42
+1837cbfa6728f5c46c1e7e135f9f6a4ef0da6836,"add identity for syslog
+http://rb.corp.taobao.com/r/29643/
+
+
+git-svn-id: http://code.taobao.org/svn/tengine/trunk@64 8a6cbc4f-5610-49f6-9325-3f9afe71ff98",CommitLabel.NonBugFix,0,0.28
+18630203c44d34b04aa1bc94ca49f7759565954e,merge changes between nginx 1.2.6 and nginx 1.2.7,CommitLabel.NonBugFix,0,0.11
+18aa3c4c4d9f75508771a1887bb24ab35bf404a5,bringing back declaration and source mapping.,CommitLabel.NonBugFix,0,0.24
+161674bc2271df5dff314e6eb01e0438eaa4f874,Added Unit test for string to number conversion,CommitLabel.NonBugFix,0,0.08
+16615300f51ad148e2dad619aaf8bfaf398f405f,add support for tunneling through http proxies,CommitLabel.NonBugFix,0,0.17
+16a3d5d298bd0427e74e8f283c00a994b97b53ce,A handful of additional fixes to the way register playback their macros,CommitLabel.NonBugFix,1,0.68
+167558157292c8393d2391124bfb9613f026c441,"upgrade to TS compiler 0.9 beta
+
+updated compiler to beta (6/6/2013), emitter, declaration local units.",CommitLabel.NonBugFix,0,0.0
+1afd130b5095319c897ade679614d2d48e222d2d,Added (set- ...) macro to for records. Internal cleanup.,CommitLabel.NonBugFix,0,0.03
+9ae33afc8aff8a8cdbc02ba1f4a7a4643c33854b,Better error checking in guards.,CommitLabel.NonBugFix,1,0.84
+e973a3f440164cefd4d4fa2499f11a108eb974a8,Each module adds its own entries to the jsToFay/fayToJs hashes. Also put jsToFayUserDefined and fayToJsUserDefined in runtime.,CommitLabel.NonBugFix,0,0.28
+08f67c8a7ddcd85b3ee72805cc3b9d64374fe21d,Merged latest,CommitLabel.NonBugFix,0,0.2
+08c6bf3dbeff840ac94fb8a305325b86164b6443,Add function pretty printing.,CommitLabel.NonBugFix,0,0.23
+085a4f448083c21061a849ccb3ced97591f8f909,v5.0.1. Initialising a skeleton will also reload the configuration.,CommitLabel.NonBugFix,-1,0.5
+011fc0f25352a67fd6e9dc2e688d814bb1517bd3,"Added justify text example, which only works in CoreText",CommitLabel.NonBugFix,0,0.04
+01f9ae36706a30a030be58986987c6dbdf8c74a4,"Support block delete , put",CommitLabel.NonBugFix,0,0.04
+01eb8eefb36665c1736ac830beaf98d70aea8714,client initiates heartbeats and detects when connections are stale,CommitLabel.NonBugFix,0,0.2
+01f796f71eb78891b51a08c4ce82311a3696c7e7,* src/logos/bench.clj: better formatting,CommitLabel.NonBugFix,0,0.41
+af8337d4a1d0d35911c3cd1a8d4be58bf518fa03,Add sqlite3 and PostgreSQL Dialects.  Fix issues in tests that let errs pass unnoticed in CreateTables().,CommitLabel.NonBugFix,0,0.18
+bdc1aebb04e58d44a537d52573e63a4c63a6e1b0,Remove unused CompileErrors and do some renaming,CommitLabel.NonBugFix,0,0.3
+bd72d4bc5941f538c3f789fb9a3d54a43043800b,"Mutlifile packages support, few misc fixes.",CommitLabel.NonBugFix,0,0.43
+1c3640ffb9b8a1727d41625a6a80588f27f680ff,Fixed unit tests :),CommitLabel.NonBugFix,0,0.02
+046d83791f21ef0541ebde18e45ef91520115085,Update the photo albums project to not use ASI anymore and the new processor features.,CommitLabel.NonBugFix,0,0.04
+043ffcce092f3bbb9efa86b647bcd49b74961772,[attributedlabel] Add support for inline images.,CommitLabel.NonBugFix,0,0.08
+042093223c9672f51383ae413881efc272efaa8e,"Design changes of Evaluators.
+Added separated files for some evaluators.
+NSTextView+VimMotion is added to implement vim motion.
+TextObjectEvaluator is goint to use this category to handle motions.
+And Normal and Visual evaluator will use the evaluator as its super
+class.
+Its implemntation is not completed.",CommitLabel.NonBugFix,0,0.01
+04a82acd36e3c8334aae378aee5a23bfc934250a,Add semantic_rename/test.0003.,CommitLabel.NonBugFix,0,0.0
+1125a8b760810f682a3c929534e3d235a27e1245,"Add 'Runtime' scope support to unmanagedClasspath
+
+Also added support for classes dirs in unmanagedClasspath, 
+in addition to jars (Issue #181).",CommitLabel.NonBugFix,0,0.06
+119ed05e5985c2497e0715ace271d44425e87340,adding line info to output,CommitLabel.NonBugFix,0,0.15
+1199ce41b094def9b90edb56afcf8761d2294521,Make rhino error support better,CommitLabel.NonBugFix,1,0.95
+1162e1f0a083a71a7d3166144d88e3d3f6d8f67a,"Implemented sampleshrink/1,2, type changes, added safe_pop to stack ADT",CommitLabel.NonBugFix,0,0.2
+09165c24071c1c7659f6eb2fb6780abc0e79d4ef,First *trial' version of parameterized modules.,CommitLabel.NonBugFix,0,0.07
+004677c4fe512e89b111a88556e2aadf3e5995ad,Replace gname2Qname with origName2QName,CommitLabel.NonBugFix,1,0.79
+002d6db966601ce46f688fe8c6ac59f29185f6b5,Experimental support for mixins with interpolated selectors.,CommitLabel.NonBugFix,0,0.29
+6ff6c50bd27bb33076fb3196f4b409507a33a1d1,"Modified data reader mapper to support yielding records rather than loading the entire result set into memory
+
+added configuration option that allows user to specify whether DataReaderMapper should buffer all results into a List or use yield return via an Enumerable. The default behavior uses a List for backwards compatibility
+
+Fixing compile error; closes #254",CommitLabel.NonBugFix,1,0.85
+03b49f7d7d3ea9ec80dd938af634b21026a99c92,"* src/main/clojure/clojure/core/logic.clj: remove expand for now, clean up how integers and more complex domains are handled. as long as a seq of intervals can be produced, we can do generic ops.",CommitLabel.NonBugFix,0,0.26
+0395e37d2cde8732ca09b6f53e4313e88f3b3c22,Include classes jars with classifier in idea config (issue #145),CommitLabel.NonBugFix,0,0.04
+035262f297613c75d394b8f0dcbd4f41390975eb,Adding overload for ForSourceMember that just takes in the property name as a string,CommitLabel.NonBugFix,0,0.3
+610525940ab53c8fe0f9567c8a2c3f0be6d0adad,"v6.49.0. Improvement.
+
+- v6.49.0 August 9, 2013
+	- DocPad will now shutdown and destroy itself more thoroughly
+		- Thanks to [Ashton Williams](https://github.com/Ashton-W) for [issue #595](https://github.com/bevry/docpad/issues/595)
+	- Added the event `docpadDestroy` for plugins that are doing anything long-running so they can destroy themselves thoroughly too",CommitLabel.NonBugFix,0,0.03
+0b6eda1b1bb12d29e0394bd5f012e438b5cf40d3,Updated for Express.js v3. Need to update some plugins to.,CommitLabel.NonBugFix,0,0.01
+0b9a53206817781d7aac002ab14b8c29b5bdde14,"more updates to the resolver...
+
+more updates to the resolver, added the compiler services in there.",CommitLabel.NonBugFix,0,0.0
+0b7ceda19867381e76d0bd755b9acd6bef426935,"use nrsc to pack static data into the binaries, making adding assets easier and simplifying the build process",CommitLabel.NonBugFix,0,0.0
+0b074872ea922709b8d280e9062a6856d9eb9024,"v6.31.0. Improvement.
+
+- v6.31.0 April 24, 2013
+	- DocPad will now warn you when you have files of the same outPath
+	- File and Document IDs will now always be their `cid` (before they
+use to be their relativePath on occasion)
+	- Fuzzy searching no longer searches for the id
+	- Server is now able to serve cached pages while a non-initial
+generation is occurring
+	- We no longer replace tabs with 4 spaces for the content of files and
+documents (we still do it for YAML meta data headers on documents)
+		- This means if you're a plugin developer, you may need to update
+your plugin's test's `out-expected` folder accordingly
+			- If this is too difficult, we've added a `removeWhitespace` config
+option for your plugin tester, set it to `true`, [see here for
+usage](https://github.com/docpad/docpad-plugin-paged/blob/master/src/pag
+ed.tester.coffee)
+	- Change events will now fire when adding a url to a file
+	- URL cache index for serving files is now generated via change
+events, rather than after generation",CommitLabel.NonBugFix,0,0.0
+53ce240d76add2e2fe5417fdafafd4337ea3b0ec,Removed networking operations from Nimbus. AFNetworking is now the default networking stack.,CommitLabel.NonBugFix,0,0.27
+894b56a6ffe67825ef7d8e2282ae5752c27f59f7,"Fix tests for importer rewrite. Caterpillar optimisation attempt.
+
+- load events now parse events
+- split out `populateCollections` into it's own thing
+- moved `generateParse` logic into `populateCollections`
+- added `opts.collection` support back to `parseDirectory`",CommitLabel.NonBugFix,0,0.04
+12dbb04e9afdc58834a2f91aca871725f296d045,Clean up handling of print depth and make it consistent.,CommitLabel.NonBugFix,1,0.94
+12cc2558a25d2b0954e39ede0df1c50dbb59d60c,updated reflection sample,CommitLabel.NonBugFix,0,0.11
+12f2fe0d728932d61cf35d75ffeeac1e4080f571,"Refined stats printing subsystem, minor cleanups.
+
+* Implemented collect/3, aggregate/3, measure/3, with_title/1.
+* Cleaned up macro definitions.
+* Cleaned up proper.erl exported types.",CommitLabel.NonBugFix,0,0.05
+d527586ee7ac5646068ffb885198814e877d8fca,"Make error messages a tiny bit friendlier, and some general house-keeping.",CommitLabel.NonBugFix,1,0.87
+d5e82f8b9e7966fccad8ed6f4750d8509509607c,Adding a test to verify deep nested graph of filling existing destinations; closes #170,CommitLabel.NonBugFix,0,0.16
+0217bf5ce24fa1475d08fa74f72c0c8c7e2bd22c,Expand macro ++ in such a way as to allow use in patterns.,CommitLabel.NonBugFix,0,0.38
+02e5bee3b39eb4defca56ca46c290c435eba4563,Made 'dj' and 'dk' function like vim,CommitLabel.NonBugFix,0,0.2
+02912b2be77ab4fce58efbcc96784f36d69a0898,* project.clj: can unify all core datatypes,CommitLabel.NonBugFix,1,0.86
+021f6a9734f494dd31cd0655f43ca6369a98f106,"Move things again, trying to suit GOPATH scheme.",CommitLabel.NonBugFix,0,0.0
+0213579de43a5eadbbce234dfcff65d6f8c4b466,1.5.0 release,CommitLabel.NonBugFix,0,0.3
+0245026e393d0f95d8f8534a753f68c4ffe5d80f,"Fix #189.
+
+* XVimWindow is no longer an NSView
+* Associate XVimWindow instance with DVTSourceTextView
+* Associate XVimStatusLine with container view
+* Associate XVimCommandLine with editor
+* Move command line functions to XVim",CommitLabel.NonBugFix,0,0.36
+020cc2cd70052831032ec8b2f286b8caa8ffc1fc,-pretty flag to jsbeautify output,CommitLabel.NonBugFix,0,0.43
+0284274e2805d9cf01aa52fe4219fa61801e041c,* src/main/clojure/clojure/core/logic.clj: implement super? for RangeFD,CommitLabel.NonBugFix,1,0.71
+022d689a494348ab0893fbe4df8608288e41f4ff,"e,E to use XVimMotion",CommitLabel.NonBugFix,-1,0.5
+33af4ecb42695868a3717e9fb09a7611b730d886,merge nginx changes between 1.2.5 and 1.2.6,CommitLabel.NonBugFix,0,0.2
+620d9580c9e401168996b17ea00e2dc77e43e245,"Fix up vertical alignment of images in attributed strings. Now supports top, bottom and middle alignment.",CommitLabel.NonBugFix,1,0.88
+156088e42804d47b5924e62c633acc77a6812f8b,"added types, minor refactoring, added rudimentary README instructions",CommitLabel.NonBugFix,0,0.0
+8691a0a009fe39872c756c8aeb06887a584dc18b,[core] Add NIError.h/m.,CommitLabel.NonBugFix,0,0.09
+14180d6f839760ce071fb49d07f21dfaaa612795,"Better record handling, internal fixes, documentation.",CommitLabel.NonBugFix,0,0.04
+2a9361439752ceb0daa852aa86e9b8c078096147,Tests passing for WinRT,CommitLabel.NonBugFix,0,0.02
+45b9d8abaaf4d5c89aad716ed20d947975ac199c,add consistent_hash_module for tengine,CommitLabel.NonBugFix,0,0.11
+e048f91c71798d10c8709f19687faed01895d8ca,"fix comments, add new context helper, made helpers more consistent",CommitLabel.NonBugFix,0,0.31
+0739c2a6af1b994f948a4b3d80ca618cc6f6e886,Applying patch for ordering member mapping from Mattias Fagerlund,CommitLabel.NonBugFix,0,0.45
+071ca908b6e5049351dfbd6242d800e53463cce6,Add named query parameter binding from map or struct.  Fixes #61,CommitLabel.NonBugFix,0,0.25
+07474efb5d95a0869da5aaa079fc5534c4d2125b,"Adds support for SAVEPOINT, ROLLBACK TO SAVEPOINT, and RELEASE SAVEPOINT",CommitLabel.NonBugFix,0,0.17
+0cae1486c1c11ef3e5ee06e3a4a72785f73e3726,"Clean up structure of positional.
+
+I attempted to address Jason's ""code smell"" comment about separate functions
+for efficient call forms and efficient functions. I'm not sure I succeeded.",CommitLabel.NonBugFix,0,0.34
+0c360f2086d331731b4cb8912f4bf9c9f2cd99da,"Add support for built-in package ""unsafe"".",CommitLabel.NonBugFix,0,0.17
+224cdcad4a96887097e1db236bda9da85c0e1fa3,Move code generation out of lfe_comp into lfe_codegen.,CommitLabel.NonBugFix,0,0.2
+65bdedafa827a17eccc33f497d166810fbd162f2,"Disequality that does not depend on unify.
+
+Added IDisunifyTerms protocol. Added disunify which looks like unify
+but instead returns a constraint set. Not yet sure if this approach is
+general enough to implement nominal disequality. Extend the core type
+to IDisunifyTerms.
+
+No more calls to unify in !=c. Commented out normalize-store and
+prefix-subsumes? as those are optimizations anyhow. != goal now calls
+disunify and uses the :prefixc property of the constraint set to
+construct the !=c constraint.",CommitLabel.NonBugFix,0,0.11
+654256c47a45764f5356c71b9fd00ae8ae8a897f,"Significant Refactoring of Compiler
+
+Have refactored the compiler to make it more manageable, and have also
+tried to solve the missing lambda, '_this' bug by way of double passing
+on first load.",CommitLabel.NonBugFix,1,0.65
+06e31b3c428949a1ec618283749b4171655d4647,"Better syntax: Ability to write Map<B>(objectA) instead of Map<A,B>(objectA)
+
+Tests for Map method with one generic parameter",CommitLabel.NonBugFix,0,0.06
+0637157beba6173066a1b3b4a18d6abfda3425b8,Moved code generation ot of lfe_comp into lfe_codegen.,CommitLabel.NonBugFix,0,0.02
+06aab3082a6b787b1f86466e894a30ec926daedf,Initial parser implementation based on a FSM,CommitLabel.NonBugFix,0,0.37
+20b717e77a954af17bf8d28a2313a83fc0053eaf,"Removed user_drv.erl and user_drv.beam as no longer needed and io-server
+protocol has been changed.",CommitLabel.NonBugFix,0,0.01
+20054717a055d7ced4e5daa66151b7cf0ab6a0df,Win RT version compiling including unit tests,CommitLabel.NonBugFix,0,0.0
+0e6eca5d06f99d3cefd278eb4e7ca705b499b663,"Handle compiler option warnings_as_errors
+
+We do this in the samw way as the vanilla compiler by flagging an
+error when there are warnings, but leaving them as warnings.",CommitLabel.NonBugFix,1,0.85
+0e46b3d56609b96d2f8a0208b59c0724c71bf7c0,"Use case-insensitive filtering as a fallback, if no proposals were found.
+
+Closes #91.",CommitLabel.NonBugFix,1,0.73
+0e3810e540fa514f302c4bd0cef25fec82ab7f5a,Bigger timeout for some tests; also some clean ups,CommitLabel.NonBugFix,0,0.21
+0e7088c295109661ea1995649f54a23a9d35deee,"Added correct classpath for sbt build project.  Sbt sources now included!
+Added ability to skip sbt sub-project in idea module generation
+Added managed source directories when applicable.",CommitLabel.NonBugFix,0,0.14
+d9817d2f734d4a5b87393a18cd7b23c205a940f0,"- Removing configuration validation from dynamic mapping
+- Adding overloads for mapping to existing objects for dynamic mapping",CommitLabel.NonBugFix,0,0.09
+4f7acd829eb4b330ae263404dd56c8fb27b85993,Make classifiers of sources and javadocs configurable (issue #97),CommitLabel.NonBugFix,0,0.04
+b11a797379b358448e499e5ae9529f953765d23f,Converted CoreDataRecipes sample to MagicalRecordRecipes sample application,CommitLabel.NonBugFix,0,0.0
+26b5aa7506408e52e025193a8e72a98b1d8b4b0a,cache sql queries for get/insert/update/delete. shaved about half the overhead off according to benchmarks,CommitLabel.NonBugFix,0,0.02
+2670b6afcd7b97daedc5b4f4ce7ed362fea3238c,"Added formatted output. Very like the erlang versions but they do
+output LFE forms. Characters and based numbers useless for now.",CommitLabel.NonBugFix,0,0.04
+d0f665773075206460532ba54158979deb4f56ec,"dialect: support quoting column names
+
+Add support for quoting column names when generating queries. If a table
+uses a reserved word for a column name (silly but happens) then there
+will be a SQL error when trying to fetch a mapped struct.",CommitLabel.NonBugFix,1,0.51
+286fdfc901f650d5657225f57a9ff221569e9a26,"Strengthen some specs
+
+While at it, shortened some comment lines so that they fit
+on one line in my emacs buffer...",CommitLabel.NonBugFix,0,0.34
+282ee5c6d1349881c3d218b81f16e86ac74223e6,"Incorporated positional compile to replace eager-compile.
+
+This is largely an export so Jason can take a look; I still plan to clean
+things up.",CommitLabel.NonBugFix,0,0.22
+109ef9b4c0515442cfc979271b3709e43748edad,fix up to lib.d.ts,CommitLabel.NonBugFix,0,0.26
+10a3fecf90444de506dadafdf91088e4b6b2e05a,Some adjustments to the iCloud helpers,CommitLabel.NonBugFix,0,0.43
+2c1bf84c95e7eb0bac171a99e126cc50510cbbbf,added unit tests for tagging,CommitLabel.NonBugFix,0,0.06
+2bea3358c00627cd091c1ed37423c30b2dd6e948,better indentation,CommitLabel.NonBugFix,0,0.25
+29e8a92d6b2a54212113cb7e69957cec660eeac2,"Handful of fixes and better visual support
+
+Reorganized the way XVimVisualEvaluator handles a number of actions in
+order to be more extensible in the future.",CommitLabel.NonBugFix,1,0.58
+1b4a1c02a5d6f4c202b62c9c283f7b3fe35028ef,Removed unnecessary $ from test wrapper tags.,CommitLabel.NonBugFix,0,0.31
+0a8db05d02d31fadc2f51e6b573565a14fdab74b,Create new spec based upon ImportSingleRelatedEntityTests.m,CommitLabel.NonBugFix,0,0.05
+0a380242596738bf8eabebe4dfdb8eb7a371bde1,Adding sample for mapping to interfaces,CommitLabel.NonBugFix,0,0.1
+52c7b57392633d4c01d10b99585230d2b048caad,"added declarations to compiled unit object.
+
+additional updates on d.ts files added to the resource (resx) folder.
+the node.d.ts file now differs from the default in that it now contains
+a portions of lib.d.ts minus the DOM specific API's and that all
+declarations as no longer module scoped under the AMD quotation scheme.",CommitLabel.NonBugFix,0,0.01
+e163397cdf515d653060758d8c8ae593e0ce9104,A small fix in the docs and update copyrights.,CommitLabel.NonBugFix,0,0.06
+a0149aba501833dafe57cd35962bb6802fb87fda,better error messages for graph,CommitLabel.NonBugFix,1,0.97
+2406f2d31ebebcdaca4b3dd9c302b9b9688c6e0c,"`fixc`
+
+as suspected `treec` is not quite flexible enough. Instead we now have
+a higher order contraint `fixc` which takes a function which must take
+3 arguments - the term, the substitution and a reifier. This function
+must return a goal. This goal can of course call fixc again
+recursively, perhaps using constrain-tree to get tree constraining
+behavior. Redefine `treec` in terms of `fixc` as an example :)",CommitLabel.NonBugFix,0,0.29
+0565b7717b5147c81c9cbebd4b1e0f3671270ab8,Move Defined and Nullable to Language.Fay.FFI,CommitLabel.NonBugFix,0,0.38
+00611261c9eff0eb3280217ed570dbe03d8c59e4,"This simplifies and documents the two AddAudioData()
+methods in the NVP. 
+
+More importantanly this also prevents AddAudioData(char*...)
+from crashing the frontend if ""audio_channels"" is <= 0...
+This happens when we transition from a stream with audio
+to one without it and a frame is decoded while the audio
+params are still being reset.
+
+
+
+git-svn-id: http://svn.mythtv.org/svn/trunk@7213 7dbf422c-18fa-0310-86e9-fd20926502f2",CommitLabel.NonBugFix,1,1.0
+0052b061aad267fe526ea0707cbb6295e1f6b003,"Make the new vsync code optional, dependent on a new setting in the playback
+section.
+
+
+git-svn-id: http://svn.mythtv.org/svn/trunk@1582 7dbf422c-18fa-0310-86e9-fd20926502f2",CommitLabel.NonBugFix,0,0.33
+00140d193197d6d4e371d5f6bfd410c89702ca5a,"Atari and Odyssey2 support, patch by Bill Soudan.
+
+
+git-svn-id: http://svn.mythtv.org/svn/trunk@3755 7dbf422c-18fa-0310-86e9-fd20926502f2",CommitLabel.NonBugFix,0,0.01
+004205015d5f4dcad9d095ed20251b1f96ae53af,"A little more of the new scanner code is in this commit.
+
+Please test DVB scanning in Europe with this commit.
+
+This removes depreciated parts of dvbsignalmonitor, as they
+are no longer used in scanwizard. The code now uses the range
+and value reporting signals, instead of the old non-range 
+reporting signals.
+
+This moves SIScan thread handling code from ScanWizardScanner to SIScan.
+Removes the USING_DVB checks on SIScan code in ScanWizard[Scanner] since,
+as of  the last scanning checkin, SIScan no longer depends on DVB stuff 
+to compile. This also adds some of the pcHDTV v4l scanning code to 
+scanwizard, basically everything that doesn't depend on a pcHDTV v4l
+enabled SIScan.
+
+Finally, this makes some changes to SIScan, but just header and define
+stuff. Everything else depends on using the new FrequencyTable class in
+frequencytables.h, but testing by John Pullan seems to indicate that
+the new frequency tables are breaking DVB scanning in Europe. So I will
+make a patch that just adds the FrequencyTable stuff for testing before
+anything goes into svn.
+
+
+
+git-svn-id: http://svn.mythtv.org/svn/trunk@6884 7dbf422c-18fa-0310-86e9-fd20926502f2",CommitLabel.NonBugFix,0,0.19
+277c981e1edaaaf699a290735702dad9541ecb66,Initial release.,CommitLabel.NonBugFix,0,0.0
+04828d18b995d7f033f60e6f98ff2f792ffcfe9c,"Group items now have signals to indicate that they're about to go back and that they've gone back.
+
+The recording group item now hooks into the ""goingBack"" signal of it's list item and resets the group to ""Default"" if you select the create new group then go back.
+
+Remnoved the unused Pre/Post roll group so that it's text wouldn't need to be translated.
+
+
+git-svn-id: http://svn.mythtv.org/svn/trunk@4133 7dbf422c-18fa-0310-86e9-fd20926502f2",CommitLabel.NonBugFix,0,0.33
+0f23737f1dac76e65b9206886a84630d3da0c7cb,"Movement is working with whitespace at eol.
+
+Special cases still fail.",CommitLabel.BugFix,1,0.92
+9f328a239ecfd36d8775b341c83580ff2ea03304,"fixing 'symbol' error on declaration.
+
+simply not exporting declarations from the compiler. can be resolved
+from the reflection metadata.",CommitLabel.BugFix,1,0.95
+b37897f3865693853af848ade4d461fb3d7719cd,Don't override existing modules with constructor definitions. Fixes ModuleRecordClash test,CommitLabel.BugFix,1,0.9
+080c39ef2e609414880a1550cffad3fad9cb2870,Fix NSAttributeDescription lookups using attributesByName by switching to fast enumeration,CommitLabel.BugFix,0,0.39
+08f11248c48e189b0bfb9f067af627de2557e4d3,Verifying inheritance is working OK; closes #153,CommitLabel.BugFix,0,0.41
+0933e421f5f504eb098e42f05e8cda288d67a80b,Fix misunderstanding in handling of binary types,CommitLabel.BugFix,1,0.91
+00c43427b078b1f22d7bcdd551a7573a70d88e23,Add automatically generated version information. Fixes #541.,CommitLabel.BugFix,0,0.19
+6fb09ce19cef31dfc91ca07face1b78fb8aad5f6,fixed bug in proper_types:with_parameters/2,CommitLabel.BugFix,1,0.99
+4b7742ed627a2c4b8140cd73779e5af164644867,"Following bug fix for nextLine
+ - 'j' on a blankline moves cursor 2 lines donw",CommitLabel.BugFix,1,0.99
+031c955cab6b0b590ab39afe67ee30b0a12fdcc8,Reverting commit where destination objects passed in are void methods,CommitLabel.BugFix,0,0.3
+8b3bb71379ffcb2dbb5e19d532e95f65b3f23bf0,make version field overrideable. fix primary key declaration in create table if table has more than one pk,CommitLabel.BugFix,0,0.17
+d8e5a49085f18cd903070a71a354e77cfeb34ff0,Fix invalid Symbols as Idents in ModuleScope,CommitLabel.BugFix,1,0.99
+5387e850af5c2d20605658a3dabe5e69a8bec5d1,Fixing checking of bitsegs in patterns.,CommitLabel.BugFix,1,0.77
+3f451e9986646690b3f70ac53641b92cdfbf89f4,Fix windows build.,CommitLabel.BugFix,1,0.71
+bee9f4a3cf9b9ee3301da7ccb2e450eef102c1e9,"Fix some data import tests
+Added data update tests",CommitLabel.BugFix,0,0.0
+628cc94ed6da619e47feecd36da784fbf14d8999,"Fixes in initial state computation
+
+*Now initial_state/0 is only called during command generation
+ and evaluated during command execution.
+
+*Also fixed proper_types:parameter/3",CommitLabel.BugFix,1,0.97
+15152a6ff82471e0dfd592ea94f0aec832d60792,Fix block selection corruption,CommitLabel.BugFix,1,0.86
+15a9cf4f66b3bb6d4fbb9fd1ad49580158aadc29,Xcode 5 is a wonderland of typecasting,CommitLabel.BugFix,-1,0.5
+3a530a0c716210cf80bb833e32eb88909171b1b0,Fix bug in compose-schemata / comp-partial for optional args,CommitLabel.BugFix,1,0.97
+4507a9778e9ebe2512cd1e922315b5d52d2fb2b8,Fix graph tests and add tests for new positional compilations,CommitLabel.BugFix,0,0.3
+a6ef5bcba753175c021e9c5e88885895090c7ec6,fixed top level reflection object,CommitLabel.BugFix,1,0.77
+660629cfe839280444409e7a62c52e63004766e0,fixed up the npm stuff.,CommitLabel.BugFix,0,0.08
+0e98c7e8e7d92d64d9aa2214db1d3c48cfb2c398,"Remove unnecssary special case guard handling in lfe_codegen.erl
+
+These special cases are unnecssary as the optimiser fixes it for us
+and they are a rememant of old guard handling.",CommitLabel.BugFix,1,0.9
+7a6ec41d8bc104e8bf2bb2f2950a3a8d567b0447,"1 fix bugs of the limit_req module(please read this issue https://github.com/taobao/tengine/pull/1).
+
+2 add test case for limit_req module.
+
+3 refactor some code and fixed code style.",CommitLabel.BugFix,1,0.97
+4a9267ee77abd1e0938543031628c74d236acf0a,"[photos] Fix bugs in the layout of the photo scroll views.
+
+Due to pushing the scroll view down to a subview I needed to update
+the way we calculate centering the photo. This needed to be done
+when the scrollview's layoutSubviews method was called so I created
+a simple subclass of UIScrollView that handles this. The rest of
+the photo scroll view functionality was able to stay in the root
+of the view.
+
+Also fixed some issues with photo centering. The problem was related
+to when we set the frame of the paging scroll view and the fact that
+it was simply setting the frame of all of the subviews, without giving
+them the opportunity to maintain their existing state.",CommitLabel.BugFix,1,0.97
+260be7807abad2302323213bf0289fbd09525adf,Fixes and cleanups to typeserver and transformer.,CommitLabel.BugFix,1,0.65
+5d4b069c85dc28642f22a01650482f8c1ddcfd06,* src/logos/minikanren.clj: fix the behavior of rest-lvars during reification,CommitLabel.BugFix,1,0.93
+5db1b4d46aa1ad050331e60c7ac731295b053063,bugfix when use chrome and safari.,CommitLabel.BugFix,1,0.77
+1bfe47835fac48b76e96fc920db38fcda5cedffc,more fixes,CommitLabel.BugFix,1,0.77
+0a3798bb3de6625f23b324c6bdc01505f11a35da,Don't import modules twice.,CommitLabel.BugFix,1,0.81
+0a5b47f497789dfb239af0966c90c845fb8f5532,Integrating patch to fix ambiguous match exceptions on multiple IEnumerable implementors,CommitLabel.BugFix,1,0.93
+5804d573ef6e1364e7daee37fc354a07db617a5d,fixed resx declaration file.,CommitLabel.BugFix,1,0.58
+4d526264f2d16db3ca68f52893657096982d979c,Fixed bug where destination collections were not cleared before mapping,CommitLabel.BugFix,1,0.97
+a03b6ee36175620d1f22fd1148fe2086dd0195b3,"Fixed issue with mapping og void methods
+
+Fixed a bug where matching void methods were added to the typemap on
+CreateMap, thus failing with a .NET type coersion exception. Such
+methods should've been filtered out but the ReturnType was checked
+against null instead of typeof(void). Added unit tests to support the
+fix.
+
+closes #214",CommitLabel.BugFix,1,0.97
+a086b9eebc4dbe2b4fb754c76bb268da0debad14,Fixing bug where type map resolution did not attempt to find a map for the underlying member type,CommitLabel.BugFix,1,0.97
+d66806cf5ce4950440f30e03698ab92762cc0220,remove debug print,CommitLabel.BugFix,0,0.47
+05109446550dd8cc35d222ff11201867c701c226,Fixed issue where the profile was not being used correctly,CommitLabel.BugFix,1,0.89
+05de0ed1f06bb11e09783534a712386e60f14400,"v6.47.0. Bugfix. Improvement.
+
+- v6.47.0 July 31, 2013
+	- Added `FileModel::deleteSource`
+	- Added support for specifying inline content within the styles block
+	- Fixed `DocPad::parseFileDirectory`",CommitLabel.BugFix,0,0.27
+32e1cd63c0656e245bcae6b28ed6c013fcaed3cc,fix first selection range of visual mode of 'V',CommitLabel.BugFix,1,0.71
+ed42484be60a6bbae825cc88f9b6fab3d3af88fd,"Unwind variable scoping code in lfe_trans.erl
+
+To do this properly will take more work than I am prepared to do
+for the moment. Also fixed binary handling in from_bitseg.",CommitLabel.BugFix,1,0.79
+00521a7bdd238534f89b55f5e998fd046a68ff14,"Set the painter object before we load OSD windows.
+
+
+git-svn-id: http://svn.mythtv.org/svn/trunk@27023 7dbf422c-18fa-0310-86e9-fd20926502f2",CommitLabel.BugFix,-1,0.5

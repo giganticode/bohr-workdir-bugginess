@@ -1,0 +1,1 @@
+{"match": {"$and": [{"manual_labels.berger": {"$exists": true}}, {"files": {"$exists": true}}, {"files": {"$type": "array"}}, {"bohr.gt_512_codeberta_tokens": false}]}, "projection": null, "lookup": {"from": "issues", "localField": "links.bohr.issues", "foreignField": "_id", "as": "issues"}}
