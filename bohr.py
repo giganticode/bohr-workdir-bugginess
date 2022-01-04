@@ -37,7 +37,7 @@ bohr_200k_large_changes = Dataset(id='bohr_200k_large_changes', top_artifact=Com
 
 bugginess = Task(name='bugginess', author='hlib', description='bug or not', top_artifact=Commit,
                  labels=[CommitLabel.NonBugFix, CommitLabel.BugFix],
-                 training_dataset=commits_200k_files,
+                 training_dataset=commits_200k_files_no_merges,
                  test_datasets={
                                 levin_files: lambda c: (CommitLabel.BugFix if c.raw_data['manual_labels']['levin']['bug'] == 1 else CommitLabel.NonBugFix),
                                 berger_files: lambda c: (CommitLabel.BugFix if c.raw_data['manual_labels']['berger']['bug'] == 1 else CommitLabel.NonBugFix),
@@ -61,6 +61,8 @@ bugginess_herzig = Task(name='bugginess_herzig', author='hlib', description='bug
 
 dataset_debugging = Experiment('dataset_debugging', bugginess,
                                heuristics_classifier=f'bugginess/fine_grained_changes_transformer_90.py:'
+                                                     f'bugginess/buggless_if_one_file_markdown_ext.py:'
+                                                     f'bugginess/buggless_if_doc_extensions.py:'
                                                             f'bugginess/fine_grained_changes_transformer_80.py:'
                                                             f'bugginess/fine_grained_changes_transformer_70.py:'
                                                             f'bugginess/filemetrics:'
@@ -85,5 +87,11 @@ gitcproc_orig = Experiment('gitcproc_orig', bugginess, heuristics_classifier=f'b
 only_message_keyword = Experiment('only_message_keyword', bugginess, heuristics_classifier=f'bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py@dddbe7ba63a14c718d08e7c88b166f90980fec05')
 
 
-w = Workspace('0.5.0rc2', [dataset_debugging, keywords_combined_file_metrics_transformer, gitcproc, gitcproc_orig, only_message_keyword])
+w = Workspace('0.5.0rc2', [
+    dataset_debugging,
+    # keywords_combined_file_metrics_transformer,
+    # gitcproc,
+    # gitcproc_orig,
+    # only_message_keyword
+])
 

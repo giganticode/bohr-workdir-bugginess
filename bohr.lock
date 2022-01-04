@@ -1,11 +1,3 @@
 bohr_runtime_version: 0.5.0rc2
 dataset_debugging:
-  heuristics_classifier: bugginess/filemetrics:bugginess/fine_grained_changes_transformer_70.py:bugginess/fine_grained_changes_transformer_80.py:bugginess/fine_grained_changes_transformer_90.py:bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py
-gitcproc:
-  heuristics_classifier: bugginess/gitcproc
-gitcproc_orig:
-  heuristics_classifier: bugginess/gitcproc/keywords.py
-keywords_combined_file_metrics_transformer:
-  heuristics_classifier: bugginess/filemetrics:bugginess/fine_grained_changes_transformer_70.py:bugginess/fine_grained_changes_transformer_80.py:bugginess/fine_grained_changes_transformer_90.py:bugginess/keywords_combined
-only_message_keyword:
-  heuristics_classifier: bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py
+  heuristics_classifier: bugginess/buggless_if_doc_extensions.py:bugginess/buggless_if_one_file_markdown_ext.py:bugginess/filemetrics:bugginess/fine_grained_changes_transformer_70.py:bugginess/fine_grained_changes_transformer_80.py:bugginess/fine_grained_changes_transformer_90.py:bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py
