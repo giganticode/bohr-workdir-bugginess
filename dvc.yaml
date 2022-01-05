@@ -2072,6 +2072,214 @@ stages:
         dataset: mauczka_files
         exp: dataset_debugging
         task: bugginess
+      gitcproc__berger_files:
+        dataset: berger_files
+        exp: gitcproc
+        task: bugginess
+      gitcproc__berger_large_changes:
+        dataset: berger_large_changes
+        exp: gitcproc
+        task: bugginess
+      gitcproc__berger_small_changes:
+        dataset: berger_small_changes
+        exp: gitcproc
+        task: bugginess
+      gitcproc__bohr.herzig_eval:
+        dataset: bohr.herzig_eval
+        exp: gitcproc
+        task: bugginess
+      gitcproc__bohr.herzig_train:
+        dataset: bohr.herzig_train
+        exp: gitcproc
+        task: bugginess
+      gitcproc__bohr_200k_large_changes:
+        dataset: bohr_200k_large_changes
+        exp: gitcproc
+        task: bugginess
+      gitcproc__bohr_200k_small_changes:
+        dataset: bohr_200k_small_changes
+        exp: gitcproc
+        task: bugginess
+      gitcproc__commits_200k_files_no_merges:
+        dataset: commits_200k_files_no_merges
+        exp: gitcproc
+        task: bugginess
+      gitcproc__levin_files:
+        dataset: levin_files
+        exp: gitcproc
+        task: bugginess
+      gitcproc__levin_large_changes:
+        dataset: levin_large_changes
+        exp: gitcproc
+        task: bugginess
+      gitcproc__levin_small_changes:
+        dataset: levin_small_changes
+        exp: gitcproc
+        task: bugginess
+      gitcproc__manual_labels.herzig:
+        dataset: manual_labels.herzig
+        exp: gitcproc
+        task: bugginess
+      gitcproc__mauczka_files:
+        dataset: mauczka_files
+        exp: gitcproc
+        task: bugginess
+      gitcproc_orig__berger_files:
+        dataset: berger_files
+        exp: gitcproc_orig
+        task: bugginess
+      gitcproc_orig__berger_large_changes:
+        dataset: berger_large_changes
+        exp: gitcproc_orig
+        task: bugginess
+      gitcproc_orig__berger_small_changes:
+        dataset: berger_small_changes
+        exp: gitcproc_orig
+        task: bugginess
+      gitcproc_orig__bohr.herzig_eval:
+        dataset: bohr.herzig_eval
+        exp: gitcproc_orig
+        task: bugginess
+      gitcproc_orig__bohr.herzig_train:
+        dataset: bohr.herzig_train
+        exp: gitcproc_orig
+        task: bugginess
+      gitcproc_orig__bohr_200k_large_changes:
+        dataset: bohr_200k_large_changes
+        exp: gitcproc_orig
+        task: bugginess
+      gitcproc_orig__bohr_200k_small_changes:
+        dataset: bohr_200k_small_changes
+        exp: gitcproc_orig
+        task: bugginess
+      gitcproc_orig__commits_200k_files_no_merges:
+        dataset: commits_200k_files_no_merges
+        exp: gitcproc_orig
+        task: bugginess
+      gitcproc_orig__levin_files:
+        dataset: levin_files
+        exp: gitcproc_orig
+        task: bugginess
+      gitcproc_orig__levin_large_changes:
+        dataset: levin_large_changes
+        exp: gitcproc_orig
+        task: bugginess
+      gitcproc_orig__levin_small_changes:
+        dataset: levin_small_changes
+        exp: gitcproc_orig
+        task: bugginess
+      gitcproc_orig__manual_labels.herzig:
+        dataset: manual_labels.herzig
+        exp: gitcproc_orig
+        task: bugginess
+      gitcproc_orig__mauczka_files:
+        dataset: mauczka_files
+        exp: gitcproc_orig
+        task: bugginess
+      only_keywords__berger_files:
+        dataset: berger_files
+        exp: only_keywords
+        task: bugginess
+      only_keywords__berger_large_changes:
+        dataset: berger_large_changes
+        exp: only_keywords
+        task: bugginess
+      only_keywords__berger_small_changes:
+        dataset: berger_small_changes
+        exp: only_keywords
+        task: bugginess
+      only_keywords__bohr.herzig_eval:
+        dataset: bohr.herzig_eval
+        exp: only_keywords
+        task: bugginess
+      only_keywords__bohr.herzig_train:
+        dataset: bohr.herzig_train
+        exp: only_keywords
+        task: bugginess
+      only_keywords__bohr_200k_large_changes:
+        dataset: bohr_200k_large_changes
+        exp: only_keywords
+        task: bugginess
+      only_keywords__bohr_200k_small_changes:
+        dataset: bohr_200k_small_changes
+        exp: only_keywords
+        task: bugginess
+      only_keywords__commits_200k_files_no_merges:
+        dataset: commits_200k_files_no_merges
+        exp: only_keywords
+        task: bugginess
+      only_keywords__levin_files:
+        dataset: levin_files
+        exp: only_keywords
+        task: bugginess
+      only_keywords__levin_large_changes:
+        dataset: levin_large_changes
+        exp: only_keywords
+        task: bugginess
+      only_keywords__levin_small_changes:
+        dataset: levin_small_changes
+        exp: only_keywords
+        task: bugginess
+      only_keywords__manual_labels.herzig:
+        dataset: manual_labels.herzig
+        exp: only_keywords
+        task: bugginess
+      only_keywords__mauczka_files:
+        dataset: mauczka_files
+        exp: only_keywords
+        task: bugginess
+      only_message_keywords__berger_files:
+        dataset: berger_files
+        exp: only_message_keywords
+        task: bugginess
+      only_message_keywords__berger_large_changes:
+        dataset: berger_large_changes
+        exp: only_message_keywords
+        task: bugginess
+      only_message_keywords__berger_small_changes:
+        dataset: berger_small_changes
+        exp: only_message_keywords
+        task: bugginess
+      only_message_keywords__bohr.herzig_eval:
+        dataset: bohr.herzig_eval
+        exp: only_message_keywords
+        task: bugginess
+      only_message_keywords__bohr.herzig_train:
+        dataset: bohr.herzig_train
+        exp: only_message_keywords
+        task: bugginess
+      only_message_keywords__bohr_200k_large_changes:
+        dataset: bohr_200k_large_changes
+        exp: only_message_keywords
+        task: bugginess
+      only_message_keywords__bohr_200k_small_changes:
+        dataset: bohr_200k_small_changes
+        exp: only_message_keywords
+        task: bugginess
+      only_message_keywords__commits_200k_files_no_merges:
+        dataset: commits_200k_files_no_merges
+        exp: only_message_keywords
+        task: bugginess
+      only_message_keywords__levin_files:
+        dataset: levin_files
+        exp: only_message_keywords
+        task: bugginess
+      only_message_keywords__levin_large_changes:
+        dataset: levin_large_changes
+        exp: only_message_keywords
+        task: bugginess
+      only_message_keywords__levin_small_changes:
+        dataset: levin_small_changes
+        exp: only_message_keywords
+        task: bugginess
+      only_message_keywords__manual_labels.herzig:
+        dataset: manual_labels.herzig
+        exp: only_message_keywords
+        task: bugginess
+      only_message_keywords__mauczka_files:
+        dataset: mauczka_files
+        exp: only_message_keywords
+        task: bugginess
   LabelDataset:
     do:
       cmd: bohr porcelain label-dataset "${item.exp}" "${item.dataset}"
@@ -2137,6 +2345,214 @@ stages:
         dataset: mauczka_files
         exp: dataset_debugging
         task: bugginess
+      gitcproc__berger_files:
+        dataset: berger_files
+        exp: gitcproc
+        task: bugginess
+      gitcproc__berger_large_changes:
+        dataset: berger_large_changes
+        exp: gitcproc
+        task: bugginess
+      gitcproc__berger_small_changes:
+        dataset: berger_small_changes
+        exp: gitcproc
+        task: bugginess
+      gitcproc__bohr.herzig_eval:
+        dataset: bohr.herzig_eval
+        exp: gitcproc
+        task: bugginess
+      gitcproc__bohr.herzig_train:
+        dataset: bohr.herzig_train
+        exp: gitcproc
+        task: bugginess
+      gitcproc__bohr_200k_large_changes:
+        dataset: bohr_200k_large_changes
+        exp: gitcproc
+        task: bugginess
+      gitcproc__bohr_200k_small_changes:
+        dataset: bohr_200k_small_changes
+        exp: gitcproc
+        task: bugginess
+      gitcproc__commits_200k_files_no_merges:
+        dataset: commits_200k_files_no_merges
+        exp: gitcproc
+        task: bugginess
+      gitcproc__levin_files:
+        dataset: levin_files
+        exp: gitcproc
+        task: bugginess
+      gitcproc__levin_large_changes:
+        dataset: levin_large_changes
+        exp: gitcproc
+        task: bugginess
+      gitcproc__levin_small_changes:
+        dataset: levin_small_changes
+        exp: gitcproc
+        task: bugginess
+      gitcproc__manual_labels.herzig:
+        dataset: manual_labels.herzig
+        exp: gitcproc
+        task: bugginess
+      gitcproc__mauczka_files:
+        dataset: mauczka_files
+        exp: gitcproc
+        task: bugginess
+      gitcproc_orig__berger_files:
+        dataset: berger_files
+        exp: gitcproc_orig
+        task: bugginess
+      gitcproc_orig__berger_large_changes:
+        dataset: berger_large_changes
+        exp: gitcproc_orig
+        task: bugginess
+      gitcproc_orig__berger_small_changes:
+        dataset: berger_small_changes
+        exp: gitcproc_orig
+        task: bugginess
+      gitcproc_orig__bohr.herzig_eval:
+        dataset: bohr.herzig_eval
+        exp: gitcproc_orig
+        task: bugginess
+      gitcproc_orig__bohr.herzig_train:
+        dataset: bohr.herzig_train
+        exp: gitcproc_orig
+        task: bugginess
+      gitcproc_orig__bohr_200k_large_changes:
+        dataset: bohr_200k_large_changes
+        exp: gitcproc_orig
+        task: bugginess
+      gitcproc_orig__bohr_200k_small_changes:
+        dataset: bohr_200k_small_changes
+        exp: gitcproc_orig
+        task: bugginess
+      gitcproc_orig__commits_200k_files_no_merges:
+        dataset: commits_200k_files_no_merges
+        exp: gitcproc_orig
+        task: bugginess
+      gitcproc_orig__levin_files:
+        dataset: levin_files
+        exp: gitcproc_orig
+        task: bugginess
+      gitcproc_orig__levin_large_changes:
+        dataset: levin_large_changes
+        exp: gitcproc_orig
+        task: bugginess
+      gitcproc_orig__levin_small_changes:
+        dataset: levin_small_changes
+        exp: gitcproc_orig
+        task: bugginess
+      gitcproc_orig__manual_labels.herzig:
+        dataset: manual_labels.herzig
+        exp: gitcproc_orig
+        task: bugginess
+      gitcproc_orig__mauczka_files:
+        dataset: mauczka_files
+        exp: gitcproc_orig
+        task: bugginess
+      only_keywords__berger_files:
+        dataset: berger_files
+        exp: only_keywords
+        task: bugginess
+      only_keywords__berger_large_changes:
+        dataset: berger_large_changes
+        exp: only_keywords
+        task: bugginess
+      only_keywords__berger_small_changes:
+        dataset: berger_small_changes
+        exp: only_keywords
+        task: bugginess
+      only_keywords__bohr.herzig_eval:
+        dataset: bohr.herzig_eval
+        exp: only_keywords
+        task: bugginess
+      only_keywords__bohr.herzig_train:
+        dataset: bohr.herzig_train
+        exp: only_keywords
+        task: bugginess
+      only_keywords__bohr_200k_large_changes:
+        dataset: bohr_200k_large_changes
+        exp: only_keywords
+        task: bugginess
+      only_keywords__bohr_200k_small_changes:
+        dataset: bohr_200k_small_changes
+        exp: only_keywords
+        task: bugginess
+      only_keywords__commits_200k_files_no_merges:
+        dataset: commits_200k_files_no_merges
+        exp: only_keywords
+        task: bugginess
+      only_keywords__levin_files:
+        dataset: levin_files
+        exp: only_keywords
+        task: bugginess
+      only_keywords__levin_large_changes:
+        dataset: levin_large_changes
+        exp: only_keywords
+        task: bugginess
+      only_keywords__levin_small_changes:
+        dataset: levin_small_changes
+        exp: only_keywords
+        task: bugginess
+      only_keywords__manual_labels.herzig:
+        dataset: manual_labels.herzig
+        exp: only_keywords
+        task: bugginess
+      only_keywords__mauczka_files:
+        dataset: mauczka_files
+        exp: only_keywords
+        task: bugginess
+      only_message_keywords__berger_files:
+        dataset: berger_files
+        exp: only_message_keywords
+        task: bugginess
+      only_message_keywords__berger_large_changes:
+        dataset: berger_large_changes
+        exp: only_message_keywords
+        task: bugginess
+      only_message_keywords__berger_small_changes:
+        dataset: berger_small_changes
+        exp: only_message_keywords
+        task: bugginess
+      only_message_keywords__bohr.herzig_eval:
+        dataset: bohr.herzig_eval
+        exp: only_message_keywords
+        task: bugginess
+      only_message_keywords__bohr.herzig_train:
+        dataset: bohr.herzig_train
+        exp: only_message_keywords
+        task: bugginess
+      only_message_keywords__bohr_200k_large_changes:
+        dataset: bohr_200k_large_changes
+        exp: only_message_keywords
+        task: bugginess
+      only_message_keywords__bohr_200k_small_changes:
+        dataset: bohr_200k_small_changes
+        exp: only_message_keywords
+        task: bugginess
+      only_message_keywords__commits_200k_files_no_merges:
+        dataset: commits_200k_files_no_merges
+        exp: only_message_keywords
+        task: bugginess
+      only_message_keywords__levin_files:
+        dataset: levin_files
+        exp: only_message_keywords
+        task: bugginess
+      only_message_keywords__levin_large_changes:
+        dataset: levin_large_changes
+        exp: only_message_keywords
+        task: bugginess
+      only_message_keywords__levin_small_changes:
+        dataset: levin_small_changes
+        exp: only_message_keywords
+        task: bugginess
+      only_message_keywords__manual_labels.herzig:
+        dataset: manual_labels.herzig
+        exp: only_message_keywords
+        task: bugginess
+      only_message_keywords__mauczka_files:
+        dataset: mauczka_files
+        exp: only_message_keywords
+        task: bugginess
   LoadDatasets:
     do:
       cmd: bohr porcelain load-dataset "${item}"
@@ -2150,19 +2566,19 @@ stages:
       - bohr.lock:
         - bohr_runtime_version
     foreach:
-    - bohr_200k_large_changes
     - levin_small_changes
+    - bohr_200k_small_changes
+    - berger_files
+    - mauczka_files
+    - bohr_200k_large_changes
+    - levin_files
+    - manual_labels.herzig
+    - commits_200k_files_no_merges
+    - bohr.herzig_train
+    - berger_small_changes
+    - berger_large_changes
     - bohr.herzig_eval
     - levin_large_changes
-    - mauczka_files
-    - commits_200k_files_no_merges
-    - levin_files
-    - bohr_200k_small_changes
-    - berger_small_changes
-    - bohr.herzig_train
-    - berger_large_changes
-    - berger_files
-    - manual_labels.herzig
   TrainLabelModel@dataset_debugging:
     do:
       cmd: bohr porcelain train-label-model dataset_debugging
@@ -2186,6 +2602,118 @@ stages:
       outs:
       - runs/bugginess/dataset_debugging/label_model.pkl
       - runs/bugginess/dataset_debugging/label_model_weights.csv
+      params:
+      - bohr.lock:
+        - bohr_runtime_version
+    foreach:
+    - 0
+  TrainLabelModel@gitcproc:
+    do:
+      cmd: bohr porcelain train-label-model gitcproc
+      deps:
+      - runs/bugginess/gitcproc/commits_200k_files_no_merges/heuristic_matrix.pkl
+      - runs/bugginess/gitcproc/levin_files/heuristic_matrix.pkl
+      - runs/bugginess/gitcproc/berger_files/heuristic_matrix.pkl
+      - runs/bugginess/gitcproc/manual_labels.herzig/heuristic_matrix.pkl
+      - runs/bugginess/gitcproc/bohr.herzig_eval/heuristic_matrix.pkl
+      - runs/bugginess/gitcproc/bohr.herzig_train/heuristic_matrix.pkl
+      - runs/bugginess/gitcproc/bohr_200k_small_changes/heuristic_matrix.pkl
+      - runs/bugginess/gitcproc/bohr_200k_large_changes/heuristic_matrix.pkl
+      - runs/bugginess/gitcproc/levin_small_changes/heuristic_matrix.pkl
+      - runs/bugginess/gitcproc/levin_large_changes/heuristic_matrix.pkl
+      - runs/bugginess/gitcproc/berger_small_changes/heuristic_matrix.pkl
+      - runs/bugginess/gitcproc/berger_large_changes/heuristic_matrix.pkl
+      - runs/bugginess/gitcproc/mauczka_files/heuristic_matrix.pkl
+      metrics:
+      - runs/bugginess/gitcproc/label_model_metrics.json:
+          cache: false
+      outs:
+      - runs/bugginess/gitcproc/label_model.pkl
+      - runs/bugginess/gitcproc/label_model_weights.csv
+      params:
+      - bohr.lock:
+        - bohr_runtime_version
+    foreach:
+    - 0
+  TrainLabelModel@gitcproc_orig:
+    do:
+      cmd: bohr porcelain train-label-model gitcproc_orig
+      deps:
+      - runs/bugginess/gitcproc_orig/commits_200k_files_no_merges/heuristic_matrix.pkl
+      - runs/bugginess/gitcproc_orig/levin_files/heuristic_matrix.pkl
+      - runs/bugginess/gitcproc_orig/berger_files/heuristic_matrix.pkl
+      - runs/bugginess/gitcproc_orig/manual_labels.herzig/heuristic_matrix.pkl
+      - runs/bugginess/gitcproc_orig/bohr.herzig_eval/heuristic_matrix.pkl
+      - runs/bugginess/gitcproc_orig/bohr.herzig_train/heuristic_matrix.pkl
+      - runs/bugginess/gitcproc_orig/bohr_200k_small_changes/heuristic_matrix.pkl
+      - runs/bugginess/gitcproc_orig/bohr_200k_large_changes/heuristic_matrix.pkl
+      - runs/bugginess/gitcproc_orig/levin_small_changes/heuristic_matrix.pkl
+      - runs/bugginess/gitcproc_orig/levin_large_changes/heuristic_matrix.pkl
+      - runs/bugginess/gitcproc_orig/berger_small_changes/heuristic_matrix.pkl
+      - runs/bugginess/gitcproc_orig/berger_large_changes/heuristic_matrix.pkl
+      - runs/bugginess/gitcproc_orig/mauczka_files/heuristic_matrix.pkl
+      metrics:
+      - runs/bugginess/gitcproc_orig/label_model_metrics.json:
+          cache: false
+      outs:
+      - runs/bugginess/gitcproc_orig/label_model.pkl
+      - runs/bugginess/gitcproc_orig/label_model_weights.csv
+      params:
+      - bohr.lock:
+        - bohr_runtime_version
+    foreach:
+    - 0
+  TrainLabelModel@only_keywords:
+    do:
+      cmd: bohr porcelain train-label-model only_keywords
+      deps:
+      - runs/bugginess/only_keywords/commits_200k_files_no_merges/heuristic_matrix.pkl
+      - runs/bugginess/only_keywords/levin_files/heuristic_matrix.pkl
+      - runs/bugginess/only_keywords/berger_files/heuristic_matrix.pkl
+      - runs/bugginess/only_keywords/manual_labels.herzig/heuristic_matrix.pkl
+      - runs/bugginess/only_keywords/bohr.herzig_eval/heuristic_matrix.pkl
+      - runs/bugginess/only_keywords/bohr.herzig_train/heuristic_matrix.pkl
+      - runs/bugginess/only_keywords/bohr_200k_small_changes/heuristic_matrix.pkl
+      - runs/bugginess/only_keywords/bohr_200k_large_changes/heuristic_matrix.pkl
+      - runs/bugginess/only_keywords/levin_small_changes/heuristic_matrix.pkl
+      - runs/bugginess/only_keywords/levin_large_changes/heuristic_matrix.pkl
+      - runs/bugginess/only_keywords/berger_small_changes/heuristic_matrix.pkl
+      - runs/bugginess/only_keywords/berger_large_changes/heuristic_matrix.pkl
+      - runs/bugginess/only_keywords/mauczka_files/heuristic_matrix.pkl
+      metrics:
+      - runs/bugginess/only_keywords/label_model_metrics.json:
+          cache: false
+      outs:
+      - runs/bugginess/only_keywords/label_model.pkl
+      - runs/bugginess/only_keywords/label_model_weights.csv
+      params:
+      - bohr.lock:
+        - bohr_runtime_version
+    foreach:
+    - 0
+  TrainLabelModel@only_message_keywords:
+    do:
+      cmd: bohr porcelain train-label-model only_message_keywords
+      deps:
+      - runs/bugginess/only_message_keywords/commits_200k_files_no_merges/heuristic_matrix.pkl
+      - runs/bugginess/only_message_keywords/levin_files/heuristic_matrix.pkl
+      - runs/bugginess/only_message_keywords/berger_files/heuristic_matrix.pkl
+      - runs/bugginess/only_message_keywords/manual_labels.herzig/heuristic_matrix.pkl
+      - runs/bugginess/only_message_keywords/bohr.herzig_eval/heuristic_matrix.pkl
+      - runs/bugginess/only_message_keywords/bohr.herzig_train/heuristic_matrix.pkl
+      - runs/bugginess/only_message_keywords/bohr_200k_small_changes/heuristic_matrix.pkl
+      - runs/bugginess/only_message_keywords/bohr_200k_large_changes/heuristic_matrix.pkl
+      - runs/bugginess/only_message_keywords/levin_small_changes/heuristic_matrix.pkl
+      - runs/bugginess/only_message_keywords/levin_large_changes/heuristic_matrix.pkl
+      - runs/bugginess/only_message_keywords/berger_small_changes/heuristic_matrix.pkl
+      - runs/bugginess/only_message_keywords/berger_large_changes/heuristic_matrix.pkl
+      - runs/bugginess/only_message_keywords/mauczka_files/heuristic_matrix.pkl
+      metrics:
+      - runs/bugginess/only_message_keywords/label_model_metrics.json:
+          cache: false
+      outs:
+      - runs/bugginess/only_message_keywords/label_model.pkl
+      - runs/bugginess/only_message_keywords/label_model_weights.csv
       params:
       - bohr.lock:
         - bohr_runtime_version

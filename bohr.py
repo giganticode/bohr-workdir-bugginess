@@ -84,14 +84,21 @@ gitcproc = Experiment('gitcproc', bugginess, heuristics_classifier=f'bugginess/g
 
 gitcproc_orig = Experiment('gitcproc_orig', bugginess, heuristics_classifier=f'bugginess/gitcproc/keywords.py@dddbe7ba63a14c718d08e7c88b166f90980fec05')
 
-only_message_keyword = Experiment('only_message_keyword', bugginess, heuristics_classifier=f'bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py@dddbe7ba63a14c718d08e7c88b166f90980fec05')
+only_message_keywords = Experiment('only_message_keywords', bugginess, heuristics_classifier=f'bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py@dddbe7ba63a14c718d08e7c88b166f90980fec05')
+only_keywords = Experiment('only_keywords', bugginess, heuristics_classifier=f'bugginess/keywords/bug_keywords_lookup_in_message.py:'
+                                                                             f'bugginess/keywords/bugless_keywords_lookup_in_issue_body.py:'
+                                                                             f'bugginess/keywords/bugless_keywords_lookup_in_issue_label.py:'
+                                                                             f'bugginess/keywords/bug_keywords_lookup_in_issue_body.py:'
+                                                                             f'bugginess/keywords/bug_keywords_lookup_in_issue_label.py:'
+                                                                             f'bugginess/keywords/buggless_keywords_lookup_in_message.py@dddbe7ba63a14c718d08e7c88b166f90980fec05')
 
 
 w = Workspace('0.5.0rc2', [
     dataset_debugging,
     # keywords_combined_file_metrics_transformer,
-    # gitcproc,
-    # gitcproc_orig,
-    # only_message_keyword
+    gitcproc,
+    gitcproc_orig,
+    only_message_keywords,
+    only_keywords,
 ])
 

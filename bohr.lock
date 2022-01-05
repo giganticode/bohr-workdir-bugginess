@@ -1,3 +1,11 @@
 bohr_runtime_version: 0.5.0rc2
 dataset_debugging:
   heuristics_classifier: bugginess/buggless_if_doc_extensions.py:bugginess/buggless_if_one_file_markdown_ext.py:bugginess/filemetrics:bugginess/fine_grained_changes_transformer_70.py:bugginess/fine_grained_changes_transformer_80.py:bugginess/fine_grained_changes_transformer_90.py:bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py
+gitcproc:
+  heuristics_classifier: bugginess/gitcproc
+gitcproc_orig:
+  heuristics_classifier: bugginess/gitcproc/keywords.py
+only_keywords:
+  heuristics_classifier: bugginess/keywords/bug_keywords_lookup_in_issue_body.py:bugginess/keywords/bug_keywords_lookup_in_issue_label.py:bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py:bugginess/keywords/bugless_keywords_lookup_in_issue_body.py:bugginess/keywords/bugless_keywords_lookup_in_issue_label.py
+only_message_keywords:
+  heuristics_classifier: bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py
