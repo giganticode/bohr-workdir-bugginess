@@ -2566,19 +2566,19 @@ stages:
       - bohr.lock:
         - bohr_runtime_version
     foreach:
-    - levin_small_changes
-    - bohr_200k_small_changes
-    - berger_files
-    - mauczka_files
-    - bohr_200k_large_changes
-    - levin_files
-    - manual_labels.herzig
     - commits_200k_files_no_merges
+    - levin_files
+    - levin_small_changes
+    - manual_labels.herzig
+    - bohr_200k_small_changes
     - bohr.herzig_train
-    - berger_small_changes
     - berger_large_changes
     - bohr.herzig_eval
     - levin_large_changes
+    - mauczka_files
+    - berger_small_changes
+    - berger_files
+    - bohr_200k_large_changes
   TrainLabelModel@dataset_debugging:
     do:
       cmd: bohr porcelain train-label-model dataset_debugging
