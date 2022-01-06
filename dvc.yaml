@@ -2173,6 +2173,118 @@ stages:
       - bohr.lock:
         - bohr_runtime_version
     foreach:
+      all_heuristics_with_issues__berger_files:
+        dataset: berger_files
+        exp: all_heuristics_with_issues
+        task: bugginess
+      all_heuristics_with_issues__berger_large_changes:
+        dataset: berger_large_changes
+        exp: all_heuristics_with_issues
+        task: bugginess
+      all_heuristics_with_issues__berger_small_changes:
+        dataset: berger_small_changes
+        exp: all_heuristics_with_issues
+        task: bugginess
+      all_heuristics_with_issues__bohr.herzig_eval:
+        dataset: bohr.herzig_eval
+        exp: all_heuristics_with_issues
+        task: bugginess
+      all_heuristics_with_issues__bohr.herzig_train:
+        dataset: bohr.herzig_train
+        exp: all_heuristics_with_issues
+        task: bugginess
+      all_heuristics_with_issues__bohr_200k_large_changes:
+        dataset: bohr_200k_large_changes
+        exp: all_heuristics_with_issues
+        task: bugginess
+      all_heuristics_with_issues__bohr_200k_small_changes:
+        dataset: bohr_200k_small_changes
+        exp: all_heuristics_with_issues
+        task: bugginess
+      all_heuristics_with_issues__commits_200k_files:
+        dataset: commits_200k_files
+        exp: all_heuristics_with_issues
+        task: bugginess
+      all_heuristics_with_issues__commits_200k_files_no_merges:
+        dataset: commits_200k_files_no_merges
+        exp: all_heuristics_with_issues
+        task: bugginess
+      all_heuristics_with_issues__levin_files:
+        dataset: levin_files
+        exp: all_heuristics_with_issues
+        task: bugginess
+      all_heuristics_with_issues__levin_large_changes:
+        dataset: levin_large_changes
+        exp: all_heuristics_with_issues
+        task: bugginess
+      all_heuristics_with_issues__levin_small_changes:
+        dataset: levin_small_changes
+        exp: all_heuristics_with_issues
+        task: bugginess
+      all_heuristics_with_issues__manual_labels.herzig:
+        dataset: manual_labels.herzig
+        exp: all_heuristics_with_issues
+        task: bugginess
+      all_heuristics_with_issues__mauczka_files:
+        dataset: mauczka_files
+        exp: all_heuristics_with_issues
+        task: bugginess
+      all_heuristics_without_issues__berger_files:
+        dataset: berger_files
+        exp: all_heuristics_without_issues
+        task: bugginess
+      all_heuristics_without_issues__berger_large_changes:
+        dataset: berger_large_changes
+        exp: all_heuristics_without_issues
+        task: bugginess
+      all_heuristics_without_issues__berger_small_changes:
+        dataset: berger_small_changes
+        exp: all_heuristics_without_issues
+        task: bugginess
+      all_heuristics_without_issues__bohr.herzig_eval:
+        dataset: bohr.herzig_eval
+        exp: all_heuristics_without_issues
+        task: bugginess
+      all_heuristics_without_issues__bohr.herzig_train:
+        dataset: bohr.herzig_train
+        exp: all_heuristics_without_issues
+        task: bugginess
+      all_heuristics_without_issues__bohr_200k_large_changes:
+        dataset: bohr_200k_large_changes
+        exp: all_heuristics_without_issues
+        task: bugginess
+      all_heuristics_without_issues__bohr_200k_small_changes:
+        dataset: bohr_200k_small_changes
+        exp: all_heuristics_without_issues
+        task: bugginess
+      all_heuristics_without_issues__commits_200k_files:
+        dataset: commits_200k_files
+        exp: all_heuristics_without_issues
+        task: bugginess
+      all_heuristics_without_issues__commits_200k_files_no_merges:
+        dataset: commits_200k_files_no_merges
+        exp: all_heuristics_without_issues
+        task: bugginess
+      all_heuristics_without_issues__levin_files:
+        dataset: levin_files
+        exp: all_heuristics_without_issues
+        task: bugginess
+      all_heuristics_without_issues__levin_large_changes:
+        dataset: levin_large_changes
+        exp: all_heuristics_without_issues
+        task: bugginess
+      all_heuristics_without_issues__levin_small_changes:
+        dataset: levin_small_changes
+        exp: all_heuristics_without_issues
+        task: bugginess
+      all_heuristics_without_issues__manual_labels.herzig:
+        dataset: manual_labels.herzig
+        exp: all_heuristics_without_issues
+        task: bugginess
+      all_heuristics_without_issues__mauczka_files:
+        dataset: mauczka_files
+        exp: all_heuristics_without_issues
+        task: bugginess
       dataset_debugging__berger_files:
         dataset: berger_files
         exp: dataset_debugging
@@ -2466,6 +2578,118 @@ stages:
       - bohr.lock:
         - bohr_runtime_version
     foreach:
+      all_heuristics_with_issues__berger_files:
+        dataset: berger_files
+        exp: all_heuristics_with_issues
+        task: bugginess
+      all_heuristics_with_issues__berger_large_changes:
+        dataset: berger_large_changes
+        exp: all_heuristics_with_issues
+        task: bugginess
+      all_heuristics_with_issues__berger_small_changes:
+        dataset: berger_small_changes
+        exp: all_heuristics_with_issues
+        task: bugginess
+      all_heuristics_with_issues__bohr.herzig_eval:
+        dataset: bohr.herzig_eval
+        exp: all_heuristics_with_issues
+        task: bugginess
+      all_heuristics_with_issues__bohr.herzig_train:
+        dataset: bohr.herzig_train
+        exp: all_heuristics_with_issues
+        task: bugginess
+      all_heuristics_with_issues__bohr_200k_large_changes:
+        dataset: bohr_200k_large_changes
+        exp: all_heuristics_with_issues
+        task: bugginess
+      all_heuristics_with_issues__bohr_200k_small_changes:
+        dataset: bohr_200k_small_changes
+        exp: all_heuristics_with_issues
+        task: bugginess
+      all_heuristics_with_issues__commits_200k_files:
+        dataset: commits_200k_files
+        exp: all_heuristics_with_issues
+        task: bugginess
+      all_heuristics_with_issues__commits_200k_files_no_merges:
+        dataset: commits_200k_files_no_merges
+        exp: all_heuristics_with_issues
+        task: bugginess
+      all_heuristics_with_issues__levin_files:
+        dataset: levin_files
+        exp: all_heuristics_with_issues
+        task: bugginess
+      all_heuristics_with_issues__levin_large_changes:
+        dataset: levin_large_changes
+        exp: all_heuristics_with_issues
+        task: bugginess
+      all_heuristics_with_issues__levin_small_changes:
+        dataset: levin_small_changes
+        exp: all_heuristics_with_issues
+        task: bugginess
+      all_heuristics_with_issues__manual_labels.herzig:
+        dataset: manual_labels.herzig
+        exp: all_heuristics_with_issues
+        task: bugginess
+      all_heuristics_with_issues__mauczka_files:
+        dataset: mauczka_files
+        exp: all_heuristics_with_issues
+        task: bugginess
+      all_heuristics_without_issues__berger_files:
+        dataset: berger_files
+        exp: all_heuristics_without_issues
+        task: bugginess
+      all_heuristics_without_issues__berger_large_changes:
+        dataset: berger_large_changes
+        exp: all_heuristics_without_issues
+        task: bugginess
+      all_heuristics_without_issues__berger_small_changes:
+        dataset: berger_small_changes
+        exp: all_heuristics_without_issues
+        task: bugginess
+      all_heuristics_without_issues__bohr.herzig_eval:
+        dataset: bohr.herzig_eval
+        exp: all_heuristics_without_issues
+        task: bugginess
+      all_heuristics_without_issues__bohr.herzig_train:
+        dataset: bohr.herzig_train
+        exp: all_heuristics_without_issues
+        task: bugginess
+      all_heuristics_without_issues__bohr_200k_large_changes:
+        dataset: bohr_200k_large_changes
+        exp: all_heuristics_without_issues
+        task: bugginess
+      all_heuristics_without_issues__bohr_200k_small_changes:
+        dataset: bohr_200k_small_changes
+        exp: all_heuristics_without_issues
+        task: bugginess
+      all_heuristics_without_issues__commits_200k_files:
+        dataset: commits_200k_files
+        exp: all_heuristics_without_issues
+        task: bugginess
+      all_heuristics_without_issues__commits_200k_files_no_merges:
+        dataset: commits_200k_files_no_merges
+        exp: all_heuristics_without_issues
+        task: bugginess
+      all_heuristics_without_issues__levin_files:
+        dataset: levin_files
+        exp: all_heuristics_without_issues
+        task: bugginess
+      all_heuristics_without_issues__levin_large_changes:
+        dataset: levin_large_changes
+        exp: all_heuristics_without_issues
+        task: bugginess
+      all_heuristics_without_issues__levin_small_changes:
+        dataset: levin_small_changes
+        exp: all_heuristics_without_issues
+        task: bugginess
+      all_heuristics_without_issues__manual_labels.herzig:
+        dataset: manual_labels.herzig
+        exp: all_heuristics_without_issues
+        task: bugginess
+      all_heuristics_without_issues__mauczka_files:
+        dataset: mauczka_files
+        exp: all_heuristics_without_issues
+        task: bugginess
       dataset_debugging__berger_files:
         dataset: berger_files
         exp: dataset_debugging
@@ -2759,20 +2983,78 @@ stages:
       - bohr.lock:
         - bohr_runtime_version
     foreach:
-    - commits_200k_files_no_merges
     - levin_small_changes
-    - bohr.herzig_eval
-    - levin_files
+    - bohr.herzig_train
+    - bohr_200k_small_changes
+    - berger_small_changes
     - mauczka_files
     - berger_large_changes
-    - commits_200k_files
-    - bohr_200k_large_changes
-    - berger_small_changes
-    - bohr_200k_small_changes
     - berger_files
-    - bohr.herzig_train
+    - bohr_200k_large_changes
+    - bohr.herzig_eval
     - manual_labels.herzig
+    - commits_200k_files_no_merges
     - levin_large_changes
+    - levin_files
+    - commits_200k_files
+  TrainLabelModel@all_heuristics_with_issues:
+    do:
+      cmd: bohr porcelain train-label-model all_heuristics_with_issues
+      deps:
+      - runs/bugginess/all_heuristics_with_issues/commits_200k_files_no_merges/heuristic_matrix.pkl
+      - runs/bugginess/all_heuristics_with_issues/commits_200k_files/heuristic_matrix.pkl
+      - runs/bugginess/all_heuristics_with_issues/levin_files/heuristic_matrix.pkl
+      - runs/bugginess/all_heuristics_with_issues/berger_files/heuristic_matrix.pkl
+      - runs/bugginess/all_heuristics_with_issues/manual_labels.herzig/heuristic_matrix.pkl
+      - runs/bugginess/all_heuristics_with_issues/bohr.herzig_eval/heuristic_matrix.pkl
+      - runs/bugginess/all_heuristics_with_issues/bohr.herzig_train/heuristic_matrix.pkl
+      - runs/bugginess/all_heuristics_with_issues/bohr_200k_small_changes/heuristic_matrix.pkl
+      - runs/bugginess/all_heuristics_with_issues/bohr_200k_large_changes/heuristic_matrix.pkl
+      - runs/bugginess/all_heuristics_with_issues/levin_small_changes/heuristic_matrix.pkl
+      - runs/bugginess/all_heuristics_with_issues/levin_large_changes/heuristic_matrix.pkl
+      - runs/bugginess/all_heuristics_with_issues/berger_small_changes/heuristic_matrix.pkl
+      - runs/bugginess/all_heuristics_with_issues/berger_large_changes/heuristic_matrix.pkl
+      - runs/bugginess/all_heuristics_with_issues/mauczka_files/heuristic_matrix.pkl
+      metrics:
+      - runs/bugginess/all_heuristics_with_issues/label_model_metrics.json:
+          cache: false
+      outs:
+      - runs/bugginess/all_heuristics_with_issues/label_model.pkl
+      - runs/bugginess/all_heuristics_with_issues/label_model_weights.csv
+      params:
+      - bohr.lock:
+        - bohr_runtime_version
+    foreach:
+    - 0
+  TrainLabelModel@all_heuristics_without_issues:
+    do:
+      cmd: bohr porcelain train-label-model all_heuristics_without_issues
+      deps:
+      - runs/bugginess/all_heuristics_without_issues/commits_200k_files_no_merges/heuristic_matrix.pkl
+      - runs/bugginess/all_heuristics_without_issues/commits_200k_files/heuristic_matrix.pkl
+      - runs/bugginess/all_heuristics_without_issues/levin_files/heuristic_matrix.pkl
+      - runs/bugginess/all_heuristics_without_issues/berger_files/heuristic_matrix.pkl
+      - runs/bugginess/all_heuristics_without_issues/manual_labels.herzig/heuristic_matrix.pkl
+      - runs/bugginess/all_heuristics_without_issues/bohr.herzig_eval/heuristic_matrix.pkl
+      - runs/bugginess/all_heuristics_without_issues/bohr.herzig_train/heuristic_matrix.pkl
+      - runs/bugginess/all_heuristics_without_issues/bohr_200k_small_changes/heuristic_matrix.pkl
+      - runs/bugginess/all_heuristics_without_issues/bohr_200k_large_changes/heuristic_matrix.pkl
+      - runs/bugginess/all_heuristics_without_issues/levin_small_changes/heuristic_matrix.pkl
+      - runs/bugginess/all_heuristics_without_issues/levin_large_changes/heuristic_matrix.pkl
+      - runs/bugginess/all_heuristics_without_issues/berger_small_changes/heuristic_matrix.pkl
+      - runs/bugginess/all_heuristics_without_issues/berger_large_changes/heuristic_matrix.pkl
+      - runs/bugginess/all_heuristics_without_issues/mauczka_files/heuristic_matrix.pkl
+      metrics:
+      - runs/bugginess/all_heuristics_without_issues/label_model_metrics.json:
+          cache: false
+      outs:
+      - runs/bugginess/all_heuristics_without_issues/label_model.pkl
+      - runs/bugginess/all_heuristics_without_issues/label_model_weights.csv
+      params:
+      - bohr.lock:
+        - bohr_runtime_version
+    foreach:
+    - 0
   TrainLabelModel@dataset_debugging:
     do:
       cmd: bohr porcelain train-label-model dataset_debugging

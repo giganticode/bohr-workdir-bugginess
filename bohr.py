@@ -72,13 +72,28 @@ dataset_debugging = Experiment('dataset_debugging', bugginess,
                                                             f'@dddbe7ba63a14c718d08e7c88b166f90980fec05')
 
 
-keywords_combined_file_metrics_transformer = Experiment('keywords_combined_file_metrics_transformer', bugginess,
+all_heuristics_with_issues = Experiment('all_heuristics_with_issues', bugginess,
                                                        heuristics_classifier=f'bugginess/fine_grained_changes_transformer_90.py:'
                                                                              f'bugginess/fine_grained_changes_transformer_80.py:'
                                                                              f'bugginess/fine_grained_changes_transformer_70.py:'
                                                                              f'bugginess/filemetrics:'
-                                                                             f'bugginess/keywords_combined'
+                                                                             f'bugginess/keywords/bug_keywords_lookup_in_message.py:'
+                                                                             f'bugginess/keywords/buggless_keywords_lookup_in_message.py:'
+                                                                             f'bugginess/keywords/bugless_keywords_lookup_in_issue_body.py:'
+                                                                             f'bugginess/keywords/bugless_keywords_lookup_in_issue_label.py:'
+                                                                             f'bugginess/keywords/bug_keywords_lookup_in_issue_body.py:'
+                                                                             f'bugginess/keywords/bug_keywords_lookup_in_issue_label.py'
                                                                              f'@dddbe7ba63a14c718d08e7c88b166f90980fec05')
+
+
+all_heuristics_without_issues = Experiment('all_heuristics_without_issues', bugginess,
+                                        heuristics_classifier=f'bugginess/fine_grained_changes_transformer_90.py:'
+                                                              f'bugginess/fine_grained_changes_transformer_80.py:'
+                                                              f'bugginess/fine_grained_changes_transformer_70.py:'
+                                                              f'bugginess/filemetrics:'
+                                                              f'bugginess/keywords/bug_keywords_lookup_in_message.py:'
+                                                              f'bugginess/keywords/buggless_keywords_lookup_in_message.py'
+                                                              f'@dddbe7ba63a14c718d08e7c88b166f90980fec05')
 
 
 gitcproc = Experiment('gitcproc', bugginess, heuristics_classifier=f'bugginess/gitcproc@dddbe7ba63a14c718d08e7c88b166f90980fec05')
@@ -96,7 +111,8 @@ only_keywords = Experiment('only_keywords', bugginess, heuristics_classifier=f'b
 
 w = Workspace('0.5.0rc2', [
     dataset_debugging,
-    # keywords_combined_file_metrics_transformer,
+    all_heuristics_without_issues,
+    all_heuristics_with_issues,
     gitcproc,
     gitcproc_orig,
     only_message_keywords,
