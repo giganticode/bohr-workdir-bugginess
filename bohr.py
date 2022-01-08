@@ -67,6 +67,8 @@ dataset_debugging = Experiment('dataset_debugging', bugginess,
                                                             f'bugginess/fine_grained_changes_transformer_80.py:'
                                                             f'bugginess/fine_grained_changes_transformer_70.py:'
                                                             f'bugginess/filemetrics:'
+                                                            f'bugginess/small_change.py:'
+                                                            f'bugginess/long_change.py:'
                                                             f'bugginess/keywords/bug_keywords_lookup_in_message.py:'
                                                             f'bugginess/keywords/buggless_keywords_lookup_in_message.py'
                                                             f'@dddbe7ba63a14c718d08e7c88b166f90980fec05')

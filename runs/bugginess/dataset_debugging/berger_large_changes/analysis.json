@@ -4,11 +4,11 @@
         "all_files_test_fix": 0.006289308176100629,
         "bug_message_keyword_bad": 0.0,
         "bug_message_keyword_broken": 0.0,
-        "bug_message_keyword_bug": 0.03773584905660377,
-        "bug_message_keyword_bugfix": 0.2389937106918239,
+        "bug_message_keyword_bug": 0.05660377358490566,
+        "bug_message_keyword_bugfix": 0.3081761006289308,
         "bug_message_keyword_close": 0.031446540880503145,
         "bug_message_keyword_concurr": 0.0,
-        "bug_message_keyword_correct": 0.006289308176100629,
+        "bug_message_keyword_correct": 0.012578616352201259,
         "bug_message_keyword_corrupt": 0.006289308176100629,
         "bug_message_keyword_crash": 0.006289308176100629,
         "bug_message_keyword_deadlock": 0.0,
@@ -16,16 +16,16 @@
         "bug_message_keyword_disabl": 0.0,
         "bug_message_keyword_endless": 0.0,
         "bug_message_keyword_ensur": 0.0,
-        "bug_message_keyword_error": 0.0440251572327044,
+        "bug_message_keyword_error": 0.050314465408805034,
         "bug_message_keyword_except": 0.012578616352201259,
-        "bug_message_keyword_fail": 0.006289308176100629,
+        "bug_message_keyword_fail": 0.012578616352201259,
         "bug_message_keyword_garbag": 0.0,
-        "bug_message_keyword_handl": 0.06289308176100629,
+        "bug_message_keyword_handl": 0.06918238993710692,
         "bug_message_keyword_incomplet": 0.0,
         "bug_message_keyword_inconsist": 0.0,
         "bug_message_keyword_incorrect": 0.0,
         "bug_message_keyword_infinit": 0.0,
-        "bug_message_keyword_invalid": 0.0,
+        "bug_message_keyword_invalid": 0.006289308176100629,
         "bug_message_keyword_issue": 0.0,
         "bug_message_keyword_leak": 0.0,
         "bug_message_keyword_loop": 0.0,
@@ -155,11 +155,13 @@
         "bugless_message_keyword_updat": 0.025157232704402517,
         "bugless_message_keyword_upgrad": 0.0,
         "bugless_message_keyword_version": 0.012578616352201259,
-        "fine_grained_changes_transformer_70": 0.08176100628930817,
-        "fine_grained_changes_transformer_80": 0.06918238993710692,
-        "fine_grained_changes_transformer_90": 0.09433962264150944,
+        "fine_grained_changes_transformer_70": 0.10062893081761007,
+        "fine_grained_changes_transformer_80": 0.08176100628930817,
+        "fine_grained_changes_transformer_90": 0.10062893081761007,
+        "long_change": 0.48427672955974843,
         "no_files_have_modified_status": 0.0,
-        "refactoring_if_at_least_2_renamed": 0.006289308176100629
+        "refactoring_if_at_least_2_renamed": 0.006289308176100629,
+        "small_change": 0.48427672955974843
     },
     "Correct": {
         "all_files_test_add": 1,
@@ -320,8 +322,10 @@
         "fine_grained_changes_transformer_70": 14,
         "fine_grained_changes_transformer_80": 11,
         "fine_grained_changes_transformer_90": 30,
+        "long_change": 118,
         "no_files_have_modified_status": 6,
-        "refactoring_if_at_least_2_renamed": 3
+        "refactoring_if_at_least_2_renamed": 3,
+        "small_change": 118
     },
     "Coverage": {
         "all_files_test_add": 0.006289308176100629,
@@ -482,8 +486,10 @@
         "fine_grained_changes_transformer_70": 0.1320754716981132,
         "fine_grained_changes_transformer_80": 0.1320754716981132,
         "fine_grained_changes_transformer_90": 0.22012578616352202,
+        "long_change": 1.0,
         "no_files_have_modified_status": 0.03773584905660377,
-        "refactoring_if_at_least_2_renamed": 0.018867924528301886
+        "refactoring_if_at_least_2_renamed": 0.018867924528301886,
+        "small_change": 1.0
     },
     "Emp. Acc.": {
         "all_files_test_add": 1.0,
@@ -644,8 +650,10 @@
         "fine_grained_changes_transformer_70": 0.6666666666666666,
         "fine_grained_changes_transformer_80": 0.5238095238095238,
         "fine_grained_changes_transformer_90": 0.8571428571428572,
+        "long_change": 0.7421383647798743,
         "no_files_have_modified_status": 1.0,
-        "refactoring_if_at_least_2_renamed": 1.0
+        "refactoring_if_at_least_2_renamed": 1.0,
+        "small_change": 0.7421383647798743
     },
     "Incorrect": {
         "all_files_test_add": 0,
@@ -806,8 +814,10 @@
         "fine_grained_changes_transformer_70": 7,
         "fine_grained_changes_transformer_80": 10,
         "fine_grained_changes_transformer_90": 5,
+        "long_change": 41,
         "no_files_have_modified_status": 0,
-        "refactoring_if_at_least_2_renamed": 0
+        "refactoring_if_at_least_2_renamed": 0,
+        "small_change": 41
     },
     "Overlaps": {
         "all_files_test_add": 0.006289308176100629,
@@ -815,7 +825,7 @@
         "bug_message_keyword_bad": 0.0,
         "bug_message_keyword_broken": 0.0,
         "bug_message_keyword_bug": 0.05660377358490566,
-        "bug_message_keyword_bugfix": 0.2830188679245283,
+        "bug_message_keyword_bugfix": 0.3081761006289308,
         "bug_message_keyword_close": 0.031446540880503145,
         "bug_message_keyword_concurr": 0.0,
         "bug_message_keyword_correct": 0.012578616352201259,
@@ -826,7 +836,7 @@
         "bug_message_keyword_disabl": 0.0,
         "bug_message_keyword_endless": 0.0,
         "bug_message_keyword_ensur": 0.0,
-        "bug_message_keyword_error": 0.0440251572327044,
+        "bug_message_keyword_error": 0.050314465408805034,
         "bug_message_keyword_except": 0.012578616352201259,
         "bug_message_keyword_fail": 0.012578616352201259,
         "bug_message_keyword_garbag": 0.0,
@@ -861,16 +871,16 @@
         "bug_message_keyword_unsynchron": 0.0,
         "bug_message_keyword_wrong": 0.0,
         "buggless_if_doc_extensions": 0.0,
-        "buggless_if_many_lines_changed": 0.2578616352201258,
+        "buggless_if_many_lines_changed": 0.27044025157232704,
         "buggless_if_one_file_markdown_ext": 0.0,
-        "buggless_one_file": 0.1069182389937107,
+        "buggless_one_file": 0.11320754716981132,
         "bugless_if_at_least_2_removed_files": 0.03773584905660377,
         "bugless_if_at_least_5_added_files": 0.05660377358490566,
         "bugless_if_many_files_changes": 0.10062893081761007,
         "bugless_if_not_code_files": 0.0,
         "bugless_message_keyword_abil": 0.012578616352201259,
-        "bugless_message_keyword_ad": 0.15723270440251572,
-        "bugless_message_keyword_add": 0.11949685534591195,
+        "bugless_message_keyword_ad": 0.16352201257861634,
+        "bugless_message_keyword_add": 0.1320754716981132,
         "bugless_message_keyword_addit": 0.018867924528301886,
         "bugless_message_keyword_allow": 0.018867924528301886,
         "bugless_message_keyword_analysi": 0.0,
@@ -894,7 +904,7 @@
         "bugless_message_keyword_doc": 0.03773584905660377,
         "bugless_message_keyword_drop": 0.0,
         "bugless_message_keyword_enhanc": 0.0,
-        "bugless_message_keyword_exampl": 0.006289308176100629,
+        "bugless_message_keyword_exampl": 0.012578616352201259,
         "bugless_message_keyword_exclud": 0.0,
         "bugless_message_keyword_expand": 0.012578616352201259,
         "bugless_message_keyword_extendgener": 0.0,
@@ -913,8 +923,8 @@
         "bugless_message_keyword_migrat": 0.0,
         "bugless_message_keyword_minim": 0.0,
         "bugless_message_keyword_modif": 0.0,
-        "bugless_message_keyword_move": 0.0440251572327044,
-        "bugless_message_keyword_new": 0.031446540880503145,
+        "bugless_message_keyword_move": 0.050314465408805034,
+        "bugless_message_keyword_new": 0.0440251572327044,
         "bugless_message_keyword_note": 0.0,
         "bugless_message_keyword_opinion": 0.0,
         "bugless_message_keyword_optim": 0.018867924528301886,
@@ -937,7 +947,7 @@
         "bugless_message_keyword_regress|test": 0.0,
         "bugless_message_keyword_reimplement": 0.0,
         "bugless_message_keyword_release": 0.0,
-        "bugless_message_keyword_remov": 0.050314465408805034,
+        "bugless_message_keyword_remov": 0.05660377358490566,
         "bugless_message_keyword_renam": 0.012578616352201259,
         "bugless_message_keyword_reorgan": 0.006289308176100629,
         "bugless_message_keyword_replac": 0.025157232704402517,
@@ -962,14 +972,16 @@
         "bugless_message_keyword_tweak": 0.0,
         "bugless_message_keyword_unit": 0.0440251572327044,
         "bugless_message_keyword_unnecessari": 0.006289308176100629,
-        "bugless_message_keyword_updat": 0.06289308176100629,
+        "bugless_message_keyword_updat": 0.06918238993710692,
         "bugless_message_keyword_upgrad": 0.006289308176100629,
         "bugless_message_keyword_version": 0.031446540880503145,
-        "fine_grained_changes_transformer_70": 0.11949685534591195,
-        "fine_grained_changes_transformer_80": 0.11949685534591195,
-        "fine_grained_changes_transformer_90": 0.20125786163522014,
+        "fine_grained_changes_transformer_70": 0.1320754716981132,
+        "fine_grained_changes_transformer_80": 0.1320754716981132,
+        "fine_grained_changes_transformer_90": 0.22012578616352202,
+        "long_change": 1.0,
         "no_files_have_modified_status": 0.03773584905660377,
-        "refactoring_if_at_least_2_renamed": 0.018867924528301886
+        "refactoring_if_at_least_2_renamed": 0.018867924528301886,
+        "small_change": 1.0
     },
     "Polarity": {
         "all_files_test_add": [
@@ -1287,10 +1299,16 @@
             0,
             1
         ],
+        "long_change": [
+            0
+        ],
         "no_files_have_modified_status": [
             0
         ],
         "refactoring_if_at_least_2_renamed": [
+            0
+        ],
+        "small_change": [
             0
         ]
     }
