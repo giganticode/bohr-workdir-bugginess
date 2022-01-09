@@ -19,6 +19,7 @@ berger_files = Dataset(id='berger_files', top_artifact=Commit, query=id_with_fil
 levin_files = Dataset(id='levin_files', top_artifact=Commit, query=id_with_files('manual_labels.levin'))
 herzig = Dataset(id='manual_labels.herzig', top_artifact=Commit)
 mauczka_files = Dataset(id='mauczka_files', top_artifact=Commit, query=id_with_files('manual_labels.mauczka'))
+idan_files = Dataset(id='idan_files', top_artifact=Commit, query=id_with_files('idan/0_1', [{"idan/0_1.Is_Corrective": {"$exists": True}}]))
 
 herzig_train = Dataset(id='bohr.herzig_train', top_artifact=Commit)
 herzig_eval = Dataset(id='bohr.herzig_eval', top_artifact=Commit)
@@ -40,6 +41,7 @@ bugginess = Task(name='bugginess', author='hlib', description='bug or not', top_
                  training_dataset=commits_200k_files_no_merges,
                  test_datasets={
                                 commits_200k_files: None,
+                                idan_files: lambda c: (CommitLabel.BugFix if c.raw_data['idan/0_1']['Is_Corrective'] else CommitLabel.NonBugFix),
                                 levin_files: lambda c: (CommitLabel.BugFix if c.raw_data['manual_labels']['levin']['bug'] == 1 else CommitLabel.NonBugFix),
                                 berger_files: lambda c: (CommitLabel.BugFix if c.raw_data['manual_labels']['berger']['bug'] == 1 else CommitLabel.NonBugFix),
                                 herzig: lambda c: (CommitLabel.BugFix if c.raw_data['manual_labels']['herzig']['CLASSIFIED'] == 'BUG' else CommitLabel.NonBugFix),
