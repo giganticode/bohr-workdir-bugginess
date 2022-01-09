@@ -158,10 +158,10 @@
         "fine_grained_changes_transformer_70": 0.06448257930317212,
         "fine_grained_changes_transformer_80": 0.08606344253770151,
         "fine_grained_changes_transformer_90": 0.11622464898595944,
-        "long_change": 0.5717628705148206,
+        "large_change": 0.2171086843473739,
         "no_files_have_modified_status": 0.005980239209568383,
         "refactoring_if_at_least_2_renamed": 0.0031201248049922,
-        "small_change": 0.5717628705148206
+        "small_change": 0.3546541861674467
     },
     "Correct": {
         "all_files_test_add": 3,
@@ -322,10 +322,10 @@
         "fine_grained_changes_transformer_70": 242,
         "fine_grained_changes_transformer_80": 327,
         "fine_grained_changes_transformer_90": 605,
-        "long_change": 2376,
+        "large_change": 1602,
         "no_files_have_modified_status": 66,
         "refactoring_if_at_least_2_renamed": 81,
-        "small_change": 2376
+        "small_change": 774
     },
     "Coverage": {
         "all_files_test_add": 0.0013000520020800832,
@@ -486,10 +486,10 @@
         "fine_grained_changes_transformer_70": 0.0969838793551742,
         "fine_grained_changes_transformer_80": 0.125065002600104,
         "fine_grained_changes_transformer_90": 0.21580863234529382,
-        "long_change": 1.0,
+        "large_change": 0.5769630785231409,
         "no_files_have_modified_status": 0.01950078003120125,
         "refactoring_if_at_least_2_renamed": 0.02158086323452938,
-        "small_change": 1.0
+        "small_change": 0.42303692147685906
     },
     "Emp. Acc.": {
         "all_files_test_add": 0.6,
@@ -650,10 +650,10 @@
         "fine_grained_changes_transformer_70": 0.6487935656836461,
         "fine_grained_changes_transformer_80": 0.6798336798336798,
         "fine_grained_changes_transformer_90": 0.7289156626506024,
-        "long_change": 0.6177847113884556,
+        "large_change": 0.7219468228931951,
         "no_files_have_modified_status": 0.88,
         "refactoring_if_at_least_2_renamed": 0.9759036144578312,
-        "small_change": 0.6177847113884556
+        "small_change": 0.4757221880762139
     },
     "Incorrect": {
         "all_files_test_add": 2,
@@ -814,10 +814,10 @@
         "fine_grained_changes_transformer_70": 131,
         "fine_grained_changes_transformer_80": 154,
         "fine_grained_changes_transformer_90": 225,
-        "long_change": 1470,
+        "large_change": 617,
         "no_files_have_modified_status": 9,
         "refactoring_if_at_least_2_renamed": 2,
-        "small_change": 1470
+        "small_change": 853
     },
     "Overlaps": {
         "all_files_test_add": 0.0013000520020800832,
@@ -978,10 +978,10 @@
         "fine_grained_changes_transformer_70": 0.0969838793551742,
         "fine_grained_changes_transformer_80": 0.125065002600104,
         "fine_grained_changes_transformer_90": 0.21580863234529382,
-        "long_change": 1.0,
+        "large_change": 0.5371814872594903,
         "no_files_have_modified_status": 0.01950078003120125,
         "refactoring_if_at_least_2_renamed": 0.02158086323452938,
-        "small_change": 1.0
+        "small_change": 0.3998959958398336
     },
     "Polarity": {
         "all_files_test_add": [
@@ -1419,9 +1419,8 @@
             0,
             1
         ],
-        "long_change": [
-            0,
-            1
+        "large_change": [
+            0
         ],
         "no_files_have_modified_status": [
             0
@@ -1430,7 +1429,6 @@
             0
         ],
         "small_change": [
-            0,
             1
         ]
     }

@@ -45,12 +45,6 @@ bugginess = Task(name='bugginess', author='hlib', description='bug or not', top_
                                 herzig: lambda c: (CommitLabel.BugFix if c.raw_data['manual_labels']['herzig']['CLASSIFIED'] == 'BUG' else CommitLabel.NonBugFix),
                                 herzig_eval: lambda c: (CommitLabel.BugFix if c.raw_data['manual_labels']['herzig']['CLASSIFIED'] == 'BUG' else CommitLabel.NonBugFix),
                                 herzig_train: lambda c: (CommitLabel.BugFix if c.raw_data['manual_labels']['herzig']['CLASSIFIED'] == 'BUG' else CommitLabel.NonBugFix),
-                                bohr_200k_small_changes: lambda c: (CommitLabel.BugFix if round(c.raw_data['bohr']['label_model']['only_message_keywords/0_1']['label']) == 1 else CommitLabel.NonBugFix),
-                                bohr_200k_large_changes: lambda c: (CommitLabel.BugFix if round(c.raw_data['bohr']['label_model']['only_message_keywords/0_1']['label']) == 1 else CommitLabel.NonBugFix),
-                                levin_small_changes: lambda c: (CommitLabel.BugFix if c.raw_data['manual_labels']['levin']['bug'] == 1 else CommitLabel.NonBugFix),
-                                levin_large_changes: lambda c: (CommitLabel.BugFix if c.raw_data['manual_labels']['levin']['bug'] == 1 else CommitLabel.NonBugFix),
-                                berger_small_changes: lambda c: (CommitLabel.BugFix if c.raw_data['manual_labels']['berger']['bug'] == 1 else CommitLabel.NonBugFix),
-                                berger_large_changes: lambda c: (CommitLabel.BugFix if c.raw_data['manual_labels']['berger']['bug'] == 1 else CommitLabel.NonBugFix),
                                 mauczka_files: lambda c: (CommitLabel.BugFix if c.raw_data['manual_labels']['mauczka']['hl_corrective'] == 1 else CommitLabel.NonBugFix),
                                 })
 
@@ -68,7 +62,7 @@ dataset_debugging = Experiment('dataset_debugging', bugginess,
                                                             f'bugginess/fine_grained_changes_transformer_70.py:'
                                                             f'bugginess/filemetrics:'
                                                             f'bugginess/small_change.py:'
-                                                            f'bugginess/long_change.py:'
+                                                            f'bugginess/large_change.py:'
                                                             f'bugginess/keywords/bug_keywords_lookup_in_message.py:'
                                                             f'bugginess/keywords/buggless_keywords_lookup_in_message.py'
                                                             f'@dddbe7ba63a14c718d08e7c88b166f90980fec05')

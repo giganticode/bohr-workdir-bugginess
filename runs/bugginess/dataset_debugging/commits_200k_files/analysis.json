@@ -158,10 +158,10 @@
         "fine_grained_changes_transformer_70": 0.08712981872135869,
         "fine_grained_changes_transformer_80": 0.10244351125394888,
         "fine_grained_changes_transformer_90": 0.20850602528374404,
-        "long_change": 0.7385503183736936,
+        "large_change": 0.12983514648474928,
         "no_files_have_modified_status": 0.05121354306394302,
         "refactoring_if_at_least_2_renamed": 0.0064167492485504825,
-        "small_change": 0.7385503183736936
+        "small_change": 0.6087151718889442
     },
     "Coverage": {
         "all_files_test_add": 0.0074460571484886145,
@@ -322,10 +322,10 @@
         "fine_grained_changes_transformer_70": 0.10782000251851932,
         "fine_grained_changes_transformer_80": 0.12584384085147854,
         "fine_grained_changes_transformer_90": 0.2645978307883513,
-        "long_change": 1.0,
+        "large_change": 0.3242484136065744,
         "no_files_have_modified_status": 0.05449856827651152,
         "refactoring_if_at_least_2_renamed": 0.014246059338505423,
-        "small_change": 1.0
+        "small_change": 0.6757515863934256
     },
     "Overlaps": {
         "all_files_test_add": 0.0074460571484886145,
@@ -486,10 +486,10 @@
         "fine_grained_changes_transformer_70": 0.10782000251851932,
         "fine_grained_changes_transformer_80": 0.12584384085147854,
         "fine_grained_changes_transformer_90": 0.2645978307883513,
-        "long_change": 1.0,
+        "large_change": 0.30472988880189655,
         "no_files_have_modified_status": 0.05449856827651152,
         "refactoring_if_at_least_2_renamed": 0.014246059338505423,
-        "small_change": 1.0
+        "small_change": 0.6556581821765483
     },
     "Polarity": {
         "all_files_test_add": [
@@ -953,9 +953,8 @@
             0,
             1
         ],
-        "long_change": [
-            0,
-            1
+        "large_change": [
+            0
         ],
         "no_files_have_modified_status": [
             0
@@ -964,7 +963,6 @@
             0
         ],
         "small_change": [
-            0,
             1
         ]
     }
