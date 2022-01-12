@@ -67,7 +67,7 @@ dataset_debugging = Experiment('dataset_debugging', bugginess,
                                                             f'bugginess/large_change.py:'
                                                             f'bugginess/keywords/bug_keywords_lookup_in_message.py:'
                                                             f'bugginess/keywords/buggless_keywords_lookup_in_message.py'
-                                                            f'@dddbe7ba63a14c718d08e7c88b166f90980fec05')
+                                                            f'@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
 
 
 all_heuristics_with_issues = Experiment('all_heuristics_with_issues', bugginess,
@@ -81,7 +81,7 @@ all_heuristics_with_issues = Experiment('all_heuristics_with_issues', bugginess,
                                                                              f'bugginess/keywords/bugless_keywords_lookup_in_issue_label.py:'
                                                                              f'bugginess/keywords/bug_keywords_lookup_in_issue_body.py:'
                                                                              f'bugginess/keywords/bug_keywords_lookup_in_issue_label.py'
-                                                                             f'@dddbe7ba63a14c718d08e7c88b166f90980fec05')
+                                                                             f'@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
 
 
 all_heuristics_without_issues = Experiment('all_heuristics_without_issues', bugginess,
@@ -91,20 +91,20 @@ all_heuristics_without_issues = Experiment('all_heuristics_without_issues', bugg
                                                               f'bugginess/filemetrics:'
                                                               f'bugginess/keywords/bug_keywords_lookup_in_message.py:'
                                                               f'bugginess/keywords/buggless_keywords_lookup_in_message.py'
-                                                              f'@dddbe7ba63a14c718d08e7c88b166f90980fec05')
+                                                              f'@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
 
 
-gitcproc = Experiment('gitcproc', bugginess, heuristics_classifier=f'bugginess/gitcproc@dddbe7ba63a14c718d08e7c88b166f90980fec05')
+gitcproc = Experiment('gitcproc', bugginess, heuristics_classifier=f'bugginess/gitcproc@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
 
-gitcproc_orig = Experiment('gitcproc_orig', bugginess, heuristics_classifier=f'bugginess/gitcproc/keywords.py@dddbe7ba63a14c718d08e7c88b166f90980fec05')
+gitcproc_orig = Experiment('gitcproc_orig', bugginess, heuristics_classifier=f'bugginess/gitcproc/keywords.py@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
 
-only_message_keywords = Experiment('only_message_keywords', bugginess, heuristics_classifier=f'bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py@dddbe7ba63a14c718d08e7c88b166f90980fec05')
+only_message_keywords = Experiment('only_message_keywords', bugginess, heuristics_classifier=f'bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
 only_keywords = Experiment('only_keywords', bugginess, heuristics_classifier=f'bugginess/keywords/bug_keywords_lookup_in_message.py:'
                                                                              f'bugginess/keywords/bugless_keywords_lookup_in_issue_body.py:'
                                                                              f'bugginess/keywords/bugless_keywords_lookup_in_issue_label.py:'
                                                                              f'bugginess/keywords/bug_keywords_lookup_in_issue_body.py:'
                                                                              f'bugginess/keywords/bug_keywords_lookup_in_issue_label.py:'
-                                                                             f'bugginess/keywords/buggless_keywords_lookup_in_message.py@dddbe7ba63a14c718d08e7c88b166f90980fec05')
+                                                                             f'bugginess/keywords/buggless_keywords_lookup_in_message.py@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
 
 
 w = Workspace('0.5.0rc2', [
