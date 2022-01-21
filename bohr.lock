@@ -10,7 +10,7 @@ experiments:
     heuristics_classifier: bugginess/filemetrics:bugginess/fine_grained_changes_transformer_70.py:bugginess/fine_grained_changes_transformer_80.py:bugginess/fine_grained_changes_transformer_90.py:bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py
     train_set: commits_200k
   dataset_debugging:
-    heuristics_classifier: bugginess/buggless_if_doc_extensions.py:bugginess/buggless_if_one_file_markdown_ext.py:bugginess/filemetrics:bugginess/fine_grained_changes_transformer_70.py:bugginess/fine_grained_changes_transformer_80.py:bugginess/fine_grained_changes_transformer_90.py:bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py:bugginess/large_change.py:bugginess/small_change.py
+    heuristics_classifier: bugginess/buggless_if_doc_extensions.py:bugginess/buggless_if_one_file_markdown_ext.py:bugginess/filemetrics:bugginess/fine_grained_changes_transformer_70.py:bugginess/fine_grained_changes_transformer_80.py:bugginess/fine_grained_changes_transformer_90.py:bugginess/keywords/bug_keywords_lookup_in_issue_body.py:bugginess/keywords/bug_keywords_lookup_in_issue_label.py:bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py:bugginess/keywords/bugless_keywords_lookup_in_issue_body.py:bugginess/keywords/bugless_keywords_lookup_in_issue_label.py:bugginess/large_change.py:bugginess/small_change.py
     train_set: commits_200k_files
   gitcproc:
     heuristics_classifier: bugginess/gitcproc

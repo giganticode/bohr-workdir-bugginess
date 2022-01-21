@@ -60,8 +60,12 @@ dataset_debugging = Experiment('dataset_debugging', bugginess,
                                                             f'bugginess/filemetrics:'
                                                             f'bugginess/small_change.py:'
                                                             f'bugginess/large_change.py:'
-                                                            f'bugginess/keywords/bug_keywords_lookup_in_message.py:'
-                                                            f'bugginess/keywords/buggless_keywords_lookup_in_message.py'
+                                                     f'bugginess/keywords/bug_keywords_lookup_in_message.py:'
+                                                     f'bugginess/keywords/buggless_keywords_lookup_in_message.py:'
+                                                     f'bugginess/keywords/bugless_keywords_lookup_in_issue_body.py:'
+                                                     f'bugginess/keywords/bugless_keywords_lookup_in_issue_label.py:'
+                                                     f'bugginess/keywords/bug_keywords_lookup_in_issue_body.py:'
+                                                     f'bugginess/keywords/bug_keywords_lookup_in_issue_label.py'
                                                             f'@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
 
 

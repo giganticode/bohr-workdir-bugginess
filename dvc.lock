@@ -14267,14 +14267,14 @@ stages:
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc2
-        experiments.dataset_debugging.heuristics_classifier: bugginess/buggless_if_doc_extensions.py:bugginess/buggless_if_one_file_markdown_ext.py:bugginess/filemetrics:bugginess/fine_grained_changes_transformer_70.py:bugginess/fine_grained_changes_transformer_80.py:bugginess/fine_grained_changes_transformer_90.py:bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py:bugginess/large_change.py:bugginess/small_change.py
+        experiments.dataset_debugging.heuristics_classifier: bugginess/buggless_if_doc_extensions.py:bugginess/buggless_if_one_file_markdown_ext.py:bugginess/filemetrics:bugginess/fine_grained_changes_transformer_70.py:bugginess/fine_grained_changes_transformer_80.py:bugginess/fine_grained_changes_transformer_90.py:bugginess/keywords/bug_keywords_lookup_in_issue_body.py:bugginess/keywords/bug_keywords_lookup_in_issue_label.py:bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py:bugginess/keywords/bugless_keywords_lookup_in_issue_body.py:bugginess/keywords/bugless_keywords_lookup_in_issue_label.py:bugginess/large_change.py:bugginess/small_change.py
     outs:
     - path: runs/bugginess/dataset_debugging/manual_labels.herzig/analysis.json
-      md5: d8453b96c21bacf365978947db252de0
-      size: 63328
+      md5: dcc3c7a2933bf640797fae1046718a91
+      size: 115844
     - path: runs/bugginess/dataset_debugging/manual_labels.herzig/heuristic_matrix.pkl
-      md5: cfe5e1335112480976bdd374c9f76e19
-      size: 6677024
+      md5: 8ac8d16c53d12ccf22dde407f2b3f4eb
+      size: 13063955
     - path: runs/bugginess/dataset_debugging/manual_labels.herzig/heuristic_metrics.json
       md5: 54217cafca7f9bf9bfa7accd4b053467
       size: 72
@@ -14288,14 +14288,14 @@ stages:
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc2
-        experiments.dataset_debugging.heuristics_classifier: bugginess/buggless_if_doc_extensions.py:bugginess/buggless_if_one_file_markdown_ext.py:bugginess/filemetrics:bugginess/fine_grained_changes_transformer_70.py:bugginess/fine_grained_changes_transformer_80.py:bugginess/fine_grained_changes_transformer_90.py:bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py:bugginess/large_change.py:bugginess/small_change.py
+        experiments.dataset_debugging.heuristics_classifier: bugginess/buggless_if_doc_extensions.py:bugginess/buggless_if_one_file_markdown_ext.py:bugginess/filemetrics:bugginess/fine_grained_changes_transformer_70.py:bugginess/fine_grained_changes_transformer_80.py:bugginess/fine_grained_changes_transformer_90.py:bugginess/keywords/bug_keywords_lookup_in_issue_body.py:bugginess/keywords/bug_keywords_lookup_in_issue_label.py:bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py:bugginess/keywords/bugless_keywords_lookup_in_issue_body.py:bugginess/keywords/bugless_keywords_lookup_in_issue_label.py:bugginess/large_change.py:bugginess/small_change.py
     outs:
     - path: runs/bugginess/dataset_debugging/commits_200k_files/analysis.json
-      md5: f255b1d3d9e031b0bf3ee779d3ae1f77
-      size: 41214
+      md5: 2007e1979ff8fedc4cbf0538b9f8d9b5
+      size: 81901
     - path: runs/bugginess/dataset_debugging/commits_200k_files/heuristic_matrix.pkl
-      md5: e7b41b9fc08f26fb74ec94eb76c87f86
-      size: 236718441
+      md5: bb84da97b0789032c42425c48ee76ca1
+      size: 463206620
     - path: runs/bugginess/dataset_debugging/commits_200k_files/heuristic_metrics.json
       md5: ee53d260cd541f43e554c20c21acabf7
       size: 17
@@ -14309,14 +14309,14 @@ stages:
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc2
-        experiments.dataset_debugging.heuristics_classifier: bugginess/buggless_if_doc_extensions.py:bugginess/buggless_if_one_file_markdown_ext.py:bugginess/filemetrics:bugginess/fine_grained_changes_transformer_70.py:bugginess/fine_grained_changes_transformer_80.py:bugginess/fine_grained_changes_transformer_90.py:bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py:bugginess/large_change.py:bugginess/small_change.py
+        experiments.dataset_debugging.heuristics_classifier: bugginess/buggless_if_doc_extensions.py:bugginess/buggless_if_one_file_markdown_ext.py:bugginess/filemetrics:bugginess/fine_grained_changes_transformer_70.py:bugginess/fine_grained_changes_transformer_80.py:bugginess/fine_grained_changes_transformer_90.py:bugginess/keywords/bug_keywords_lookup_in_issue_body.py:bugginess/keywords/bug_keywords_lookup_in_issue_label.py:bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py:bugginess/keywords/bugless_keywords_lookup_in_issue_body.py:bugginess/keywords/bugless_keywords_lookup_in_issue_label.py:bugginess/large_change.py:bugginess/small_change.py
     outs:
     - path: runs/bugginess/dataset_debugging/levin_files/analysis.json
-      md5: 09a244c698274c2637f748368bf9aed7
-      size: 61393
+      md5: ce92ec094c5a74c29e69e45a32f405f9
+      size: 113909
     - path: runs/bugginess/dataset_debugging/levin_files/heuristic_matrix.pkl
-      md5: 217ebb8a5117ad2170738f8f573bbc80
-      size: 1214321
+      md5: 1d9b13d1db51aa82e2137832e2178e3b
+      size: 2374634
     - path: runs/bugginess/dataset_debugging/levin_files/heuristic_metrics.json
       md5: c6071438ded0cc64f81b00e82cc8ce3c
       size: 72
@@ -14330,14 +14330,14 @@ stages:
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc2
-        experiments.dataset_debugging.heuristics_classifier: bugginess/buggless_if_doc_extensions.py:bugginess/buggless_if_one_file_markdown_ext.py:bugginess/filemetrics:bugginess/fine_grained_changes_transformer_70.py:bugginess/fine_grained_changes_transformer_80.py:bugginess/fine_grained_changes_transformer_90.py:bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py:bugginess/large_change.py:bugginess/small_change.py
+        experiments.dataset_debugging.heuristics_classifier: bugginess/buggless_if_doc_extensions.py:bugginess/buggless_if_one_file_markdown_ext.py:bugginess/filemetrics:bugginess/fine_grained_changes_transformer_70.py:bugginess/fine_grained_changes_transformer_80.py:bugginess/fine_grained_changes_transformer_90.py:bugginess/keywords/bug_keywords_lookup_in_issue_body.py:bugginess/keywords/bug_keywords_lookup_in_issue_label.py:bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py:bugginess/keywords/bugless_keywords_lookup_in_issue_body.py:bugginess/keywords/bugless_keywords_lookup_in_issue_label.py:bugginess/large_change.py:bugginess/small_change.py
     outs:
     - path: runs/bugginess/dataset_debugging/berger_files/analysis.json
-      md5: a37e21fd2dfbd47d1f698c44804f6fc7
-      size: 59221
+      md5: 0f89630a5e5756e28e86826529afa1ae
+      size: 111737
     - path: runs/bugginess/dataset_debugging/berger_files/heuristic_matrix.pkl
-      md5: 150ba02f012625a1e601804773aa671e
-      size: 463928
+      md5: 7124220fff16a5f87f67e26e735d5660
+      size: 906281
     - path: runs/bugginess/dataset_debugging/berger_files/heuristic_metrics.json
       md5: 2494e44bbeb51c319d4983ce0f8832cf
       size: 72
@@ -14351,14 +14351,14 @@ stages:
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc2
-        experiments.dataset_debugging.heuristics_classifier: bugginess/buggless_if_doc_extensions.py:bugginess/buggless_if_one_file_markdown_ext.py:bugginess/filemetrics:bugginess/fine_grained_changes_transformer_70.py:bugginess/fine_grained_changes_transformer_80.py:bugginess/fine_grained_changes_transformer_90.py:bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py:bugginess/large_change.py:bugginess/small_change.py
+        experiments.dataset_debugging.heuristics_classifier: bugginess/buggless_if_doc_extensions.py:bugginess/buggless_if_one_file_markdown_ext.py:bugginess/filemetrics:bugginess/fine_grained_changes_transformer_70.py:bugginess/fine_grained_changes_transformer_80.py:bugginess/fine_grained_changes_transformer_90.py:bugginess/keywords/bug_keywords_lookup_in_issue_body.py:bugginess/keywords/bug_keywords_lookup_in_issue_label.py:bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py:bugginess/keywords/bugless_keywords_lookup_in_issue_body.py:bugginess/keywords/bugless_keywords_lookup_in_issue_label.py:bugginess/large_change.py:bugginess/small_change.py
     outs:
     - path: runs/bugginess/dataset_debugging/bohr.herzig_eval/analysis.json
-      md5: 03adbb86d368353bf89ef1c7216e76fd
-      size: 61774
+      md5: c30512339f0d9056ee301c9fdc641f90
+      size: 114290
     - path: runs/bugginess/dataset_debugging/bohr.herzig_eval/heuristic_matrix.pkl
-      md5: 848463bdf4bc97cc2fe39688f7b1d75a
-      size: 1692554
+      md5: 29a06112b27149ba5c240846f2470325
+      size: 3310427
     - path: runs/bugginess/dataset_debugging/bohr.herzig_eval/heuristic_metrics.json
       md5: d74f16c6b486f46d46fe5ef88c392c30
       size: 72
@@ -14372,14 +14372,14 @@ stages:
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc2
-        experiments.dataset_debugging.heuristics_classifier: bugginess/buggless_if_doc_extensions.py:bugginess/buggless_if_one_file_markdown_ext.py:bugginess/filemetrics:bugginess/fine_grained_changes_transformer_70.py:bugginess/fine_grained_changes_transformer_80.py:bugginess/fine_grained_changes_transformer_90.py:bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py:bugginess/large_change.py:bugginess/small_change.py
+        experiments.dataset_debugging.heuristics_classifier: bugginess/buggless_if_doc_extensions.py:bugginess/buggless_if_one_file_markdown_ext.py:bugginess/filemetrics:bugginess/fine_grained_changes_transformer_70.py:bugginess/fine_grained_changes_transformer_80.py:bugginess/fine_grained_changes_transformer_90.py:bugginess/keywords/bug_keywords_lookup_in_issue_body.py:bugginess/keywords/bug_keywords_lookup_in_issue_label.py:bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py:bugginess/keywords/bugless_keywords_lookup_in_issue_body.py:bugginess/keywords/bugless_keywords_lookup_in_issue_label.py:bugginess/large_change.py:bugginess/small_change.py
     outs:
     - path: runs/bugginess/dataset_debugging/bohr.herzig_train/analysis.json
-      md5: 674a9bbe95fc4992723ad94b4983091d
-      size: 63236
+      md5: 732f09556eb0c9f93e22ea59cbe32b6a
+      size: 115752
     - path: runs/bugginess/dataset_debugging/bohr.herzig_train/heuristic_matrix.pkl
-      md5: 56ccb25c728249e7f5069c320df4589b
-      size: 4992197
+      md5: 652f1cf49ec33128f07cbb1901571c8f
+      size: 9767128
     - path: runs/bugginess/dataset_debugging/bohr.herzig_train/heuristic_metrics.json
       md5: c7355355c97226136f3df60d7222910a
       size: 72
@@ -14498,14 +14498,14 @@ stages:
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc2
-        experiments.dataset_debugging.heuristics_classifier: bugginess/buggless_if_doc_extensions.py:bugginess/buggless_if_one_file_markdown_ext.py:bugginess/filemetrics:bugginess/fine_grained_changes_transformer_70.py:bugginess/fine_grained_changes_transformer_80.py:bugginess/fine_grained_changes_transformer_90.py:bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py:bugginess/large_change.py:bugginess/small_change.py
+        experiments.dataset_debugging.heuristics_classifier: bugginess/buggless_if_doc_extensions.py:bugginess/buggless_if_one_file_markdown_ext.py:bugginess/filemetrics:bugginess/fine_grained_changes_transformer_70.py:bugginess/fine_grained_changes_transformer_80.py:bugginess/fine_grained_changes_transformer_90.py:bugginess/keywords/bug_keywords_lookup_in_issue_body.py:bugginess/keywords/bug_keywords_lookup_in_issue_label.py:bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py:bugginess/keywords/bugless_keywords_lookup_in_issue_body.py:bugginess/keywords/bugless_keywords_lookup_in_issue_label.py:bugginess/large_change.py:bugginess/small_change.py
     outs:
     - path: runs/bugginess/dataset_debugging/mauczka_files/analysis.json
-      md5: 171625d60177b04820e20708dced76a3
-      size: 59462
+      md5: 076724ea6aa2ef20f1151826ae9cf1c8
+      size: 111978
     - path: runs/bugginess/dataset_debugging/mauczka_files/heuristic_matrix.pkl
-      md5: d74a20ba456d19fce157b0876cc4b4b9
-      size: 1145633
+      md5: 7f8391bec2fedfd1d88b3cc7cdf9b9a2
+      size: 2240226
     - path: runs/bugginess/dataset_debugging/mauczka_files/heuristic_metrics.json
       md5: 96274ee41a801a110e503c8ea93f59ff
       size: 72
@@ -14513,59 +14513,59 @@ stages:
     cmd: bohr porcelain train-label-model dataset_debugging
     deps:
     - path: runs/bugginess/dataset_debugging/berger_files/heuristic_matrix.pkl
-      md5: 150ba02f012625a1e601804773aa671e
-      size: 463928
+      md5: 7124220fff16a5f87f67e26e735d5660
+      size: 906281
     - path: runs/bugginess/dataset_debugging/bohr.herzig_eval/heuristic_matrix.pkl
-      md5: 848463bdf4bc97cc2fe39688f7b1d75a
-      size: 1692554
+      md5: 29a06112b27149ba5c240846f2470325
+      size: 3310427
     - path: runs/bugginess/dataset_debugging/bohr.herzig_train/heuristic_matrix.pkl
-      md5: 56ccb25c728249e7f5069c320df4589b
-      size: 4992197
+      md5: 652f1cf49ec33128f07cbb1901571c8f
+      size: 9767128
     - path: runs/bugginess/dataset_debugging/commits_200k_files/heuristic_matrix.pkl
-      md5: e7b41b9fc08f26fb74ec94eb76c87f86
-      size: 236718441
+      md5: bb84da97b0789032c42425c48ee76ca1
+      size: 463206620
     - path: runs/bugginess/dataset_debugging/idan_files/heuristic_matrix.pkl
-      md5: 371265733c1fedc549b08af51a049a2e
-      size: 1358186
+      md5: bfda47687bdeea7a02c88eed129578fb
+      size: 2656139
     - path: runs/bugginess/dataset_debugging/levin_files/heuristic_matrix.pkl
-      md5: 217ebb8a5117ad2170738f8f573bbc80
-      size: 1214321
+      md5: 1d9b13d1db51aa82e2137832e2178e3b
+      size: 2374634
     - path: runs/bugginess/dataset_debugging/manual_labels.herzig/heuristic_matrix.pkl
-      md5: cfe5e1335112480976bdd374c9f76e19
-      size: 6677024
+      md5: 8ac8d16c53d12ccf22dde407f2b3f4eb
+      size: 13063955
     - path: runs/bugginess/dataset_debugging/mauczka_files/heuristic_matrix.pkl
-      md5: d74a20ba456d19fce157b0876cc4b4b9
-      size: 1145633
+      md5: 7f8391bec2fedfd1d88b3cc7cdf9b9a2
+      size: 2240226
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc2
         experiments.dataset_debugging.train_set: commits_200k_files
     outs:
     - path: runs/bugginess/dataset_debugging/label_model.pkl
-      md5: e2315c0bca074e272ff319c6f6f60ea7
-      size: 547720
+      md5: 3aeb4e7ce6f26befbbd7a1bded41f145
+      size: 2050754
     - path: runs/bugginess/dataset_debugging/label_model_metrics.json
-      md5: a1202ec567150c1c312483920c751045
+      md5: 05ebe7b354bfabd4daad589513b98eb8
       size: 1177
     - path: runs/bugginess/dataset_debugging/label_model_weights.csv
-      md5: af5d998235df312ec9dcf7851ce22312
-      size: 10688
+      md5: ffe0b6bc0d939fe2688107792ed65970
+      size: 21357
   LabelDataset@dataset_debugging__manual_labels.herzig:
     cmd: bohr porcelain label-dataset "dataset_debugging" "manual_labels.herzig"
     deps:
     - path: runs/bugginess/dataset_debugging/label_model.pkl
-      md5: e2315c0bca074e272ff319c6f6f60ea7
-      size: 547720
+      md5: 3aeb4e7ce6f26befbbd7a1bded41f145
+      size: 2050754
     - path: runs/bugginess/dataset_debugging/manual_labels.herzig/heuristic_matrix.pkl
-      md5: cfe5e1335112480976bdd374c9f76e19
-      size: 6677024
+      md5: 8ac8d16c53d12ccf22dde407f2b3f4eb
+      size: 13063955
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc2
     outs:
     - path: runs/bugginess/dataset_debugging/manual_labels.herzig/labeled.csv
-      md5: f952a994762b4d60d23ee21a7520cbb1
-      size: 1347000
+      md5: 3128bb9f70334a32e0c41dceb7ad0477
+      size: 1347167
   ComputeSingleHeuristic@bugginess__commits_200k_files__bugginess/sstubs/commit_explorer_output_merge.py:
     cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
       "bugginess/sstubs/commit_explorer_output_merge.py" --dataset "commits_200k_files"
@@ -18666,18 +18666,18 @@ stages:
     cmd: bohr porcelain label-dataset "dataset_debugging" "bohr.herzig_train"
     deps:
     - path: runs/bugginess/dataset_debugging/bohr.herzig_train/heuristic_matrix.pkl
-      md5: 56ccb25c728249e7f5069c320df4589b
-      size: 4992197
+      md5: 652f1cf49ec33128f07cbb1901571c8f
+      size: 9767128
     - path: runs/bugginess/dataset_debugging/label_model.pkl
-      md5: e2315c0bca074e272ff319c6f6f60ea7
-      size: 547720
+      md5: 3aeb4e7ce6f26befbbd7a1bded41f145
+      size: 2050754
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc2
     outs:
     - path: runs/bugginess/dataset_debugging/bohr.herzig_train/labeled.csv
-      md5: f1c694d4b3b4ecc5ff3e1bb871f8fdc2
-      size: 1007432
+      md5: 3af3f6f20fab099896e3b6b71ea08355
+      size: 1007545
   ComputeSingleHeuristic@bugginess__berger_files__bugginess/keywords/buggless_keywords_lookup_in_message.py:
     cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
       "bugginess/keywords/buggless_keywords_lookup_in_message.py" --dataset "berger_files"
@@ -19298,18 +19298,18 @@ stages:
     cmd: bohr porcelain label-dataset "dataset_debugging" "mauczka_files"
     deps:
     - path: runs/bugginess/dataset_debugging/label_model.pkl
-      md5: e2315c0bca074e272ff319c6f6f60ea7
-      size: 547720
+      md5: 3aeb4e7ce6f26befbbd7a1bded41f145
+      size: 2050754
     - path: runs/bugginess/dataset_debugging/mauczka_files/heuristic_matrix.pkl
-      md5: d74a20ba456d19fce157b0876cc4b4b9
-      size: 1145633
+      md5: 7f8391bec2fedfd1d88b3cc7cdf9b9a2
+      size: 2240226
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc2
     outs:
     - path: runs/bugginess/dataset_debugging/mauczka_files/labeled.csv
-      md5: d25ab13ead86e61ddf917d497fb43172
-      size: 126754
+      md5: b8b328e69e0c9d8f9524f0b2d54ab495
+      size: 126764
   LabelDataset@keywords_combined_file_metrics_transformer__bohr.herzig_train:
     cmd: bohr porcelain label-dataset "keywords_combined_file_metrics_transformer"
       "bohr.herzig_train"
@@ -19734,18 +19734,18 @@ stages:
     cmd: bohr porcelain label-dataset "dataset_debugging" "levin_files"
     deps:
     - path: runs/bugginess/dataset_debugging/label_model.pkl
-      md5: e2315c0bca074e272ff319c6f6f60ea7
-      size: 547720
+      md5: 3aeb4e7ce6f26befbbd7a1bded41f145
+      size: 2050754
     - path: runs/bugginess/dataset_debugging/levin_files/heuristic_matrix.pkl
-      md5: 217ebb8a5117ad2170738f8f573bbc80
-      size: 1214321
+      md5: 1d9b13d1db51aa82e2137832e2178e3b
+      size: 2374634
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc2
     outs:
     - path: runs/bugginess/dataset_debugging/levin_files/labeled.csv
-      md5: 745e42eff8807e8032e1a99327fdfad0
-      size: 189860
+      md5: 492356c7900e2fcff4400f69b2cf9b41
+      size: 189888
   LabelDataset@gitcproc_orig__bohr.herzig_eval:
     cmd: bohr porcelain label-dataset "gitcproc_orig" "bohr.herzig_eval"
     deps:
@@ -19880,18 +19880,18 @@ stages:
     cmd: bohr porcelain label-dataset "dataset_debugging" "bohr.herzig_eval"
     deps:
     - path: runs/bugginess/dataset_debugging/bohr.herzig_eval/heuristic_matrix.pkl
-      md5: 848463bdf4bc97cc2fe39688f7b1d75a
-      size: 1692554
+      md5: 29a06112b27149ba5c240846f2470325
+      size: 3310427
     - path: runs/bugginess/dataset_debugging/label_model.pkl
-      md5: e2315c0bca074e272ff319c6f6f60ea7
-      size: 547720
+      md5: 3aeb4e7ce6f26befbbd7a1bded41f145
+      size: 2050754
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc2
     outs:
     - path: runs/bugginess/dataset_debugging/bohr.herzig_eval/labeled.csv
-      md5: 6263236454c3754b852852372ac67f96
-      size: 339620
+      md5: 08ffce66b81cf91ec9d01163b9fc842d
+      size: 339674
   LabelDataset@keywords_combined_file_metrics_transformer__bohr_200k_small_changes:
     cmd: bohr porcelain label-dataset "keywords_combined_file_metrics_transformer"
       "bohr_200k_small_changes"
@@ -19913,34 +19913,34 @@ stages:
     cmd: bohr porcelain label-dataset "dataset_debugging" "berger_files"
     deps:
     - path: runs/bugginess/dataset_debugging/berger_files/heuristic_matrix.pkl
-      md5: 150ba02f012625a1e601804773aa671e
-      size: 463928
+      md5: 7124220fff16a5f87f67e26e735d5660
+      size: 906281
     - path: runs/bugginess/dataset_debugging/label_model.pkl
-      md5: e2315c0bca074e272ff319c6f6f60ea7
-      size: 547720
+      md5: 3aeb4e7ce6f26befbbd7a1bded41f145
+      size: 2050754
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc2
     outs:
     - path: runs/bugginess/dataset_debugging/berger_files/labeled.csv
-      md5: 4768a6fcd4bed923f38c2436e5521e25
-      size: 61339
+      md5: d5e7a5f4eb61f54ebbc3662f79c8f9b9
+      size: 61354
   LabelDataset@dataset_debugging__commits_200k_files:
     cmd: bohr porcelain label-dataset "dataset_debugging" "commits_200k_files"
     deps:
     - path: runs/bugginess/dataset_debugging/commits_200k_files/heuristic_matrix.pkl
-      md5: e7b41b9fc08f26fb74ec94eb76c87f86
-      size: 236718441
+      md5: bb84da97b0789032c42425c48ee76ca1
+      size: 463206620
     - path: runs/bugginess/dataset_debugging/label_model.pkl
-      md5: e2315c0bca074e272ff319c6f6f60ea7
-      size: 547720
+      md5: 3aeb4e7ce6f26befbbd7a1bded41f145
+      size: 2050754
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc2
     outs:
     - path: runs/bugginess/dataset_debugging/commits_200k_files/labeled.csv
-      md5: f8c584aab1a852f6da036d0b7aee9ffc
-      size: 43390511
+      md5: 4b4941f020953a8459ad00a3225e2f91
+      size: 43393160
   ComputeSingleHeuristic@bugginess__bohr.herzig_train__bugginess/fine_grained_changes_transformer_70.py:
     cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
       "bugginess/fine_grained_changes_transformer_70.py" --dataset "bohr.herzig_train"
@@ -33908,14 +33908,14 @@ stages:
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc2
-        experiments.dataset_debugging.heuristics_classifier: bugginess/buggless_if_doc_extensions.py:bugginess/buggless_if_one_file_markdown_ext.py:bugginess/filemetrics:bugginess/fine_grained_changes_transformer_70.py:bugginess/fine_grained_changes_transformer_80.py:bugginess/fine_grained_changes_transformer_90.py:bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py:bugginess/large_change.py:bugginess/small_change.py
+        experiments.dataset_debugging.heuristics_classifier: bugginess/buggless_if_doc_extensions.py:bugginess/buggless_if_one_file_markdown_ext.py:bugginess/filemetrics:bugginess/fine_grained_changes_transformer_70.py:bugginess/fine_grained_changes_transformer_80.py:bugginess/fine_grained_changes_transformer_90.py:bugginess/keywords/bug_keywords_lookup_in_issue_body.py:bugginess/keywords/bug_keywords_lookup_in_issue_label.py:bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py:bugginess/keywords/bugless_keywords_lookup_in_issue_body.py:bugginess/keywords/bugless_keywords_lookup_in_issue_label.py:bugginess/large_change.py:bugginess/small_change.py
     outs:
     - path: runs/bugginess/dataset_debugging/idan_files/analysis.json
-      md5: 30bd8f11db03b4d5c358f76874609665
-      size: 61091
+      md5: 042c20fd6d1f669e79f21ecc8dbef01e
+      size: 113915
     - path: runs/bugginess/dataset_debugging/idan_files/heuristic_matrix.pkl
-      md5: 371265733c1fedc549b08af51a049a2e
-      size: 1358186
+      md5: bfda47687bdeea7a02c88eed129578fb
+      size: 2656139
     - path: runs/bugginess/dataset_debugging/idan_files/heuristic_metrics.json
       md5: 67aba9fdbfc573de9d382174319fc218
       size: 72
@@ -35259,18 +35259,18 @@ stages:
     cmd: bohr porcelain label-dataset "dataset_debugging" "idan_files"
     deps:
     - path: runs/bugginess/dataset_debugging/idan_files/heuristic_matrix.pkl
-      md5: 371265733c1fedc549b08af51a049a2e
-      size: 1358186
+      md5: bfda47687bdeea7a02c88eed129578fb
+      size: 2656139
     - path: runs/bugginess/dataset_debugging/label_model.pkl
-      md5: e2315c0bca074e272ff319c6f6f60ea7
-      size: 547720
+      md5: 3aeb4e7ce6f26befbbd7a1bded41f145
+      size: 2050754
     params:
       bohr.lock:
         bohr_runtime_version: 0.5.0rc2
     outs:
     - path: runs/bugginess/dataset_debugging/idan_files/labeled.csv
-      md5: 0e90f65d3e790d8b0830bae572cedd13
-      size: 177422
+      md5: 896abd2c7a72a423c19ece76bb76d399
+      size: 177510
   ComputeSingleHeuristic@bugginess__mauczka_files__bugginess/large_change.py:
     cmd: bohr porcelain compute-single-heuristic-metric --task "bugginess" --heuristic-group
       "bugginess/large_change.py" --dataset "mauczka_files"
