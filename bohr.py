@@ -12,6 +12,7 @@ def id_with_files(id: str, conditions: Optional[List[Dict]] = None) -> Dict:
         {"files": {"$type": "array"}}] + (conditions if conditions is not None else [])}
 
 
+commits_200k = Dataset(id='commits_200k', top_artifact=Commit, query={'bohr.200k_commits': {"$exists": True}})
 commits_200k_files = Dataset(id='commits_200k_files', top_artifact=Commit, query=id_with_files('bohr.200k_commits'))
 commits_200k_files_no_merges = Dataset(id='commits_200k_files_no_merges', top_artifact=Commit, query=id_with_files("bohr.200k_commits", [{"special_commit_finder/0_1.merge": False}]))
 
@@ -38,9 +39,7 @@ bohr_200k_large_changes = Dataset(id='bohr_200k_large_changes', top_artifact=Com
 
 bugginess = Task(name='bugginess', author='hlib', description='bug or not', top_artifact=Commit,
                  labels=[CommitLabel.NonBugFix, CommitLabel.BugFix],
-                 training_dataset=commits_200k_files_no_merges,
                  test_datasets={
-                                commits_200k_files: None,
                                 idan_files: lambda c: (CommitLabel.BugFix if c.raw_data['idan/0_1']['Is_Corrective'] else CommitLabel.NonBugFix),
                                 levin_files: lambda c: (CommitLabel.BugFix if c.raw_data['manual_labels']['levin']['bug'] == 1 else CommitLabel.NonBugFix),
                                 berger_files: lambda c: (CommitLabel.BugFix if c.raw_data['manual_labels']['berger']['bug'] == 1 else CommitLabel.NonBugFix),
@@ -50,13 +49,9 @@ bugginess = Task(name='bugginess', author='hlib', description='bug or not', top_
                                 mauczka_files: lambda c: (CommitLabel.BugFix if c.raw_data['manual_labels']['mauczka']['hl_corrective'] == 1 else CommitLabel.NonBugFix),
                                 })
 
-bugginess_herzig = Task(name='bugginess_herzig', author='hlib', description='bug or not (herzig)', top_artifact=Commit,
-                 labels=[CommitLabel.NonBugFix, CommitLabel.BugFix],
-                 training_dataset=herzig_train,
-                 test_datasets={herzig_eval:lambda c: (CommitLabel.BugFix if c.raw_data['manual_labels']['herzig']['CLASSIFIED'] == 'BUG' else CommitLabel.NonBugFix)})
-
 
 dataset_debugging = Experiment('dataset_debugging', bugginess,
+                               train_dataset=commits_200k_files,
                                heuristics_classifier=f'bugginess/fine_grained_changes_transformer_90.py:'
                                                      f'bugginess/buggless_if_one_file_markdown_ext.py:'
                                                      f'bugginess/buggless_if_doc_extensions.py:'
@@ -71,6 +66,7 @@ dataset_debugging = Experiment('dataset_debugging', bugginess,
 
 
 all_heuristics_with_issues = Experiment('all_heuristics_with_issues', bugginess,
+                                        train_dataset=commits_200k_files,
                                                        heuristics_classifier=f'bugginess/fine_grained_changes_transformer_90.py:'
                                                                              f'bugginess/fine_grained_changes_transformer_80.py:'
                                                                              f'bugginess/fine_grained_changes_transformer_70.py:'
@@ -85,6 +81,7 @@ all_heuristics_with_issues = Experiment('all_heuristics_with_issues', bugginess,
 
 
 all_heuristics_without_issues = Experiment('all_heuristics_without_issues', bugginess,
+                                           train_dataset=commits_200k_files,
                                         heuristics_classifier=f'bugginess/fine_grained_changes_transformer_90.py:'
                                                               f'bugginess/fine_grained_changes_transformer_80.py:'
                                                               f'bugginess/fine_grained_changes_transformer_70.py:'
@@ -93,13 +90,31 @@ all_heuristics_without_issues = Experiment('all_heuristics_without_issues', bugg
                                                               f'bugginess/keywords/buggless_keywords_lookup_in_message.py'
                                                               f'@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
 
+all_heuristics_without_issues_orig200k = Experiment('all_heuristics_without_issues_orig200k', bugginess,
+                                                 train_dataset=commits_200k,
+                                           heuristics_classifier=f'bugginess/fine_grained_changes_transformer_90.py:'
+                                                                 f'bugginess/fine_grained_changes_transformer_80.py:'
+                                                                 f'bugginess/fine_grained_changes_transformer_70.py:'
+                                                                 f'bugginess/filemetrics:'
+                                                                 f'bugginess/keywords/bug_keywords_lookup_in_message.py:'
+                                                                 f'bugginess/keywords/buggless_keywords_lookup_in_message.py'
+                                                                 f'@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
 
-gitcproc = Experiment('gitcproc', bugginess, heuristics_classifier=f'bugginess/gitcproc@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
 
-gitcproc_orig = Experiment('gitcproc_orig', bugginess, heuristics_classifier=f'bugginess/gitcproc/keywords.py@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
+message_keywords_filemetrics = Experiment('message_keywords_filemetrics', bugginess,
+                                          train_dataset=commits_200k_files,
+                                           heuristics_classifier=f'bugginess/filemetrics:'
+                                                                 f'bugginess/keywords/bug_keywords_lookup_in_message.py:'
+                                                                 f'bugginess/keywords/buggless_keywords_lookup_in_message.py'
+                                                                 f'@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
 
-only_message_keywords = Experiment('only_message_keywords', bugginess, heuristics_classifier=f'bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
-only_keywords = Experiment('only_keywords', bugginess, heuristics_classifier=f'bugginess/keywords/bug_keywords_lookup_in_message.py:'
+
+gitcproc = Experiment('gitcproc', bugginess, train_dataset=commits_200k_files, heuristics_classifier=f'bugginess/gitcproc@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
+
+gitcproc_orig = Experiment('gitcproc_orig', bugginess, train_dataset=commits_200k_files, heuristics_classifier=f'bugginess/gitcproc/keywords.py@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
+
+only_message_keywords = Experiment('only_message_keywords', bugginess, train_dataset=commits_200k_files, heuristics_classifier=f'bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
+only_keywords = Experiment('only_keywords', bugginess, train_dataset=commits_200k_files, heuristics_classifier=f'bugginess/keywords/bug_keywords_lookup_in_message.py:'
                                                                              f'bugginess/keywords/bugless_keywords_lookup_in_issue_body.py:'
                                                                              f'bugginess/keywords/bugless_keywords_lookup_in_issue_label.py:'
                                                                              f'bugginess/keywords/bug_keywords_lookup_in_issue_body.py:'
@@ -110,7 +125,9 @@ only_keywords = Experiment('only_keywords', bugginess, heuristics_classifier=f'b
 w = Workspace('0.5.0rc2', [
     dataset_debugging,
     all_heuristics_without_issues,
+    all_heuristics_without_issues_orig200k,
     all_heuristics_with_issues,
+    # message_keywords_filemetrics,
     gitcproc,
     gitcproc_orig,
     only_message_keywords,
