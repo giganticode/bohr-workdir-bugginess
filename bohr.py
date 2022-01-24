@@ -125,6 +125,12 @@ only_keywords = Experiment('only_keywords', bugginess, train_dataset=commits_200
                                                                              f'bugginess/keywords/bug_keywords_lookup_in_issue_label.py:'
                                                                              f'bugginess/keywords/buggless_keywords_lookup_in_message.py@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
 
+only_message_and_label_keywords = Experiment('only_message_and_label_keywords', bugginess, train_dataset=commits_200k_files, heuristics_classifier=f'bugginess/keywords/bug_keywords_lookup_in_message.py:'
+                                                                                                               f'bugginess/keywords/bugless_keywords_lookup_in_issue_label.py:'
+                                                                                                               f'bugginess/keywords/bug_keywords_lookup_in_issue_label.py:'
+                                                                                                               f'bugginess/keywords/buggless_keywords_lookup_in_message.py@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
+
+
 
 w = Workspace('0.5.0rc2', [
     dataset_debugging,
@@ -135,6 +141,7 @@ w = Workspace('0.5.0rc2', [
     gitcproc,
     gitcproc_orig,
     only_message_keywords,
+    only_message_and_label_keywords,
     only_keywords,
 ])
 

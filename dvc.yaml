@@ -1686,6 +1686,38 @@ stages:
         dataset: mauczka_files
         exp: only_keywords
         task: bugginess
+      only_message_and_label_keywords__berger_files:
+        dataset: berger_files
+        exp: only_message_and_label_keywords
+        task: bugginess
+      only_message_and_label_keywords__bohr.herzig_eval:
+        dataset: bohr.herzig_eval
+        exp: only_message_and_label_keywords
+        task: bugginess
+      only_message_and_label_keywords__bohr.herzig_train:
+        dataset: bohr.herzig_train
+        exp: only_message_and_label_keywords
+        task: bugginess
+      only_message_and_label_keywords__commits_200k_files:
+        dataset: commits_200k_files
+        exp: only_message_and_label_keywords
+        task: bugginess
+      only_message_and_label_keywords__idan_files:
+        dataset: idan_files
+        exp: only_message_and_label_keywords
+        task: bugginess
+      only_message_and_label_keywords__levin_files:
+        dataset: levin_files
+        exp: only_message_and_label_keywords
+        task: bugginess
+      only_message_and_label_keywords__manual_labels.herzig:
+        dataset: manual_labels.herzig
+        exp: only_message_and_label_keywords
+        task: bugginess
+      only_message_and_label_keywords__mauczka_files:
+        dataset: mauczka_files
+        exp: only_message_and_label_keywords
+        task: bugginess
       only_message_keywords__berger_files:
         dataset: berger_files
         exp: only_message_keywords
@@ -3455,6 +3487,38 @@ stages:
         dataset: mauczka_files
         exp: only_keywords
         task: bugginess
+      only_message_and_label_keywords__berger_files:
+        dataset: berger_files
+        exp: only_message_and_label_keywords
+        task: bugginess
+      only_message_and_label_keywords__bohr.herzig_eval:
+        dataset: bohr.herzig_eval
+        exp: only_message_and_label_keywords
+        task: bugginess
+      only_message_and_label_keywords__bohr.herzig_train:
+        dataset: bohr.herzig_train
+        exp: only_message_and_label_keywords
+        task: bugginess
+      only_message_and_label_keywords__commits_200k_files:
+        dataset: commits_200k_files
+        exp: only_message_and_label_keywords
+        task: bugginess
+      only_message_and_label_keywords__idan_files:
+        dataset: idan_files
+        exp: only_message_and_label_keywords
+        task: bugginess
+      only_message_and_label_keywords__levin_files:
+        dataset: levin_files
+        exp: only_message_and_label_keywords
+        task: bugginess
+      only_message_and_label_keywords__manual_labels.herzig:
+        dataset: manual_labels.herzig
+        exp: only_message_and_label_keywords
+        task: bugginess
+      only_message_and_label_keywords__mauczka_files:
+        dataset: mauczka_files
+        exp: only_message_and_label_keywords
+        task: bugginess
       only_message_keywords__berger_files:
         dataset: berger_files
         exp: only_message_keywords
@@ -3680,6 +3744,31 @@ stages:
       params:
       - bohr.lock:
         - experiments.only_keywords.train_set
+      - bohr.lock:
+        - bohr_runtime_version
+    foreach:
+    - 0
+  TrainLabelModel@only_message_and_label_keywords:
+    do:
+      cmd: bohr porcelain train-label-model only_message_and_label_keywords
+      deps:
+      - runs/bugginess/only_message_and_label_keywords/idan_files/heuristic_matrix.pkl
+      - runs/bugginess/only_message_and_label_keywords/levin_files/heuristic_matrix.pkl
+      - runs/bugginess/only_message_and_label_keywords/berger_files/heuristic_matrix.pkl
+      - runs/bugginess/only_message_and_label_keywords/manual_labels.herzig/heuristic_matrix.pkl
+      - runs/bugginess/only_message_and_label_keywords/bohr.herzig_eval/heuristic_matrix.pkl
+      - runs/bugginess/only_message_and_label_keywords/bohr.herzig_train/heuristic_matrix.pkl
+      - runs/bugginess/only_message_and_label_keywords/mauczka_files/heuristic_matrix.pkl
+      - runs/bugginess/only_message_and_label_keywords/commits_200k_files/heuristic_matrix.pkl
+      metrics:
+      - runs/bugginess/only_message_and_label_keywords/label_model_metrics.json:
+          cache: false
+      outs:
+      - runs/bugginess/only_message_and_label_keywords/label_model.pkl
+      - runs/bugginess/only_message_and_label_keywords/label_model_weights.csv
+      params:
+      - bohr.lock:
+        - experiments.only_message_and_label_keywords.train_set
       - bohr.lock:
         - bohr_runtime_version
     foreach:

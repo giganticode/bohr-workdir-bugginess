@@ -198,7 +198,7 @@ bug_issue_body_keyword_unexpect,195,[],0.0,0.0,0.0,0,0,0.0
 bug_issue_body_keyword_unknown,196,[],0.0,0.0,0.0,0,0,0.0
 bug_issue_body_keyword_unsynchron,197,[],0.0,0.0,0.0,0,0,0.0
 bug_issue_body_keyword_wrong,198,[],0.0,0.0,0.0,0,0,0.0
-bug_issue_label_keyword_bug,199,[],0.0,0.0,0.0,0,0,0.0
+bug_issue_label_keyword_bug,199,[1],0.0009596928982725527,0.0009596928982725527,0.0009596928982725527,1,0,1.0
 bug_issue_label_keyword_fixed,200,[],0.0,0.0,0.0,0,0,0.0
 bug_issue_label_keyword_fix,201,[],0.0,0.0,0.0,0,0,0.0
 bug_issue_label_keyword_error,202,[],0.0,0.0,0.0,0,0,0.0
