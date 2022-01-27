@@ -1,0 +1,7 @@
+majority_accuracy_not_abstained = 0.7709251101321586
+n_labeling_functions = 145
+coverage = 0.7907692307692308
+label_model_accuracy = 0.697
+label_model_auc = 0.763
+label_model_f1 = 0.645
+label_model_mse = 0.21
