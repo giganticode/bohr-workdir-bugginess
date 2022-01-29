@@ -44022,3 +44022,94 @@ stages:
     - path: runs/__single_heuristic_metrics/bugginess/mauczka_files/bugginess/wip/wip_keyword_in_message.py/metrics.txt
       md5: c36e02d41f08fc05a0703f36fdb7ffb2
       size: 84
+  ComputeRandomModelMetrics@bugginess__levin_files:
+    cmd: bohr porcelain compute-random-model-metrics "bugginess" "levin_files"
+    deps:
+    - path: cached-datasets/levin_files.jsonl
+      md5: d9f014ca2fd091b9a73f8b3b2c7c9cd0
+      size: 39350103
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc2
+    outs:
+    - path: runs/bugginess/random_model/levin_files/metrics.txt
+      md5: a990c7e367d0d2c600dae8e54331fb90
+      size: 98
+  ComputeRandomModelMetrics@bugginess__idan_files:
+    cmd: bohr porcelain compute-random-model-metrics "bugginess" "idan_files"
+    deps:
+    - path: cached-datasets/idan_files.jsonl
+      md5: abe119a6f368f207ac5183c758da3f59
+      size: 37398121
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc2
+    outs:
+    - path: runs/bugginess/random_model/idan_files/metrics.txt
+      md5: 7c70bc78a10e124c0e43dcbacc5ea505
+      size: 98
+  ComputeRandomModelMetrics@bugginess__bohr.herzig_train:
+    cmd: bohr porcelain compute-random-model-metrics "bugginess" "bohr.herzig_train"
+    deps:
+    - path: cached-datasets/bohr.herzig_train.jsonl
+      md5: 1f4411fcdb6e881b0b986204586b56b2
+      size: 207833347
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc2
+    outs:
+    - path: runs/bugginess/random_model/bohr.herzig_train/metrics.txt
+      md5: 885c8d6853b86719f41bff9667ad05a7
+      size: 98
+  ComputeRandomModelMetrics@bugginess__berger_files:
+    cmd: bohr porcelain compute-random-model-metrics "bugginess" "berger_files"
+    deps:
+    - path: cached-datasets/berger_files.jsonl
+      md5: 4bd8fff15aa33a31dde7e4d82e235503
+      size: 25957621
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc2
+    outs:
+    - path: runs/bugginess/random_model/berger_files/metrics.txt
+      md5: 52ad6144cdec29b0c1eb5082c2b172f0
+      size: 98
+  ComputeRandomModelMetrics@bugginess__mauczka_files:
+    cmd: bohr porcelain compute-random-model-metrics "bugginess" "mauczka_files"
+    deps:
+    - path: cached-datasets/mauczka_files.jsonl
+      md5: bb2154ab0f36d194a893b5d977810a4e
+      size: 37410152
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc2
+    outs:
+    - path: runs/bugginess/random_model/mauczka_files/metrics.txt
+      md5: e33ae5d4990ca78f5c590a1b7b14295f
+      size: 98
+  ComputeRandomModelMetrics@bugginess__manual_labels.herzig:
+    cmd: bohr porcelain compute-random-model-metrics "bugginess" "manual_labels.herzig"
+    deps:
+    - path: cached-datasets/manual_labels.herzig.jsonl
+      md5: 531fa982dbe7064f3d345677df510c58
+      size: 294446290
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc2
+    outs:
+    - path: runs/bugginess/random_model/manual_labels.herzig/metrics.txt
+      md5: aa43fe9c376cfcd2d462323f3060552f
+      size: 98
+  ComputeRandomModelMetrics@bugginess__bohr.herzig_eval:
+    cmd: bohr porcelain compute-random-model-metrics "bugginess" "bohr.herzig_eval"
+    deps:
+    - path: cached-datasets/bohr.herzig_eval.jsonl
+      md5: a0fb7a37649d7c8c746da917f1e2cdf6
+      size: 86612943
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.5.0rc2
+    outs:
+    - path: runs/bugginess/random_model/bohr.herzig_eval/metrics.txt
+      md5: 1d61c02ee9ee7a3b162a60d855466744
+      size: 98

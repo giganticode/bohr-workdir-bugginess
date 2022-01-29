@@ -1746,6 +1746,40 @@ stages:
         dataset: mauczka_files
         exp: only_message_keywords
         task: bugginess
+  ComputeRandomModelMetrics:
+    do:
+      cmd: bohr porcelain compute-random-model-metrics "${item.task}" "${item.dataset}"
+      deps:
+      - cached-datasets/${item.dataset}.jsonl
+      metrics:
+      - runs/${item.task}/random_model/${item.dataset}/metrics.txt:
+          cache: false
+      outs: []
+      params:
+      - bohr.lock:
+        - bohr_runtime_version
+    foreach:
+      bugginess__berger_files:
+        dataset: berger_files
+        task: bugginess
+      bugginess__bohr.herzig_eval:
+        dataset: bohr.herzig_eval
+        task: bugginess
+      bugginess__bohr.herzig_train:
+        dataset: bohr.herzig_train
+        task: bugginess
+      bugginess__idan_files:
+        dataset: idan_files
+        task: bugginess
+      bugginess__levin_files:
+        dataset: levin_files
+        task: bugginess
+      bugginess__manual_labels.herzig:
+        dataset: manual_labels.herzig
+        task: bugginess
+      bugginess__mauczka_files:
+        dataset: mauczka_files
+        task: bugginess
   ComputeSingleHeuristicMetrics__bugginess:
     cmd: bohr porcelain compute-single-heuristic-metric bugginess
     deps:
