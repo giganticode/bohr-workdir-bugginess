@@ -1,4 +1,4 @@
-from typing import Dict, Optional, List
+from typing import Dict, Optional, List, Any
 
 from pydot import frozendict
 
@@ -14,9 +14,32 @@ def id_with_files(id: str, conditions: Optional[List[Dict]] = None) -> Dict:
         {"files": {"$type": "array"}}] + (conditions if conditions is not None else [])}
 
 
+important_projects= {
+    'levin' : ["apache/hadoop", "apache/hbase", "ReactiveX/RxJava", "apache/camel", "elastic/elasticsearch", "JetBrains/intellij-community", "restlet/restlet-framework-java", "spring-projects/spring-framework", "kiegroup/drools", "orientechnologies/orientdb", "JetBrains/kotlin"],
+    'berger': ["0x43/DesignPatternsPHP", "AlexMeliq/less.js", "Arcank/nimbus", "AutoMapper/AutoMapper", "Chenkaiang/XVim", "GeertJohan/gorp", "K2InformaticsGmBH/proper", "MerlinDMC/gocode", "MythTV/mythtv", "alibaba/tengine", "clojure/core.logic", "docpad/docpad", "faylang/fay", "lfe/lfe", "magicalpanda/MagicalRecord", "mpeltonen/sbt-idea", "plumatic/plumbing", "sinclairzx81/typescript.api", "yu19930123/ngrok", "JetBrains/kotlin"],
+    'herzig': ["apache/jackrabbit", "apache/lucene-solr", "apache/tomcat", "mozilla/rhino", "apache/httpcomponents-client"],
+}
+
+
+def important_project_query(datasets: List[str]) -> Dict[str, Any]:
+    projects = [p for dataset in datasets for p in important_projects[dataset]]
+
+    important_project_condition = []
+    for project in projects:
+        owner, repo = project.split('/')
+        important_project_condition.append({'owner': owner, 'repo': repo})
+
+    query = {'$and': [{'files': {"$exists": True}}, {"files": {"$type": "array"}}, {"message": {"$exists": True}}, {"special_commit_finder/0_1.merge": False}, {"manual_labels": {"$exists": False}}, {'$or': important_project_condition}]}
+    return query
+
+
 commits_200k = Dataset(id='commits_200k', top_artifact=Commit, query={'bohr.200k_commits': {"$exists": True}})
 commits_200k_files = Dataset(id='commits_200k_files', top_artifact=Commit, query=id_with_files('bohr.200k_commits'))
 commits_200k_files_no_merges = Dataset(id='commits_200k_files_no_merges', top_artifact=Commit, query=id_with_files("bohr.200k_commits", [{"special_commit_finder/0_1.merge": False}]))
+levin_berger_herzig_train = Dataset(id='levin_berger_herzig_train', top_artifact=Commit, query=important_project_query(['levin', 'berger', 'herzig']), projection={'gumtree/3_0_0-beta2': 0}, n_datapoints=20000)
+levin_train = Dataset(id='levin_train', top_artifact=Commit, query=important_project_query(['levin']), projection={'gumtree/3_0_0-beta2': 0}, n_datapoints=20000)
+berger_train = Dataset(id='berger_train', top_artifact=Commit, query=important_project_query(['berger']), projection={'gumtree/3_0_0-beta2': 0}, n_datapoints=20000)
+herzig_train = Dataset(id='herzig_train', top_artifact=Commit, query=important_project_query(['herzig']), projection={'gumtree/3_0_0-beta2': 0}, n_datapoints=20000)
 
 berger_files = Dataset(id='berger_files', top_artifact=Commit, query=id_with_files('manual_labels.berger'))
 levin_files = Dataset(id='levin_files', top_artifact=Commit, query=id_with_files('manual_labels.levin'))
@@ -24,8 +47,8 @@ herzig = Dataset(id='manual_labels.herzig', top_artifact=Commit)
 mauczka_files = Dataset(id='mauczka_files', top_artifact=Commit, query=id_with_files('manual_labels.mauczka'))
 idan_files = Dataset(id='idan_files', top_artifact=Commit, query=id_with_files('idan/0_1', [{"idan/0_1.Is_Corrective": {"$exists": True}}]))
 
-herzig_train = Dataset(id='bohr.herzig_train', top_artifact=Commit)
-herzig_eval = Dataset(id='bohr.herzig_eval', top_artifact=Commit)
+bohr_herzig_train = Dataset(id='bohr.herzig_train', top_artifact=Commit)
+bohr_herzig_eval = Dataset(id='bohr.herzig_eval', top_artifact=Commit)
 
 levin_small_changes = Dataset(id='levin_small_changes', top_artifact=Commit, query=id_with_files('manual_labels.levin', [{'bohr.gt_512_codeberta_tokens': False}]))
 levin_large_changes = Dataset(id='levin_large_changes', top_artifact=Commit, query=id_with_files('manual_labels.levin', [{'bohr.gt_512_codeberta_tokens': True}]))
@@ -53,8 +76,8 @@ bugginess = Task(name='bugginess', author='hlib', description='bug or not', top_
 dataset_debugging = Experiment('dataset_debugging', bugginess,
                                train_dataset=commits_200k_files,
                                extra_test_datasets=frozendict(
-                                   {herzig_eval: lambda c: (CommitLabel.BugFix if c.raw_data['manual_labels']['herzig']['CLASSIFIED'] == 'BUG' else CommitLabel.NonBugFix),
-                                    herzig_train: lambda c: (CommitLabel.BugFix if c.raw_data['manual_labels']['herzig']['CLASSIFIED'] == 'BUG' else CommitLabel.NonBugFix)}
+                                   {bohr_herzig_eval: lambda c: (CommitLabel.BugFix if c.raw_data['manual_labels']['herzig']['CLASSIFIED'] == 'BUG' else CommitLabel.NonBugFix),
+                                    bohr_herzig_train: lambda c: (CommitLabel.BugFix if c.raw_data['manual_labels']['herzig']['CLASSIFIED'] == 'BUG' else CommitLabel.NonBugFix)}
                                 ),
                                heuristics_classifier=f'bugginess/fine_grained_changes_transformer_90.py:'
                                                      f'bugginess/buggless_if_one_file_markdown_ext.py:'
@@ -135,6 +158,54 @@ only_message_and_label_keywords = Experiment('only_message_and_label_keywords', 
                                                                                                                f'bugginess/keywords/buggless_keywords_lookup_in_message.py@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
 
 
+only_message_keywords_important_projects = Experiment('only_message_keywords_important_projects', bugginess, train_dataset=levin_berger_herzig_train, heuristics_classifier=f'bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
+
+all_heuristics_without_issues_important_projects = Experiment('all_heuristics_without_issues_important_projects', bugginess,
+                                           train_dataset=levin_berger_herzig_train,
+                                           heuristics_classifier=f'bugginess/fine_grained_changes_transformer_90.py:'
+                                                                 f'bugginess/fine_grained_changes_transformer_80.py:'
+                                                                 f'bugginess/fine_grained_changes_transformer_70.py:'
+                                                                 f'bugginess/filemetrics:'
+                                                                 f'bugginess/keywords/bug_keywords_lookup_in_message.py:'
+                                                                 f'bugginess/keywords/buggless_keywords_lookup_in_message.py'
+                                                                 f'@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
+
+only_message_keywords_levin = Experiment('only_message_keywords_levin', bugginess, train_dataset=levin_train, heuristics_classifier=f'bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
+
+all_heuristics_without_issues_levin = Experiment('all_heuristics_without_issues_levin', bugginess,
+                                                              train_dataset=levin_train,
+                                                              heuristics_classifier=f'bugginess/fine_grained_changes_transformer_90.py:'
+                                                                                    f'bugginess/fine_grained_changes_transformer_80.py:'
+                                                                                    f'bugginess/fine_grained_changes_transformer_70.py:'
+                                                                                    f'bugginess/filemetrics:'
+                                                                                    f'bugginess/keywords/bug_keywords_lookup_in_message.py:'
+                                                                                    f'bugginess/keywords/buggless_keywords_lookup_in_message.py'
+                                                                                    f'@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
+
+only_message_keywords_berger = Experiment('only_message_keywords_berger', bugginess, train_dataset=berger_train, heuristics_classifier=f'bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
+
+all_heuristics_without_issues_berger = Experiment('all_heuristics_without_issues_berger', bugginess,
+                                                 train_dataset=berger_train,
+                                                 heuristics_classifier=f'bugginess/fine_grained_changes_transformer_90.py:'
+                                                                       f'bugginess/fine_grained_changes_transformer_80.py:'
+                                                                       f'bugginess/fine_grained_changes_transformer_70.py:'
+                                                                       f'bugginess/filemetrics:'
+                                                                       f'bugginess/keywords/bug_keywords_lookup_in_message.py:'
+                                                                       f'bugginess/keywords/buggless_keywords_lookup_in_message.py'
+                                                                       f'@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
+
+
+only_message_keywords_herzig = Experiment('only_message_keywords_herzig', bugginess, train_dataset=herzig_train, heuristics_classifier=f'bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
+
+all_heuristics_without_issues_herzig = Experiment('all_heuristics_without_issues_herzig', bugginess,
+                                                  train_dataset=herzig_train,
+                                                  heuristics_classifier=f'bugginess/fine_grained_changes_transformer_90.py:'
+                                                                        f'bugginess/fine_grained_changes_transformer_80.py:'
+                                                                        f'bugginess/fine_grained_changes_transformer_70.py:'
+                                                                        f'bugginess/filemetrics:'
+                                                                        f'bugginess/keywords/bug_keywords_lookup_in_message.py:'
+                                                                        f'bugginess/keywords/buggless_keywords_lookup_in_message.py'
+                                                                        f'@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
 
 w = Workspace('0.5.0rc2', [
     dataset_debugging,
@@ -147,5 +218,13 @@ w = Workspace('0.5.0rc2', [
     only_message_keywords,
     only_message_and_label_keywords,
     only_keywords,
+    only_message_keywords_important_projects,
+    all_heuristics_without_issues_important_projects,
+    all_heuristics_without_issues_levin,
+    only_message_keywords_levin,
+    all_heuristics_without_issues_berger,
+    only_message_keywords_berger,
+    all_heuristics_without_issues_herzig,
+    only_message_keywords_herzig,
 ])
 
