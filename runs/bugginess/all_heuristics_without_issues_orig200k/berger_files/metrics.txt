@@ -4,4 +4,5 @@ coverage = 0.96875
 label_model_accuracy = 0.685
 label_model_auc = 0.735
 label_model_f1 = 0.636
+label_model_f1_macro = 0.679
 label_model_mse = 0.218
