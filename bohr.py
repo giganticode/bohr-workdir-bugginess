@@ -1,5 +1,7 @@
 from typing import Dict, Optional, List
 
+from pydot import frozendict
+
 from bohrapi.artifacts import Commit
 from bohrlabels.labels import CommitLabel
 from bohrapi.core import Dataset, Task, Workspace, Experiment
@@ -44,14 +46,16 @@ bugginess = Task(name='bugginess', author='hlib', description='bug or not', top_
                                 levin_files: lambda c: (CommitLabel.BugFix if c.raw_data['manual_labels']['levin']['bug'] == 1 else CommitLabel.NonBugFix),
                                 berger_files: lambda c: (CommitLabel.BugFix if c.raw_data['manual_labels']['berger']['bug'] == 1 else CommitLabel.NonBugFix),
                                 herzig: lambda c: (CommitLabel.BugFix if c.raw_data['manual_labels']['herzig']['CLASSIFIED'] == 'BUG' else CommitLabel.NonBugFix),
-                                herzig_eval: lambda c: (CommitLabel.BugFix if c.raw_data['manual_labels']['herzig']['CLASSIFIED'] == 'BUG' else CommitLabel.NonBugFix),
-                                herzig_train: lambda c: (CommitLabel.BugFix if c.raw_data['manual_labels']['herzig']['CLASSIFIED'] == 'BUG' else CommitLabel.NonBugFix),
                                 mauczka_files: lambda c: (CommitLabel.BugFix if c.raw_data['manual_labels']['mauczka']['hl_corrective'] == 1 else CommitLabel.NonBugFix),
                                 })
 
 
 dataset_debugging = Experiment('dataset_debugging', bugginess,
                                train_dataset=commits_200k_files,
+                               extra_test_datasets=frozendict(
+                                   {herzig_eval: lambda c: (CommitLabel.BugFix if c.raw_data['manual_labels']['herzig']['CLASSIFIED'] == 'BUG' else CommitLabel.NonBugFix),
+                                    herzig_train: lambda c: (CommitLabel.BugFix if c.raw_data['manual_labels']['herzig']['CLASSIFIED'] == 'BUG' else CommitLabel.NonBugFix)}
+                                ),
                                heuristics_classifier=f'bugginess/fine_grained_changes_transformer_90.py:'
                                                      f'bugginess/buggless_if_one_file_markdown_ext.py:'
                                                      f'bugginess/buggless_if_doc_extensions.py:'
