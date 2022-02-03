@@ -1,7 +1,8 @@
 majority_accuracy_not_abstained = 0.8566176470588235
 n_labeling_functions = 300
 coverage = 0.8948863636363636
-label_model_accuracy = 0.77
+label_model_accuracy = 0.764
 label_model_auc = 0.89
-label_model_f1 = 0.743
+label_model_f1 = 0.738
+label_model_f1_macro = 0.762
 label_model_mse = 0.155

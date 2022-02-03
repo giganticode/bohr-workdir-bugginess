@@ -1,1 +1,1 @@
-{"match": {"$and": [{"manual_labels.levin": {"$exists": true}}, {"files": {"$exists": true}}, {"files": {"$type": "array"}}]}, "projection": null, "lookup": {"from": "issues", "localField": "links.bohr.issues", "foreignField": "_id", "as": "issues"}}
+{"match": {"$and": [{"manual_labels.levin": {"$exists": true}}, {"files": {"$exists": true}}, {"files": {"$type": "array"}}]}, "projection": null, "lookup": {"from": "issues", "localField": "links.bohr.issues", "foreignField": "_id", "as": "issues"}, "limit": null}
