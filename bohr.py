@@ -78,17 +78,18 @@ refactoring = Task(name='refactoring', author='hlib', description='refactoring o
                      herzig: lambda c: (CommitLabel.Refactoring if c.raw_data['manual_labels']['herzig']['CLASSIFIED'] == 'REFACTORING' else CommitLabel.CommitLabel & ~CommitLabel.Refactoring),
                  })
 
+REVISION = '0a56f59c95ca87ee324c365bf2eb71b212a6045e'
 
 refactoring_no_ref_heuristics = Experiment('refactoring_no_ref_heuristics', refactoring, train_dataset=herzig_train,
                                       heuristics_classifier=f'bugginess/keywords/bug_keywords_lookup_in_message.py:'
                                                             f'bugginess/keywords/buggless_keywords_lookup_in_message.py'
-                                                            f'@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
+                                                            f'@{REVISION}')
 
 refactoring_few_ref_heuristics = Experiment('refactoring_few_ref_heuristics', refactoring, train_dataset=herzig_train,
                                            heuristics_classifier=f'bugginess/keywords/bug_keywords_lookup_in_message.py:'
                                                                  f'bugginess/keywords/buggless_keywords_lookup_in_message.py:'
                                                                  f'refactoring/keywords.py'
-                                                                 f'@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
+                                                                 f'@{REVISION}')
 
 dataset_debugging = Experiment('dataset_debugging', bugginess,
                                train_dataset=commits_200k_files,
@@ -111,7 +112,7 @@ dataset_debugging = Experiment('dataset_debugging', bugginess,
                                                      f'bugginess/keywords/bugless_keywords_lookup_in_issue_label.py:'
                                                      f'bugginess/keywords/bug_keywords_lookup_in_issue_body.py:'
                                                      f'bugginess/keywords/bug_keywords_lookup_in_issue_label.py'
-                                                            f'@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
+                                                            f'@{REVISION}')
 
 
 all_heuristics_with_issues = Experiment('all_heuristics_with_issues', bugginess,
@@ -127,7 +128,7 @@ all_heuristics_with_issues = Experiment('all_heuristics_with_issues', bugginess,
                                                                              f'bugginess/keywords/bugless_keywords_lookup_in_issue_label.py:'
                                                                              f'bugginess/keywords/bug_keywords_lookup_in_issue_body.py:'
                                                                              f'bugginess/keywords/bug_keywords_lookup_in_issue_label.py'
-                                                                             f'@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
+                                                                             f'@{REVISION}')
 
 
 all_heuristics_without_issues = Experiment('all_heuristics_without_issues', bugginess,
@@ -139,7 +140,7 @@ all_heuristics_without_issues = Experiment('all_heuristics_without_issues', bugg
                                                               f'bugginess/filemetrics:'
                                                               f'bugginess/keywords/bug_keywords_lookup_in_message.py:'
                                                               f'bugginess/keywords/buggless_keywords_lookup_in_message.py'
-                                                              f'@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
+                                                              f'@{REVISION}')
 
 all_heuristics_without_issues_orig200k = Experiment('all_heuristics_without_issues_orig200k', bugginess,
                                                  train_dataset=commits_200k,
@@ -150,7 +151,7 @@ all_heuristics_without_issues_orig200k = Experiment('all_heuristics_without_issu
                                                                  f'bugginess/filemetrics:'
                                                                  f'bugginess/keywords/bug_keywords_lookup_in_message.py:'
                                                                  f'bugginess/keywords/buggless_keywords_lookup_in_message.py'
-                                                                 f'@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
+                                                                 f'@{REVISION}')
 
 
 message_keywords_filemetrics = Experiment('message_keywords_filemetrics', bugginess,
@@ -159,32 +160,32 @@ message_keywords_filemetrics = Experiment('message_keywords_filemetrics', buggin
                                                                  f'bugginess/filemetrics:'
                                                                  f'bugginess/keywords/bug_keywords_lookup_in_message.py:'
                                                                  f'bugginess/keywords/buggless_keywords_lookup_in_message.py'
-                                                                 f'@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
+                                                                 f'@{REVISION}')
 
 
-gitcproc = Experiment('gitcproc', bugginess, train_dataset=commits_200k_files, heuristics_classifier=f'bugginess/gitcproc@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
+gitcproc = Experiment('gitcproc', bugginess, train_dataset=commits_200k_files, heuristics_classifier=f'bugginess/gitcproc@{REVISION}')
 
-gitcproc_orig = Experiment('gitcproc_orig', bugginess, train_dataset=commits_200k_files, heuristics_classifier=f'bugginess/gitcproc/keywords.py@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
+gitcproc_orig = Experiment('gitcproc_orig', bugginess, train_dataset=commits_200k_files, heuristics_classifier=f'bugginess/gitcproc/keywords.py@{REVISION}')
 
 only_message_keywords = Experiment('only_message_keywords', bugginess, train_dataset=commits_200k_files, heuristics_classifier=f'refactoring/keywords.py:'
-                                                                                                                               f'bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
+                                                                                                                               f'bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py@{REVISION}')
 only_keywords = Experiment('only_keywords', bugginess, train_dataset=commits_200k_files, heuristics_classifier=f'refactoring/keywords.py:'
                                                                                                                f'bugginess/keywords/bug_keywords_lookup_in_message.py:'
                                                                              f'bugginess/keywords/bugless_keywords_lookup_in_issue_body.py:'
                                                                              f'bugginess/keywords/bugless_keywords_lookup_in_issue_label.py:'
                                                                              f'bugginess/keywords/bug_keywords_lookup_in_issue_body.py:'
                                                                              f'bugginess/keywords/bug_keywords_lookup_in_issue_label.py:'
-                                                                             f'bugginess/keywords/buggless_keywords_lookup_in_message.py@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
+                                                                             f'bugginess/keywords/buggless_keywords_lookup_in_message.py@{REVISION}')
 
 only_message_and_label_keywords = Experiment('only_message_and_label_keywords', bugginess, train_dataset=commits_200k_files, heuristics_classifier=f'refactoring/keywords.py:'
                                                                                                                                                    f'bugginess/keywords/bug_keywords_lookup_in_message.py:'
                                                                                                                f'bugginess/keywords/bugless_keywords_lookup_in_issue_label.py:'
                                                                                                                f'bugginess/keywords/bug_keywords_lookup_in_issue_label.py:'
-                                                                                                               f'bugginess/keywords/buggless_keywords_lookup_in_message.py@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
+                                                                                                               f'bugginess/keywords/buggless_keywords_lookup_in_message.py@{REVISION}')
 
 
 only_message_keywords_important_projects = Experiment('only_message_keywords_important_projects', bugginess, train_dataset=levin_berger_herzig_train, heuristics_classifier=f'refactoring/keywords.py:'
-                                                                                                                                                                            f'bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
+                                                                                                                                                                            f'bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py@{REVISION}')
 
 all_heuristics_without_issues_important_projects = Experiment('all_heuristics_without_issues_important_projects', bugginess,
                                            train_dataset=levin_berger_herzig_train,
@@ -195,10 +196,10 @@ all_heuristics_without_issues_important_projects = Experiment('all_heuristics_wi
                                                                  f'bugginess/filemetrics:'
                                                                  f'bugginess/keywords/bug_keywords_lookup_in_message.py:'
                                                                  f'bugginess/keywords/buggless_keywords_lookup_in_message.py'
-                                                                 f'@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
+                                                                 f'@{REVISION}')
 
 only_message_keywords_levin = Experiment('only_message_keywords_levin', bugginess, train_dataset=levin_train, heuristics_classifier=f'refactoring/keywords.py:'
-                                                                                                                                    f'bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
+                                                                                                                                    f'bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py@{REVISION}')
 
 all_heuristics_without_issues_levin = Experiment('all_heuristics_without_issues_levin', bugginess,
                                                               train_dataset=levin_train,
@@ -209,10 +210,10 @@ all_heuristics_without_issues_levin = Experiment('all_heuristics_without_issues_
                                                                                     f'bugginess/filemetrics:'
                                                                                     f'bugginess/keywords/bug_keywords_lookup_in_message.py:'
                                                                                     f'bugginess/keywords/buggless_keywords_lookup_in_message.py'
-                                                                                    f'@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
+                                                                                    f'@{REVISION}')
 
 only_message_keywords_berger = Experiment('only_message_keywords_berger', bugginess, train_dataset=berger_train, heuristics_classifier=f'refactoring/keywords.py:'
-                                                                                                                                       f'bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
+                                                                                                                                       f'bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py@{REVISION}')
 
 all_heuristics_without_issues_berger = Experiment('all_heuristics_without_issues_berger', bugginess,
                                                  train_dataset=berger_train,
@@ -223,11 +224,11 @@ all_heuristics_without_issues_berger = Experiment('all_heuristics_without_issues
                                                                        f'bugginess/filemetrics:'
                                                                        f'bugginess/keywords/bug_keywords_lookup_in_message.py:'
                                                                        f'bugginess/keywords/buggless_keywords_lookup_in_message.py'
-                                                                       f'@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
+                                                                       f'@{REVISION}')
 
 
 only_message_keywords_herzig = Experiment('only_message_keywords_herzig', bugginess, train_dataset=herzig_train, heuristics_classifier=f'refactoring/keywords.py:'
-                                                                                                                                       f'bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
+                                                                                                                                       f'bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py@{REVISION}')
 
 all_heuristics_without_issues_herzig = Experiment('all_heuristics_without_issues_herzig', bugginess,
                                                   train_dataset=herzig_train,
@@ -238,7 +239,7 @@ all_heuristics_without_issues_herzig = Experiment('all_heuristics_without_issues
                                                                         f'bugginess/filemetrics:'
                                                                         f'bugginess/keywords/bug_keywords_lookup_in_message.py:'
                                                                         f'bugginess/keywords/buggless_keywords_lookup_in_message.py'
-                                                                        f'@4ad6fd42a2cf8e609bd15afc4c7e4f43bce67dd8')
+                                                                        f'@{REVISION}')
 
 w = Workspace('0.6.0', [
     dataset_debugging,
