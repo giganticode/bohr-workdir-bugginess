@@ -17,12 +17,6 @@ jobs:
           echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
           echo "🐧 This job is now running on a ${{ runner.os }}!"
           echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
-      - name: Add Github ssh key scan to known hosts
-        run: |
-          mkdir -p ~/.ssh
-          ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
-          cat ~/.ssh/known_hosts
-          chmod 600 ~/.ssh/known_hosts
       - name: Update git
         run: |
           apt-get update
@@ -35,6 +29,10 @@ jobs:
         uses: actions/checkout@v2
         with:
           depth: 0
+      - name: Configure ssh agent
+        uses: webfactory/ssh-agent@v0.5.4
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
       - name: Checkout PR
         run: |
           PR_NUMBER=$(echo $GITHUB_REF | awk 'BEGIN { FS = "/" } ; { print $3 }')
