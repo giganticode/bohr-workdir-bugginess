@@ -27,6 +27,7 @@ jobs:
           git --version
       - name: Add Github ssh key scan to known hosts
         run: |
+          mkdir -p ~/.ssh
           ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
           cat ~/.ssh/known_hosts
       - name: Check out repository code
