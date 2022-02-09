@@ -1,0 +1,74 @@
+name: GitHub Actions Demo
+on: [pull_request]
+jobs:
+  Reproduce-Pipeline:
+    runs-on: self-hosted
+    strategy:
+      matrix:
+        python:
+          - 3.8.0
+    container: giganticode/bohr-cml-base:latest
+    env:
+      DVC_SQUIRREL_USERNAME: ${{ secrets.DVC_SQUIRREL_USERNAME }}
+      DVC_SQUIRREL_PASSWORD: ${{ secrets.DVC_SQUIRREL_PASSWORD }}
+    steps:
+      - name: Display env info.
+        run: |
+          echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+          echo "🐧 This job is now running on a ${{ runner.os }}!"
+          echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+      - name: Update git
+        run: |
+          apt-get update
+          apt-get install software-properties-common -y
+          add-apt-repository ppa:git-core/ppa -y
+          apt-get update
+          apt-get install git -y
+          git --version
+      - name: Check out repository code
+        uses: actions/checkout@v2
+        with:
+          depth: 0
+      - name: Checkout PR
+        run: |
+          PR_NUMBER=$(echo $GITHUB_REF | awk 'BEGIN { FS = "/" } ; { print $3 }')
+          git fetch origin pull/$PR_NUMBER/head:pr/$PR_NUMBER
+          git checkout pr/$PR_NUMBER
+          echo "HEAD is $(git rev-parse --short HEAD)"
+      - name: Setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install bohr runtime
+        run: |
+          pip install git+https://github.com/giganticode/bohr-runtime
+      - name: Setup DVC
+        run: |
+          dvc --version
+          dvc remote modify --local squirrel user $DVC_SQUIRREL_USERNAME
+          dvc remote modify --local squirrel password $DVC_SQUIRREL_PASSWORD
+          cat .dvc/config
+      - name: Reproduce dvc pipeline
+        run: bohr repro
+      - name: Display env info
+        run: |
+          echo "💡 The ${{ github.repository }} repository has been cloned to the runner"
+          echo "🖥️ The workflow is now ready to test your code on the runner."
+          echo "🍏 This job's status is ${{ job.status }}."
+      - name: Commit metrics
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git diff --cached --exit-code || git commit -m "dvc: update outputs and hashsum"
+      - name: Push to dvc remote
+        run: |
+          pip install 'dvc[ssh]'
+          dvc push -r squirrel
+      - name: Check dvc status
+        run: dvc status -r squirrel
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.head_ref }}
