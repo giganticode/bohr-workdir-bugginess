@@ -25,6 +25,10 @@ jobs:
           apt-get update
           apt-get install git -y
           git --version
+      - name: Add Github ssh key scan to known hosts
+        run: |
+          ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+          cat ~/.ssh/known_hosts
       - name: Check out repository code
         uses: actions/checkout@v2
         with:
