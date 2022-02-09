@@ -41,7 +41,7 @@ jobs:
           python-version: ${{ matrix.python }}
       - name: Install bohr runtime
         run: |
-          pip install git+https://github.com/giganticode/bohr-runtime
+          pip install git+https://github.com/giganticode/bohr-runtime@3a74e7a2c4f06f6b3b5c987f609709c188927f64
       - name: Setup DVC
         run: |
           dvc --version
