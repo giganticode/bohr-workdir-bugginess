@@ -21024,3 +21024,15 @@ stages:
     - path: runs/bugginess/dataset_debugging/label_model_weights.csv
       md5: 6a21cd314846d10d2ffe2ede15cd4931
       size: 21425
+  LoadDatasets@commits_200k_files_0:
+    cmd: bohr porcelain load-dataset "commits_200k_files_0"
+    params:
+      bohr.lock:
+        bohr_runtime_version: 0.6.0
+    outs:
+    - path: cached-datasets/commits_200k_files_0.jsonl
+      md5: ed45dade144cbdecbafb2ba88ad5931d
+      size: 168026961
+    - path: cached-datasets/commits_200k_files_0.jsonl.metadata.json
+      md5: c4f7fa2ca2bddc49ab7f53626b638c90
+      size: 290

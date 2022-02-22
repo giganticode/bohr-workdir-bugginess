@@ -175,6 +175,12 @@ stages:
       berger_files__refactoring/keywords.py:
         dataset: berger_files
         heuristic_group: refactoring/keywords.py
+      berger_files__tangling/links_to_multiple_issues.py:
+        dataset: berger_files
+        heuristic_group: tangling/links_to_multiple_issues.py
+      berger_files__tangling/multiple_sentences.py:
+        dataset: berger_files
+        heuristic_group: tangling/multiple_sentences.py
       berger_train__bugginess/add_keyword.py:
         dataset: berger_train
         heuristic_group: bugginess/add_keyword.py
@@ -337,6 +343,12 @@ stages:
       berger_train__refactoring/keywords.py:
         dataset: berger_train
         heuristic_group: refactoring/keywords.py
+      berger_train__tangling/links_to_multiple_issues.py:
+        dataset: berger_train
+        heuristic_group: tangling/links_to_multiple_issues.py
+      berger_train__tangling/multiple_sentences.py:
+        dataset: berger_train
+        heuristic_group: tangling/multiple_sentences.py
       bohr.herzig_eval__bugginess/add_keyword.py:
         dataset: bohr.herzig_eval
         heuristic_group: bugginess/add_keyword.py
@@ -499,6 +511,12 @@ stages:
       bohr.herzig_eval__refactoring/keywords.py:
         dataset: bohr.herzig_eval
         heuristic_group: refactoring/keywords.py
+      bohr.herzig_eval__tangling/links_to_multiple_issues.py:
+        dataset: bohr.herzig_eval
+        heuristic_group: tangling/links_to_multiple_issues.py
+      bohr.herzig_eval__tangling/multiple_sentences.py:
+        dataset: bohr.herzig_eval
+        heuristic_group: tangling/multiple_sentences.py
       bohr.herzig_train__bugginess/add_keyword.py:
         dataset: bohr.herzig_train
         heuristic_group: bugginess/add_keyword.py
@@ -661,6 +679,12 @@ stages:
       bohr.herzig_train__refactoring/keywords.py:
         dataset: bohr.herzig_train
         heuristic_group: refactoring/keywords.py
+      bohr.herzig_train__tangling/links_to_multiple_issues.py:
+        dataset: bohr.herzig_train
+        heuristic_group: tangling/links_to_multiple_issues.py
+      bohr.herzig_train__tangling/multiple_sentences.py:
+        dataset: bohr.herzig_train
+        heuristic_group: tangling/multiple_sentences.py
       commits_200k__bugginess/add_keyword.py:
         dataset: commits_200k
         heuristic_group: bugginess/add_keyword.py
@@ -823,6 +847,180 @@ stages:
       commits_200k__refactoring/keywords.py:
         dataset: commits_200k
         heuristic_group: refactoring/keywords.py
+      commits_200k__tangling/links_to_multiple_issues.py:
+        dataset: commits_200k
+        heuristic_group: tangling/links_to_multiple_issues.py
+      commits_200k__tangling/multiple_sentences.py:
+        dataset: commits_200k
+        heuristic_group: tangling/multiple_sentences.py
+      commits_200k_files_0__bugginess/add_keyword.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/add_keyword.py
+      commits_200k_files_0__bugginess/bug_if_sstub.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/bug_if_sstub.py
+      commits_200k_files_0__bugginess/buggless_if_doc_extensions.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/buggless_if_doc_extensions.py
+      commits_200k_files_0__bugginess/buggless_if_one_file_markdown_ext.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/buggless_if_one_file_markdown_ext.py
+      commits_200k_files_0__bugginess/conventional_commit_regex.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/conventional_commit_regex.py
+      commits_200k_files_0__bugginess/filemetrics/all_files_test_add.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/filemetrics/all_files_test_add.py
+      commits_200k_files_0__bugginess/filemetrics/all_files_test_fix.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/filemetrics/all_files_test_fix.py
+      commits_200k_files_0__bugginess/filemetrics/buggless_if_many_lines_changed.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/filemetrics/buggless_if_many_lines_changed.py
+      commits_200k_files_0__bugginess/filemetrics/buggless_one_file.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/filemetrics/buggless_one_file.py
+      commits_200k_files_0__bugginess/filemetrics/bugless_if_at_least_2_removed_files.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/filemetrics/bugless_if_at_least_2_removed_files.py
+      commits_200k_files_0__bugginess/filemetrics/bugless_if_at_least_5_added_files.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/filemetrics/bugless_if_at_least_5_added_files.py
+      commits_200k_files_0__bugginess/filemetrics/bugless_if_many_files_changes.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/filemetrics/bugless_if_many_files_changes.py
+      commits_200k_files_0__bugginess/filemetrics/bugless_if_not_code_files.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/filemetrics/bugless_if_not_code_files.py
+      commits_200k_files_0__bugginess/filemetrics/no_files_have_modified_status.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/filemetrics/no_files_have_modified_status.py
+      commits_200k_files_0__bugginess/filemetrics/refactoring_if_at_least_2_renamed.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/filemetrics/refactoring_if_at_least_2_renamed.py
+      commits_200k_files_0__bugginess/fine_grained_changes_transformer_70.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/fine_grained_changes_transformer_70.py
+      commits_200k_files_0__bugginess/fine_grained_changes_transformer_80.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/fine_grained_changes_transformer_80.py
+      commits_200k_files_0__bugginess/fine_grained_changes_transformer_90.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/fine_grained_changes_transformer_90.py
+      commits_200k_files_0__bugginess/fix_keyword.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/fix_keyword.py
+      commits_200k_files_0__bugginess/gitcproc/always_buggless.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/gitcproc/always_buggless.py
+      commits_200k_files_0__bugginess/gitcproc/keywords.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/gitcproc/keywords.py
+      commits_200k_files_0__bugginess/keywords/bug_keywords_lookup_in_clean_message.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/keywords/bug_keywords_lookup_in_clean_message.py
+      commits_200k_files_0__bugginess/keywords/bug_keywords_lookup_in_issue_body.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/keywords/bug_keywords_lookup_in_issue_body.py
+      commits_200k_files_0__bugginess/keywords/bug_keywords_lookup_in_issue_label.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/keywords/bug_keywords_lookup_in_issue_label.py
+      commits_200k_files_0__bugginess/keywords/bug_keywords_lookup_in_message.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/keywords/bug_keywords_lookup_in_message.py
+      commits_200k_files_0__bugginess/keywords/buggless_keywords_lookup_in_clean_message.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/keywords/buggless_keywords_lookup_in_clean_message.py
+      commits_200k_files_0__bugginess/keywords/buggless_keywords_lookup_in_message.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/keywords/buggless_keywords_lookup_in_message.py
+      commits_200k_files_0__bugginess/keywords/bugless_keywords_lookup_in_issue_body.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/keywords/bugless_keywords_lookup_in_issue_body.py
+      commits_200k_files_0__bugginess/keywords/bugless_keywords_lookup_in_issue_label.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/keywords/bugless_keywords_lookup_in_issue_label.py
+      commits_200k_files_0__bugginess/keywords/github_ref_in_message.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/keywords/github_ref_in_message.py
+      commits_200k_files_0__bugginess/keywords/init_commit_message_keywords.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/keywords/init_commit_message_keywords.py
+      commits_200k_files_0__bugginess/keywords/version_in_message.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/keywords/version_in_message.py
+      commits_200k_files_0__bugginess/keywords_combined/bug_keywords_lookup_in_message.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/keywords_combined/bug_keywords_lookup_in_message.py
+      commits_200k_files_0__bugginess/keywords_combined/buggless_keywords_lookup_in_message.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/keywords_combined/buggless_keywords_lookup_in_message.py
+      commits_200k_files_0__bugginess/large_change.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/large_change.py
+      commits_200k_files_0__bugginess/small_change.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/small_change.py
+      commits_200k_files_0__bugginess/sstubs/commit_explorer_output_init.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/sstubs/commit_explorer_output_init.py
+      commits_200k_files_0__bugginess/sstubs/commit_explorer_output_merge.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/sstubs/commit_explorer_output_merge.py
+      commits_200k_files_0__bugginess/sstubs/commit_explorer_output_refactoring_miner.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/sstubs/commit_explorer_output_refactoring_miner.py
+      commits_200k_files_0__bugginess/update_keyword.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/update_keyword.py
+      commits_200k_files_0__bugginess/versionbump/contains_digit_replacement_change.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/versionbump/contains_digit_replacement_change.py
+      commits_200k_files_0__bugginess/versionbump/contains_package_lock_file.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/versionbump/contains_package_lock_file.py
+      commits_200k_files_0__bugginess/versionbump/contains_python_version_file.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/versionbump/contains_python_version_file.py
+      commits_200k_files_0__bugginess/versionbump/contains_ruby_version_file.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/versionbump/contains_ruby_version_file.py
+      commits_200k_files_0__bugginess/versionbump/dependency_bump_keywords_lookup_in_message.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/versionbump/dependency_bump_keywords_lookup_in_message.py
+      commits_200k_files_0__bugginess/versionbump/maven_plugin_version_bump.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/versionbump/maven_plugin_version_bump.py
+      commits_200k_files_0__bugginess/versionbump/version_bump_keywords_lookup_in_message.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/versionbump/version_bump_keywords_lookup_in_message.py
+      commits_200k_files_0__bugginess/versionbump/version_regex.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/versionbump/version_regex.py
+      commits_200k_files_0__bugginess/versionbump/version_regex2.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/versionbump/version_regex2.py
+      commits_200k_files_0__bugginess/versionbump/version_regex3.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/versionbump/version_regex3.py
+      commits_200k_files_0__bugginess/wip/removed_fixme.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/wip/removed_fixme.py
+      commits_200k_files_0__bugginess/wip/removed_todo.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/wip/removed_todo.py
+      commits_200k_files_0__bugginess/wip/wip_keyword_in_message.py:
+        dataset: commits_200k_files_0
+        heuristic_group: bugginess/wip/wip_keyword_in_message.py
+      commits_200k_files_0__refactoring/keywords.py:
+        dataset: commits_200k_files_0
+        heuristic_group: refactoring/keywords.py
+      commits_200k_files_0__tangling/links_to_multiple_issues.py:
+        dataset: commits_200k_files_0
+        heuristic_group: tangling/links_to_multiple_issues.py
+      commits_200k_files_0__tangling/multiple_sentences.py:
+        dataset: commits_200k_files_0
+        heuristic_group: tangling/multiple_sentences.py
       commits_200k_files__bugginess/add_keyword.py:
         dataset: commits_200k_files
         heuristic_group: bugginess/add_keyword.py
@@ -985,6 +1183,12 @@ stages:
       commits_200k_files__refactoring/keywords.py:
         dataset: commits_200k_files
         heuristic_group: refactoring/keywords.py
+      commits_200k_files__tangling/links_to_multiple_issues.py:
+        dataset: commits_200k_files
+        heuristic_group: tangling/links_to_multiple_issues.py
+      commits_200k_files__tangling/multiple_sentences.py:
+        dataset: commits_200k_files
+        heuristic_group: tangling/multiple_sentences.py
       herzig_train__bugginess/add_keyword.py:
         dataset: herzig_train
         heuristic_group: bugginess/add_keyword.py
@@ -1147,6 +1351,12 @@ stages:
       herzig_train__refactoring/keywords.py:
         dataset: herzig_train
         heuristic_group: refactoring/keywords.py
+      herzig_train__tangling/links_to_multiple_issues.py:
+        dataset: herzig_train
+        heuristic_group: tangling/links_to_multiple_issues.py
+      herzig_train__tangling/multiple_sentences.py:
+        dataset: herzig_train
+        heuristic_group: tangling/multiple_sentences.py
       idan_files__bugginess/add_keyword.py:
         dataset: idan_files
         heuristic_group: bugginess/add_keyword.py
@@ -1309,6 +1519,12 @@ stages:
       idan_files__refactoring/keywords.py:
         dataset: idan_files
         heuristic_group: refactoring/keywords.py
+      idan_files__tangling/links_to_multiple_issues.py:
+        dataset: idan_files
+        heuristic_group: tangling/links_to_multiple_issues.py
+      idan_files__tangling/multiple_sentences.py:
+        dataset: idan_files
+        heuristic_group: tangling/multiple_sentences.py
       levin_berger_herzig_train__bugginess/add_keyword.py:
         dataset: levin_berger_herzig_train
         heuristic_group: bugginess/add_keyword.py
@@ -1471,6 +1687,12 @@ stages:
       levin_berger_herzig_train__refactoring/keywords.py:
         dataset: levin_berger_herzig_train
         heuristic_group: refactoring/keywords.py
+      levin_berger_herzig_train__tangling/links_to_multiple_issues.py:
+        dataset: levin_berger_herzig_train
+        heuristic_group: tangling/links_to_multiple_issues.py
+      levin_berger_herzig_train__tangling/multiple_sentences.py:
+        dataset: levin_berger_herzig_train
+        heuristic_group: tangling/multiple_sentences.py
       levin_files__bugginess/add_keyword.py:
         dataset: levin_files
         heuristic_group: bugginess/add_keyword.py
@@ -1633,6 +1855,12 @@ stages:
       levin_files__refactoring/keywords.py:
         dataset: levin_files
         heuristic_group: refactoring/keywords.py
+      levin_files__tangling/links_to_multiple_issues.py:
+        dataset: levin_files
+        heuristic_group: tangling/links_to_multiple_issues.py
+      levin_files__tangling/multiple_sentences.py:
+        dataset: levin_files
+        heuristic_group: tangling/multiple_sentences.py
       levin_train__bugginess/add_keyword.py:
         dataset: levin_train
         heuristic_group: bugginess/add_keyword.py
@@ -1795,6 +2023,12 @@ stages:
       levin_train__refactoring/keywords.py:
         dataset: levin_train
         heuristic_group: refactoring/keywords.py
+      levin_train__tangling/links_to_multiple_issues.py:
+        dataset: levin_train
+        heuristic_group: tangling/links_to_multiple_issues.py
+      levin_train__tangling/multiple_sentences.py:
+        dataset: levin_train
+        heuristic_group: tangling/multiple_sentences.py
       manual_labels.herzig__bugginess/add_keyword.py:
         dataset: manual_labels.herzig
         heuristic_group: bugginess/add_keyword.py
@@ -1957,6 +2191,12 @@ stages:
       manual_labels.herzig__refactoring/keywords.py:
         dataset: manual_labels.herzig
         heuristic_group: refactoring/keywords.py
+      manual_labels.herzig__tangling/links_to_multiple_issues.py:
+        dataset: manual_labels.herzig
+        heuristic_group: tangling/links_to_multiple_issues.py
+      manual_labels.herzig__tangling/multiple_sentences.py:
+        dataset: manual_labels.herzig
+        heuristic_group: tangling/multiple_sentences.py
       mauczka_files__bugginess/add_keyword.py:
         dataset: mauczka_files
         heuristic_group: bugginess/add_keyword.py
@@ -2119,6 +2359,12 @@ stages:
       mauczka_files__refactoring/keywords.py:
         dataset: mauczka_files
         heuristic_group: refactoring/keywords.py
+      mauczka_files__tangling/links_to_multiple_issues.py:
+        dataset: mauczka_files
+        heuristic_group: tangling/links_to_multiple_issues.py
+      mauczka_files__tangling/multiple_sentences.py:
+        dataset: mauczka_files
+        heuristic_group: tangling/multiple_sentences.py
   CombineHeuristics:
     do:
       cmd: bohr porcelain combine-heuristics "${item.exp}" --dataset "${item.dataset}"
@@ -2313,8 +2559,8 @@ stages:
         dataset: bohr.herzig_train
         exp: dataset_debugging
         task: bugginess
-      dataset_debugging__commits_200k_files:
-        dataset: commits_200k_files
+      dataset_debugging__commits_200k_files_0:
+        dataset: commits_200k_files_0
         exp: dataset_debugging
         task: bugginess
       dataset_debugging__idan_files:
@@ -2928,6 +3174,18 @@ stages:
     - runs/__heuristics/berger_files/refactoring/keywords.py/heuristic_matrix.pkl
     - runs/__heuristics/manual_labels.herzig/refactoring/keywords.py/heuristic_matrix.pkl
     - runs/__heuristics/mauczka_files/refactoring/keywords.py/heuristic_matrix.pkl
+    - cloned-bohr/heuristics/tangling/links_to_multiple_issues.py
+    - runs/__heuristics/idan_files/tangling/links_to_multiple_issues.py/heuristic_matrix.pkl
+    - runs/__heuristics/levin_files/tangling/links_to_multiple_issues.py/heuristic_matrix.pkl
+    - runs/__heuristics/berger_files/tangling/links_to_multiple_issues.py/heuristic_matrix.pkl
+    - runs/__heuristics/manual_labels.herzig/tangling/links_to_multiple_issues.py/heuristic_matrix.pkl
+    - runs/__heuristics/mauczka_files/tangling/links_to_multiple_issues.py/heuristic_matrix.pkl
+    - cloned-bohr/heuristics/tangling/multiple_sentences.py
+    - runs/__heuristics/idan_files/tangling/multiple_sentences.py/heuristic_matrix.pkl
+    - runs/__heuristics/levin_files/tangling/multiple_sentences.py/heuristic_matrix.pkl
+    - runs/__heuristics/berger_files/tangling/multiple_sentences.py/heuristic_matrix.pkl
+    - runs/__heuristics/manual_labels.herzig/tangling/multiple_sentences.py/heuristic_matrix.pkl
+    - runs/__heuristics/mauczka_files/tangling/multiple_sentences.py/heuristic_matrix.pkl
     metrics: []
     outs:
     - runs/__single_heuristic_metrics/bugginess/idan_files/bugginess/add_keyword.py/metrics.txt:
@@ -3038,6 +3296,10 @@ stages:
         cache: false
     - runs/__single_heuristic_metrics/bugginess/idan_files/refactoring/keywords.py/metrics.txt:
         cache: false
+    - runs/__single_heuristic_metrics/bugginess/idan_files/tangling/links_to_multiple_issues.py/metrics.txt:
+        cache: false
+    - runs/__single_heuristic_metrics/bugginess/idan_files/tangling/multiple_sentences.py/metrics.txt:
+        cache: false
     - runs/__single_heuristic_metrics/bugginess/levin_files/bugginess/add_keyword.py/metrics.txt:
         cache: false
     - runs/__single_heuristic_metrics/bugginess/levin_files/bugginess/bug_if_sstub.py/metrics.txt:
@@ -3145,6 +3407,10 @@ stages:
     - runs/__single_heuristic_metrics/bugginess/levin_files/bugginess/wip/wip_keyword_in_message.py/metrics.txt:
         cache: false
     - runs/__single_heuristic_metrics/bugginess/levin_files/refactoring/keywords.py/metrics.txt:
+        cache: false
+    - runs/__single_heuristic_metrics/bugginess/levin_files/tangling/links_to_multiple_issues.py/metrics.txt:
+        cache: false
+    - runs/__single_heuristic_metrics/bugginess/levin_files/tangling/multiple_sentences.py/metrics.txt:
         cache: false
     - runs/__single_heuristic_metrics/bugginess/berger_files/bugginess/add_keyword.py/metrics.txt:
         cache: false
@@ -3254,6 +3520,10 @@ stages:
         cache: false
     - runs/__single_heuristic_metrics/bugginess/berger_files/refactoring/keywords.py/metrics.txt:
         cache: false
+    - runs/__single_heuristic_metrics/bugginess/berger_files/tangling/links_to_multiple_issues.py/metrics.txt:
+        cache: false
+    - runs/__single_heuristic_metrics/bugginess/berger_files/tangling/multiple_sentences.py/metrics.txt:
+        cache: false
     - runs/__single_heuristic_metrics/bugginess/manual_labels.herzig/bugginess/add_keyword.py/metrics.txt:
         cache: false
     - runs/__single_heuristic_metrics/bugginess/manual_labels.herzig/bugginess/bug_if_sstub.py/metrics.txt:
@@ -3362,6 +3632,10 @@ stages:
         cache: false
     - runs/__single_heuristic_metrics/bugginess/manual_labels.herzig/refactoring/keywords.py/metrics.txt:
         cache: false
+    - runs/__single_heuristic_metrics/bugginess/manual_labels.herzig/tangling/links_to_multiple_issues.py/metrics.txt:
+        cache: false
+    - runs/__single_heuristic_metrics/bugginess/manual_labels.herzig/tangling/multiple_sentences.py/metrics.txt:
+        cache: false
     - runs/__single_heuristic_metrics/bugginess/mauczka_files/bugginess/add_keyword.py/metrics.txt:
         cache: false
     - runs/__single_heuristic_metrics/bugginess/mauczka_files/bugginess/bug_if_sstub.py/metrics.txt:
@@ -3469,6 +3743,10 @@ stages:
     - runs/__single_heuristic_metrics/bugginess/mauczka_files/bugginess/wip/wip_keyword_in_message.py/metrics.txt:
         cache: false
     - runs/__single_heuristic_metrics/bugginess/mauczka_files/refactoring/keywords.py/metrics.txt:
+        cache: false
+    - runs/__single_heuristic_metrics/bugginess/mauczka_files/tangling/links_to_multiple_issues.py/metrics.txt:
+        cache: false
+    - runs/__single_heuristic_metrics/bugginess/mauczka_files/tangling/multiple_sentences.py/metrics.txt:
         cache: false
     params:
     - bohr.lock:
@@ -3585,6 +3863,10 @@ stages:
     - runs/__heuristics/manual_labels.herzig/bugginess/wip/wip_keyword_in_message.py/heuristic_matrix.pkl
     - cloned-bohr/heuristics/refactoring/keywords.py
     - runs/__heuristics/manual_labels.herzig/refactoring/keywords.py/heuristic_matrix.pkl
+    - cloned-bohr/heuristics/tangling/links_to_multiple_issues.py
+    - runs/__heuristics/manual_labels.herzig/tangling/links_to_multiple_issues.py/heuristic_matrix.pkl
+    - cloned-bohr/heuristics/tangling/multiple_sentences.py
+    - runs/__heuristics/manual_labels.herzig/tangling/multiple_sentences.py/heuristic_matrix.pkl
     metrics: []
     outs:
     - runs/__single_heuristic_metrics/refactoring/manual_labels.herzig/bugginess/add_keyword.py/metrics.txt:
@@ -3694,6 +3976,10 @@ stages:
     - runs/__single_heuristic_metrics/refactoring/manual_labels.herzig/bugginess/wip/wip_keyword_in_message.py/metrics.txt:
         cache: false
     - runs/__single_heuristic_metrics/refactoring/manual_labels.herzig/refactoring/keywords.py/metrics.txt:
+        cache: false
+    - runs/__single_heuristic_metrics/refactoring/manual_labels.herzig/tangling/links_to_multiple_issues.py/metrics.txt:
+        cache: false
+    - runs/__single_heuristic_metrics/refactoring/manual_labels.herzig/tangling/multiple_sentences.py/metrics.txt:
         cache: false
     params:
     - bohr.lock:
@@ -3922,8 +4208,8 @@ stages:
         dataset: bohr.herzig_train
         exp: dataset_debugging
         task: bugginess
-      dataset_debugging__commits_200k_files:
-        dataset: commits_200k_files
+      dataset_debugging__commits_200k_files_0:
+        dataset: commits_200k_files_0
         exp: dataset_debugging
         task: bugginess
       dataset_debugging__idan_files:
@@ -4193,6 +4479,7 @@ stages:
     - bohr.herzig_train
     - commits_200k
     - commits_200k_files
+    - commits_200k_files_0
     - herzig_train
     - idan_files
     - levin_berger_herzig_train
@@ -4399,8 +4686,8 @@ stages:
         dataset: bohr.herzig_train
         exp: dataset_debugging
         task: bugginess
-      dataset_debugging__commits_200k_files:
-        dataset: commits_200k_files
+      dataset_debugging__commits_200k_files_0:
+        dataset: commits_200k_files_0
         exp: dataset_debugging
         task: bugginess
       dataset_debugging__idan_files:
@@ -4731,7 +5018,7 @@ stages:
   TrainLabelModel__dataset_debugging:
     cmd: bohr porcelain train-label-model dataset_debugging
     deps:
-    - runs/bugginess/dataset_debugging/commits_200k_files/heuristic_matrix.pkl
+    - runs/bugginess/dataset_debugging/commits_200k_files_0/heuristic_matrix.pkl
     metrics: []
     outs:
     - runs/bugginess/dataset_debugging/label_model.pkl
