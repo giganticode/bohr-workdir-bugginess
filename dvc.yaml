@@ -4480,6 +4480,7 @@ stages:
     - commits_200k
     - commits_200k_files
     - commits_200k_files_0
+    - commits_200k_files_00
     - herzig_train
     - idan_files
     - levin_berger_herzig_train
@@ -5018,7 +5019,7 @@ stages:
   TrainLabelModel__dataset_debugging:
     cmd: bohr porcelain train-label-model dataset_debugging
     deps:
-    - runs/bugginess/dataset_debugging/commits_200k_files_0/heuristic_matrix.pkl
+    - runs/bugginess/dataset_debugging/commits_200k_files_00/heuristic_matrix.pkl
     metrics: []
     outs:
     - runs/bugginess/dataset_debugging/label_model.pkl

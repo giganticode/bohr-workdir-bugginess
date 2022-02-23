@@ -36,6 +36,7 @@ def important_project_query(datasets: List[str]) -> Dict[str, Any]:
 commits_200k = Dataset(id='commits_200k', top_artifact=Commit, query={'bohr.200k_commits': {"$exists": True}})
 commits_200k_files = Dataset(id='commits_200k_files', top_artifact=Commit, query=id_with_files('bohr.200k_commits'))
 commits_200k_files_0 = Dataset(id='commits_200k_files_0', top_artifact=Commit, query=id_with_files('bohr.200k_commits', [{"_id": {'$regex':'^0'}}]))
+commits_200k_files_00 = Dataset(id='commits_200k_files_00', top_artifact=Commit, query=id_with_files('bohr.200k_commits', [{"_id": {'$regex':'^00'}}]))
 commits_200k_files_no_merges = Dataset(id='commits_200k_files_no_merges', top_artifact=Commit, query=id_with_files("bohr.200k_commits", [{"special_commit_finder/0_1.merge": False}]))
 levin_berger_herzig_train = Dataset(id='levin_berger_herzig_train', top_artifact=Commit, query=important_project_query(['levin', 'berger', 'herzig']), projection={'gumtree/3_0_0-beta2': 0}, n_datapoints=20000)
 levin_train = Dataset(id='levin_train', top_artifact=Commit, query=important_project_query(['levin']), projection={'gumtree/3_0_0-beta2': 0}, n_datapoints=20000)
@@ -93,7 +94,7 @@ refactoring_few_ref_heuristics = Experiment('refactoring_few_ref_heuristics', re
                                                                  f'@{REVISION}')
 
 dataset_debugging = Experiment('dataset_debugging', bugginess,
-                               train_dataset=commits_200k_files_0,
+                               train_dataset=commits_200k_files_00,
                                extra_test_datasets=frozendict(
                                    {bohr_herzig_eval: lambda c: (CommitLabel.BugFix if c.raw_data['manual_labels']['herzig']['CLASSIFIED'] == 'BUG' else CommitLabel.NonBugFix),
                                     bohr_herzig_train: lambda c: (CommitLabel.BugFix if c.raw_data['manual_labels']['herzig']['CLASSIFIED'] == 'BUG' else CommitLabel.NonBugFix)}
