@@ -1,40 +1,6 @@
-bohr_runtime_version: 0.6.0
+bohr_runtime_version: 0.7.0
 experiments:
   all_heuristics_with_issues:
-    heuristics_classifier: bugginess/filemetrics:bugginess/fine_grained_changes_transformer_70.py:bugginess/fine_grained_changes_transformer_80.py:bugginess/fine_grained_changes_transformer_90.py:bugginess/keywords/bug_keywords_lookup_in_issue_body.py:bugginess/keywords/bug_keywords_lookup_in_issue_label.py:bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py:bugginess/keywords/bugless_keywords_lookup_in_issue_body.py:bugginess/keywords/bugless_keywords_lookup_in_issue_label.py:refactoring
-  all_heuristics_without_issues:
-    heuristics_classifier: bugginess/filemetrics:bugginess/fine_grained_changes_transformer_70.py:bugginess/fine_grained_changes_transformer_80.py:bugginess/fine_grained_changes_transformer_90.py:bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py:refactoring
-  all_heuristics_without_issues_berger:
-    heuristics_classifier: bugginess/filemetrics:bugginess/fine_grained_changes_transformer_70.py:bugginess/fine_grained_changes_transformer_80.py:bugginess/fine_grained_changes_transformer_90.py:bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py:refactoring
-  all_heuristics_without_issues_herzig:
-    heuristics_classifier: bugginess/filemetrics:bugginess/fine_grained_changes_transformer_70.py:bugginess/fine_grained_changes_transformer_80.py:bugginess/fine_grained_changes_transformer_90.py:bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py:refactoring
-  all_heuristics_without_issues_important_projects:
-    heuristics_classifier: bugginess/filemetrics:bugginess/fine_grained_changes_transformer_70.py:bugginess/fine_grained_changes_transformer_80.py:bugginess/fine_grained_changes_transformer_90.py:bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py:refactoring
-  all_heuristics_without_issues_levin:
-    heuristics_classifier: bugginess/filemetrics:bugginess/fine_grained_changes_transformer_70.py:bugginess/fine_grained_changes_transformer_80.py:bugginess/fine_grained_changes_transformer_90.py:bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py:refactoring
-  all_heuristics_without_issues_orig200k:
-    heuristics_classifier: bugginess/filemetrics:bugginess/fine_grained_changes_transformer_70.py:bugginess/fine_grained_changes_transformer_80.py:bugginess/fine_grained_changes_transformer_90.py:bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py:refactoring
-  dataset_debugging:
-    heuristics_classifier: bugginess/buggless_if_doc_extensions.py:bugginess/buggless_if_one_file_markdown_ext.py:bugginess/filemetrics:bugginess/fine_grained_changes_transformer_70.py:bugginess/fine_grained_changes_transformer_80.py:bugginess/fine_grained_changes_transformer_90.py:bugginess/keywords/bug_keywords_lookup_in_issue_body.py:bugginess/keywords/bug_keywords_lookup_in_issue_label.py:bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py:bugginess/keywords/bugless_keywords_lookup_in_issue_body.py:bugginess/keywords/bugless_keywords_lookup_in_issue_label.py:bugginess/large_change.py:bugginess/small_change.py:refactoring
-  gitcproc:
-    heuristics_classifier: bugginess/gitcproc
-  gitcproc_orig:
-    heuristics_classifier: bugginess/gitcproc/keywords.py
-  only_keywords:
-    heuristics_classifier: bugginess/keywords/bug_keywords_lookup_in_issue_body.py:bugginess/keywords/bug_keywords_lookup_in_issue_label.py:bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py:bugginess/keywords/bugless_keywords_lookup_in_issue_body.py:bugginess/keywords/bugless_keywords_lookup_in_issue_label.py:refactoring
-  only_message_and_label_keywords:
-    heuristics_classifier: bugginess/keywords/bug_keywords_lookup_in_issue_label.py:bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py:bugginess/keywords/bugless_keywords_lookup_in_issue_label.py:refactoring
-  only_message_keywords:
-    heuristics_classifier: bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py:refactoring
-  only_message_keywords_berger:
-    heuristics_classifier: bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py:refactoring
-  only_message_keywords_herzig:
-    heuristics_classifier: bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py:refactoring
-  only_message_keywords_important_projects:
-    heuristics_classifier: bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py:refactoring
-  only_message_keywords_levin:
-    heuristics_classifier: bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py:refactoring
+    heuristics_classifier: .
   refactoring_few_ref_heuristics:
-    heuristics_classifier: bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py:refactoring
-  refactoring_no_ref_heuristics:
-    heuristics_classifier: bugginess/keywords/bug_keywords_lookup_in_message.py:bugginess/keywords/buggless_keywords_lookup_in_message.py
+    heuristics_classifier: .

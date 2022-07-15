@@ -1,1 +1,0 @@
-{"match": {"$and": [{"bohr.200k_commits": {"$exists": true}}, {"files": {"$exists": true}}, {"files": {"$type": "array"}}, {"_id": {"$regex": "^000"}}]}, "projection": null, "lookup": {"from": "issues", "localField": "links.bohr.issues", "foreignField": "_id", "as": "issues"}, "limit": null}

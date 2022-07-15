@@ -1,1 +1,0 @@
-{"match": {"$and": [{"idan/0_1": {"$exists": true}}, {"files": {"$exists": true}}, {"files": {"$type": "array"}}, {"idan/0_1.Is_Corrective": {"$exists": true}}]}, "projection": null, "lookup": {"from": "issues", "localField": "links.bohr.issues", "foreignField": "_id", "as": "issues"}, "limit": null}
