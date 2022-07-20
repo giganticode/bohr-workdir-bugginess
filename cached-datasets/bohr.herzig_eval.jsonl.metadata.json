@@ -1,0 +1,1 @@
+{"match": {"bohr.herzig_eval": {"$exists": true}}, "projection": null, "lookup": {"from": "issues", "localField": "links.bohr.issues", "foreignField": "_id", "as": "issues"}, "limit": null}
