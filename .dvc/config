@@ -1,10 +1,9 @@
 [core]
-    remote = squirrel-http
+    remote = read
     check_update = false
-['remote "squirrel"']
-    url = ssh://squirrel.inf.unibz.it/data/bohr_dvc_storage
-    user = hbabii
-['remote "squirrel-http"']
-    url = http://squirrel.inf.unibz.it:8180
-['remote "dagshub"']
-    url = https://dagshub.com/hlibbabii/bohr-workdir-bugginess.dvc
+    autostage = true
+['remote "read"']
+    url = http://139.59.140.151
+['remote "write"']
+    url = ssh://139.59.140.151/data/dvcstorage/bohr
+    user = bohr-write-user
