@@ -248,7 +248,7 @@ all_heuristics_without_issues_herzig = Experiment('all_heuristics_without_issues
                                                                         f'bugginess/keywords/buggless_keywords_lookup_in_message.py'
                                                                         f'@{REVISION}')
 
-w = Workspace('0.6.0', [
+w = Workspace('0.7.0', [
     dataset_debugging,
     all_heuristics_without_issues,
     all_heuristics_without_issues_orig200k,
