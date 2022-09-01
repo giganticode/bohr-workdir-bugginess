@@ -5,4 +5,4 @@ label_model_accuracy = 0.515
 label_model_auc = 0.611
 label_model_f1 = 0.518
 label_model_f1_macro = 0.515
-label_model_mse = 0.287
+label_model_mse = 0.29

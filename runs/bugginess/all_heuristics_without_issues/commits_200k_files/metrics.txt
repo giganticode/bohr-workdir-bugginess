@@ -1,2 +1,2 @@
-n_labeling_functions = 158
-coverage = 0.9603880709784448
+n_labeling_functions = 147
+coverage = 0.9514311681485699

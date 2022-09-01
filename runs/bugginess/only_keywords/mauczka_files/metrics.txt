@@ -1,8 +1,8 @@
-majority_accuracy_not_abstained = 0.8082595870206489
-n_labeling_functions = 300
-coverage = 0.8473804100227791
-label_model_accuracy = 0.718
-label_model_auc = 0.824
-label_model_f1 = 0.68
-label_model_f1_macro = 0.714
-label_model_mse = 0.196
+majority_accuracy_not_abstained = 0.7957317073170732
+n_labeling_functions = 278
+coverage = 0.8143507972665148
+label_model_accuracy = 0.605
+label_model_auc = 0.781
+label_model_f1 = 0.626
+label_model_f1_macro = 0.604
+label_model_mse = 0.263

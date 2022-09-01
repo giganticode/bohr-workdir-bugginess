@@ -2,14 +2,12 @@
     "Conflicts": {
         "bug_message_keyword_bad": 0.0,
         "bug_message_keyword_broken": 0.003416856492027335,
-        "bug_message_keyword_bug": 0.09681093394077449,
-        "bug_message_keyword_bugfix": 0.1571753986332574,
+        "bug_message_keyword_bug": 0.08542141230068337,
+        "bug_message_keyword_bugfix": 0.13895216400911162,
         "bug_message_keyword_close": 0.0,
-        "bug_message_keyword_concurr": 0.0,
         "bug_message_keyword_correct": 0.0056947608200455585,
         "bug_message_keyword_corrupt": 0.0011389521640091116,
         "bug_message_keyword_crash": 0.0,
-        "bug_message_keyword_deadlock": 0.0,
         "bug_message_keyword_defect": 0.0,
         "bug_message_keyword_disabl": 0.0011389521640091116,
         "bug_message_keyword_endless": 0.0,
@@ -18,7 +16,7 @@
         "bug_message_keyword_except": 0.004555808656036446,
         "bug_message_keyword_fail": 0.0,
         "bug_message_keyword_garbag": 0.0,
-        "bug_message_keyword_handl": 0.015945330296127564,
+        "bug_message_keyword_handl": 0.014806378132118452,
         "bug_message_keyword_incomplet": 0.0,
         "bug_message_keyword_inconsist": 0.0,
         "bug_message_keyword_incorrect": 0.0,
@@ -35,9 +33,8 @@
         "bug_message_keyword_of|bound": 0.0,
         "bug_message_keyword_patch": 0.01366742596810934,
         "bug_message_keyword_prevent": 0.004555808656036446,
-        "bug_message_keyword_problem": 0.002277904328018223,
+        "bug_message_keyword_problem": 0.0011389521640091116,
         "bug_message_keyword_properli": 0.003416856492027335,
-        "bug_message_keyword_race|condit": 0.0,
         "bug_message_keyword_repair": 0.0,
         "bug_message_keyword_resolv": 0.004555808656036446,
         "bug_message_keyword_threw": 0.0011389521640091116,
@@ -56,10 +53,8 @@
         "bugless_message_keyword_analysi": 0.0,
         "bugless_message_keyword_avoid": 0.0056947608200455585,
         "bugless_message_keyword_baselin": 0.0,
-        "bugless_message_keyword_beautification": 0.0,
         "bugless_message_keyword_benchmark": 0.0,
         "bugless_message_keyword_better": 0.0011389521640091116,
-        "bugless_message_keyword_bump": 0.0,
         "bugless_message_keyword_chang|log": 0.0,
         "bugless_message_keyword_clean": 0.010250569476082005,
         "bugless_message_keyword_comment": 0.002277904328018223,
@@ -80,7 +75,6 @@
         "bugless_message_keyword_extendgener": 0.0,
         "bugless_message_keyword_featur": 0.0011389521640091116,
         "bugless_message_keyword_forget": 0.0,
-        "bugless_message_keyword_format": 0.0,
         "bugless_message_keyword_gitignor": 0.0011389521640091116,
         "bugless_message_keyword_idea": 0.0,
         "bugless_message_keyword_implement": 0.010250569476082005,
@@ -113,10 +107,8 @@
         "bugless_message_keyword_reduc": 0.0,
         "bugless_message_keyword_refactor": 0.003416856492027335,
         "bugless_message_keyword_refin": 0.0,
-        "bugless_message_keyword_reformat": 0.0011389521640091116,
         "bugless_message_keyword_regress|test": 0.0,
         "bugless_message_keyword_reimplement": 0.0,
-        "bugless_message_keyword_release": 0.0,
         "bugless_message_keyword_remov": 0.012528473804100227,
         "bugless_message_keyword_renam": 0.002277904328018223,
         "bugless_message_keyword_reorgan": 0.0,
@@ -141,10 +133,7 @@
         "bugless_message_keyword_todo": 0.002277904328018223,
         "bugless_message_keyword_tweak": 0.002277904328018223,
         "bugless_message_keyword_unit": 0.002277904328018223,
-        "bugless_message_keyword_unnecessari": 0.003416856492027335,
-        "bugless_message_keyword_updat": 0.014806378132118452,
-        "bugless_message_keyword_upgrad": 0.0,
-        "bugless_message_keyword_version": 0.012528473804100227
+        "bugless_message_keyword_unnecessari": 0.003416856492027335
     },
     "Correct": {
         "bug_message_keyword_bad": 0,
@@ -152,11 +141,9 @@
         "bug_message_keyword_bug": 134,
         "bug_message_keyword_bugfix": 232,
         "bug_message_keyword_close": 2,
-        "bug_message_keyword_concurr": 1,
         "bug_message_keyword_correct": 5,
         "bug_message_keyword_corrupt": 0,
         "bug_message_keyword_crash": 3,
-        "bug_message_keyword_deadlock": 0,
         "bug_message_keyword_defect": 0,
         "bug_message_keyword_disabl": 1,
         "bug_message_keyword_endless": 0,
@@ -184,7 +171,6 @@
         "bug_message_keyword_prevent": 5,
         "bug_message_keyword_problem": 3,
         "bug_message_keyword_properli": 3,
-        "bug_message_keyword_race|condit": 0,
         "bug_message_keyword_repair": 0,
         "bug_message_keyword_resolv": 1,
         "bug_message_keyword_threw": 2,
@@ -203,10 +189,8 @@
         "bugless_message_keyword_analysi": 0,
         "bugless_message_keyword_avoid": 3,
         "bugless_message_keyword_baselin": 0,
-        "bugless_message_keyword_beautification": 0,
         "bugless_message_keyword_benchmark": 0,
         "bugless_message_keyword_better": 2,
-        "bugless_message_keyword_bump": 0,
         "bugless_message_keyword_chang|log": 0,
         "bugless_message_keyword_clean": 24,
         "bugless_message_keyword_comment": 9,
@@ -227,7 +211,6 @@
         "bugless_message_keyword_extendgener": 0,
         "bugless_message_keyword_featur": 4,
         "bugless_message_keyword_forget": 0,
-        "bugless_message_keyword_format": 4,
         "bugless_message_keyword_gitignor": 5,
         "bugless_message_keyword_idea": 0,
         "bugless_message_keyword_implement": 16,
@@ -260,10 +243,8 @@
         "bugless_message_keyword_reduc": 1,
         "bugless_message_keyword_refactor": 4,
         "bugless_message_keyword_refin": 1,
-        "bugless_message_keyword_reformat": 1,
         "bugless_message_keyword_regress|test": 0,
         "bugless_message_keyword_reimplement": 0,
-        "bugless_message_keyword_release": 0,
         "bugless_message_keyword_remov": 44,
         "bugless_message_keyword_renam": 9,
         "bugless_message_keyword_reorgan": 0,
@@ -288,10 +269,7 @@
         "bugless_message_keyword_todo": 3,
         "bugless_message_keyword_tweak": 3,
         "bugless_message_keyword_unit": 2,
-        "bugless_message_keyword_unnecessari": 3,
-        "bugless_message_keyword_updat": 31,
-        "bugless_message_keyword_upgrad": 7,
-        "bugless_message_keyword_version": 23
+        "bugless_message_keyword_unnecessari": 3
     },
     "Coverage": {
         "bug_message_keyword_bad": 0.0,
@@ -299,11 +277,9 @@
         "bug_message_keyword_bug": 0.22323462414578588,
         "bug_message_keyword_bugfix": 0.3724373576309795,
         "bug_message_keyword_close": 0.002277904328018223,
-        "bug_message_keyword_concurr": 0.0011389521640091116,
         "bug_message_keyword_correct": 0.009111617312072893,
         "bug_message_keyword_corrupt": 0.0011389521640091116,
         "bug_message_keyword_crash": 0.003416856492027335,
-        "bug_message_keyword_deadlock": 0.0,
         "bug_message_keyword_defect": 0.0,
         "bug_message_keyword_disabl": 0.002277904328018223,
         "bug_message_keyword_endless": 0.0,
@@ -331,7 +307,6 @@
         "bug_message_keyword_prevent": 0.010250569476082005,
         "bug_message_keyword_problem": 0.003416856492027335,
         "bug_message_keyword_properli": 0.003416856492027335,
-        "bug_message_keyword_race|condit": 0.0,
         "bug_message_keyword_repair": 0.0,
         "bug_message_keyword_resolv": 0.009111617312072893,
         "bug_message_keyword_threw": 0.002277904328018223,
@@ -350,10 +325,8 @@
         "bugless_message_keyword_analysi": 0.0,
         "bugless_message_keyword_avoid": 0.010250569476082005,
         "bugless_message_keyword_baselin": 0.0,
-        "bugless_message_keyword_beautification": 0.0,
         "bugless_message_keyword_benchmark": 0.0,
         "bugless_message_keyword_better": 0.003416856492027335,
-        "bugless_message_keyword_bump": 0.0,
         "bugless_message_keyword_chang|log": 0.0,
         "bugless_message_keyword_clean": 0.03189066059225513,
         "bugless_message_keyword_comment": 0.01366742596810934,
@@ -374,7 +347,6 @@
         "bugless_message_keyword_extendgener": 0.0,
         "bugless_message_keyword_featur": 0.004555808656036446,
         "bugless_message_keyword_forget": 0.0,
-        "bugless_message_keyword_format": 0.004555808656036446,
         "bugless_message_keyword_gitignor": 0.0056947608200455585,
         "bugless_message_keyword_idea": 0.0,
         "bugless_message_keyword_implement": 0.022779043280182234,
@@ -407,10 +379,8 @@
         "bugless_message_keyword_reduc": 0.0011389521640091116,
         "bugless_message_keyword_refactor": 0.00683371298405467,
         "bugless_message_keyword_refin": 0.0011389521640091116,
-        "bugless_message_keyword_reformat": 0.0011389521640091116,
         "bugless_message_keyword_regress|test": 0.0,
         "bugless_message_keyword_reimplement": 0.0,
-        "bugless_message_keyword_release": 0.0,
         "bugless_message_keyword_remov": 0.06264236902050115,
         "bugless_message_keyword_renam": 0.011389521640091117,
         "bugless_message_keyword_reorgan": 0.0,
@@ -435,10 +405,7 @@
         "bugless_message_keyword_todo": 0.004555808656036446,
         "bugless_message_keyword_tweak": 0.003416856492027335,
         "bugless_message_keyword_unit": 0.00683371298405467,
-        "bugless_message_keyword_unnecessari": 0.004555808656036446,
-        "bugless_message_keyword_updat": 0.04214123006833713,
-        "bugless_message_keyword_upgrad": 0.009111617312072893,
-        "bugless_message_keyword_version": 0.03189066059225513
+        "bugless_message_keyword_unnecessari": 0.004555808656036446
     },
     "Emp. Acc.": {
         "bug_message_keyword_bad": 0.0,
@@ -446,11 +413,9 @@
         "bug_message_keyword_bug": 0.6836734693877551,
         "bug_message_keyword_bugfix": 0.709480122324159,
         "bug_message_keyword_close": 1.0,
-        "bug_message_keyword_concurr": 1.0,
         "bug_message_keyword_correct": 0.625,
         "bug_message_keyword_corrupt": 0.0,
         "bug_message_keyword_crash": 1.0,
-        "bug_message_keyword_deadlock": 0.0,
         "bug_message_keyword_defect": 0.0,
         "bug_message_keyword_disabl": 0.5,
         "bug_message_keyword_endless": 0.0,
@@ -478,7 +443,6 @@
         "bug_message_keyword_prevent": 0.5555555555555556,
         "bug_message_keyword_problem": 1.0,
         "bug_message_keyword_properli": 1.0,
-        "bug_message_keyword_race|condit": 0.0,
         "bug_message_keyword_repair": 0.0,
         "bug_message_keyword_resolv": 0.125,
         "bug_message_keyword_threw": 1.0,
@@ -497,10 +461,8 @@
         "bugless_message_keyword_analysi": 0.0,
         "bugless_message_keyword_avoid": 0.33333333333333337,
         "bugless_message_keyword_baselin": 0.0,
-        "bugless_message_keyword_beautification": 0.0,
         "bugless_message_keyword_benchmark": 0.0,
         "bugless_message_keyword_better": 0.6666666666666666,
-        "bugless_message_keyword_bump": 0.0,
         "bugless_message_keyword_chang|log": 0.0,
         "bugless_message_keyword_clean": 0.8571428571428572,
         "bugless_message_keyword_comment": 0.75,
@@ -521,7 +483,6 @@
         "bugless_message_keyword_extendgener": 0.0,
         "bugless_message_keyword_featur": 1.0,
         "bugless_message_keyword_forget": 0.0,
-        "bugless_message_keyword_format": 1.0,
         "bugless_message_keyword_gitignor": 1.0,
         "bugless_message_keyword_idea": 0.0,
         "bugless_message_keyword_implement": 0.8,
@@ -554,10 +515,8 @@
         "bugless_message_keyword_reduc": 1.0,
         "bugless_message_keyword_refactor": 0.6666666666666666,
         "bugless_message_keyword_refin": 1.0,
-        "bugless_message_keyword_reformat": 1.0,
         "bugless_message_keyword_regress|test": 0.0,
         "bugless_message_keyword_reimplement": 0.0,
-        "bugless_message_keyword_release": 0.0,
         "bugless_message_keyword_remov": 0.8,
         "bugless_message_keyword_renam": 0.9,
         "bugless_message_keyword_reorgan": 0.0,
@@ -582,10 +541,7 @@
         "bugless_message_keyword_todo": 0.75,
         "bugless_message_keyword_tweak": 1.0,
         "bugless_message_keyword_unit": 0.33333333333333337,
-        "bugless_message_keyword_unnecessari": 0.75,
-        "bugless_message_keyword_updat": 0.8378378378378378,
-        "bugless_message_keyword_upgrad": 0.875,
-        "bugless_message_keyword_version": 0.8214285714285714
+        "bugless_message_keyword_unnecessari": 0.75
     },
     "Incorrect": {
         "bug_message_keyword_bad": 0,
@@ -593,11 +549,9 @@
         "bug_message_keyword_bug": 62,
         "bug_message_keyword_bugfix": 95,
         "bug_message_keyword_close": 0,
-        "bug_message_keyword_concurr": 0,
         "bug_message_keyword_correct": 3,
         "bug_message_keyword_corrupt": 1,
         "bug_message_keyword_crash": 0,
-        "bug_message_keyword_deadlock": 0,
         "bug_message_keyword_defect": 0,
         "bug_message_keyword_disabl": 1,
         "bug_message_keyword_endless": 0,
@@ -625,7 +579,6 @@
         "bug_message_keyword_prevent": 4,
         "bug_message_keyword_problem": 0,
         "bug_message_keyword_properli": 0,
-        "bug_message_keyword_race|condit": 0,
         "bug_message_keyword_repair": 0,
         "bug_message_keyword_resolv": 7,
         "bug_message_keyword_threw": 0,
@@ -644,10 +597,8 @@
         "bugless_message_keyword_analysi": 0,
         "bugless_message_keyword_avoid": 6,
         "bugless_message_keyword_baselin": 0,
-        "bugless_message_keyword_beautification": 0,
         "bugless_message_keyword_benchmark": 0,
         "bugless_message_keyword_better": 1,
-        "bugless_message_keyword_bump": 0,
         "bugless_message_keyword_chang|log": 0,
         "bugless_message_keyword_clean": 4,
         "bugless_message_keyword_comment": 3,
@@ -668,7 +619,6 @@
         "bugless_message_keyword_extendgener": 0,
         "bugless_message_keyword_featur": 0,
         "bugless_message_keyword_forget": 0,
-        "bugless_message_keyword_format": 0,
         "bugless_message_keyword_gitignor": 0,
         "bugless_message_keyword_idea": 0,
         "bugless_message_keyword_implement": 4,
@@ -701,10 +651,8 @@
         "bugless_message_keyword_reduc": 0,
         "bugless_message_keyword_refactor": 2,
         "bugless_message_keyword_refin": 0,
-        "bugless_message_keyword_reformat": 0,
         "bugless_message_keyword_regress|test": 0,
         "bugless_message_keyword_reimplement": 0,
-        "bugless_message_keyword_release": 0,
         "bugless_message_keyword_remov": 11,
         "bugless_message_keyword_renam": 1,
         "bugless_message_keyword_reorgan": 0,
@@ -729,22 +677,17 @@
         "bugless_message_keyword_todo": 1,
         "bugless_message_keyword_tweak": 0,
         "bugless_message_keyword_unit": 4,
-        "bugless_message_keyword_unnecessari": 1,
-        "bugless_message_keyword_updat": 6,
-        "bugless_message_keyword_upgrad": 1,
-        "bugless_message_keyword_version": 5
+        "bugless_message_keyword_unnecessari": 1
     },
     "Overlaps": {
         "bug_message_keyword_bad": 0.0,
         "bug_message_keyword_broken": 0.00683371298405467,
-        "bug_message_keyword_bug": 0.22095671981776766,
-        "bug_message_keyword_bugfix": 0.3052391799544419,
+        "bug_message_keyword_bug": 0.21981776765375854,
+        "bug_message_keyword_bugfix": 0.2984054669703872,
         "bug_message_keyword_close": 0.0011389521640091116,
-        "bug_message_keyword_concurr": 0.0011389521640091116,
         "bug_message_keyword_correct": 0.007972665148063782,
         "bug_message_keyword_corrupt": 0.0011389521640091116,
         "bug_message_keyword_crash": 0.003416856492027335,
-        "bug_message_keyword_deadlock": 0.0,
         "bug_message_keyword_defect": 0.0,
         "bug_message_keyword_disabl": 0.0011389521640091116,
         "bug_message_keyword_endless": 0.0,
@@ -772,7 +715,6 @@
         "bug_message_keyword_prevent": 0.009111617312072893,
         "bug_message_keyword_problem": 0.003416856492027335,
         "bug_message_keyword_properli": 0.003416856492027335,
-        "bug_message_keyword_race|condit": 0.0,
         "bug_message_keyword_repair": 0.0,
         "bug_message_keyword_resolv": 0.0056947608200455585,
         "bug_message_keyword_threw": 0.002277904328018223,
@@ -784,17 +726,15 @@
         "bug_message_keyword_unsynchron": 0.0,
         "bug_message_keyword_wrong": 0.002277904328018223,
         "bugless_message_keyword_abil": 0.0,
-        "bugless_message_keyword_ad": 0.02050113895216401,
-        "bugless_message_keyword_add": 0.13211845102505695,
+        "bugless_message_keyword_ad": 0.0193621867881549,
+        "bugless_message_keyword_add": 0.12984054669703873,
         "bugless_message_keyword_addit": 0.0011389521640091116,
         "bugless_message_keyword_allow": 0.007972665148063782,
         "bugless_message_keyword_analysi": 0.0,
         "bugless_message_keyword_avoid": 0.007972665148063782,
         "bugless_message_keyword_baselin": 0.0,
-        "bugless_message_keyword_beautification": 0.0,
         "bugless_message_keyword_benchmark": 0.0,
         "bugless_message_keyword_better": 0.002277904328018223,
-        "bugless_message_keyword_bump": 0.0,
         "bugless_message_keyword_chang|log": 0.0,
         "bugless_message_keyword_clean": 0.018223234624145785,
         "bugless_message_keyword_comment": 0.010250569476082005,
@@ -806,21 +746,20 @@
         "bugless_message_keyword_create": 0.0,
         "bugless_message_keyword_deprec": 0.00683371298405467,
         "bugless_message_keyword_develop": 0.003416856492027335,
-        "bugless_message_keyword_doc": 0.029612756264236904,
+        "bugless_message_keyword_doc": 0.02847380410022779,
         "bugless_message_keyword_drop": 0.0056947608200455585,
-        "bugless_message_keyword_enhanc": 0.0056947608200455585,
+        "bugless_message_keyword_enhanc": 0.004555808656036446,
         "bugless_message_keyword_exampl": 0.0,
         "bugless_message_keyword_exclud": 0.0,
         "bugless_message_keyword_expand": 0.002277904328018223,
         "bugless_message_keyword_extendgener": 0.0,
-        "bugless_message_keyword_featur": 0.004555808656036446,
+        "bugless_message_keyword_featur": 0.003416856492027335,
         "bugless_message_keyword_forget": 0.0,
-        "bugless_message_keyword_format": 0.003416856492027335,
         "bugless_message_keyword_gitignor": 0.0056947608200455585,
         "bugless_message_keyword_idea": 0.0,
-        "bugless_message_keyword_implement": 0.018223234624145785,
+        "bugless_message_keyword_implement": 0.017084282460136675,
         "bugless_message_keyword_improv": 0.022779043280182234,
-        "bugless_message_keyword_includ": 0.00683371298405467,
+        "bugless_message_keyword_includ": 0.0056947608200455585,
         "bugless_message_keyword_info": 0.002277904328018223,
         "bugless_message_keyword_intorduc": 0.0,
         "bugless_message_keyword_limit": 0.0011389521640091116,
@@ -837,7 +776,7 @@
         "bugless_message_keyword_perfom|test": 0.0,
         "bugless_message_keyword_perform": 0.002277904328018223,
         "bugless_message_keyword_perf|test": 0.0,
-        "bugless_message_keyword_plugin": 0.018223234624145785,
+        "bugless_message_keyword_plugin": 0.017084282460136675,
         "bugless_message_keyword_polish": 0.0,
         "bugless_message_keyword_possibl": 0.003416856492027335,
         "bugless_message_keyword_prepar": 0.004555808656036446,
@@ -848,12 +787,10 @@
         "bugless_message_keyword_reduc": 0.0,
         "bugless_message_keyword_refactor": 0.00683371298405467,
         "bugless_message_keyword_refin": 0.0011389521640091116,
-        "bugless_message_keyword_reformat": 0.0011389521640091116,
         "bugless_message_keyword_regress|test": 0.0,
         "bugless_message_keyword_reimplement": 0.0,
-        "bugless_message_keyword_release": 0.0,
-        "bugless_message_keyword_remov": 0.03644646924829157,
-        "bugless_message_keyword_renam": 0.007972665148063782,
+        "bugless_message_keyword_remov": 0.03530751708428246,
+        "bugless_message_keyword_renam": 0.00683371298405467,
         "bugless_message_keyword_reorgan": 0.0,
         "bugless_message_keyword_replac": 0.007972665148063782,
         "bugless_message_keyword_restrict": 0.0011389521640091116,
@@ -870,16 +807,13 @@
         "bugless_message_keyword_statist": 0.0,
         "bugless_message_keyword_support": 0.06378132118451026,
         "bugless_message_keyword_switch": 0.0011389521640091116,
-        "bugless_message_keyword_test": 0.030751708428246014,
+        "bugless_message_keyword_test": 0.02847380410022779,
         "bugless_message_keyword_test|coverag": 0.0,
         "bugless_message_keyword_test|pass": 0.0,
         "bugless_message_keyword_todo": 0.004555808656036446,
         "bugless_message_keyword_tweak": 0.003416856492027335,
         "bugless_message_keyword_unit": 0.00683371298405467,
-        "bugless_message_keyword_unnecessari": 0.004555808656036446,
-        "bugless_message_keyword_updat": 0.022779043280182234,
-        "bugless_message_keyword_upgrad": 0.004555808656036446,
-        "bugless_message_keyword_version": 0.02847380410022779
+        "bugless_message_keyword_unnecessari": 0.004555808656036446
     },
     "Polarity": {
         "bug_message_keyword_bad": [],
@@ -895,9 +829,6 @@
         "bug_message_keyword_close": [
             1
         ],
-        "bug_message_keyword_concurr": [
-            1
-        ],
         "bug_message_keyword_correct": [
             1
         ],
@@ -907,7 +838,6 @@
         "bug_message_keyword_crash": [
             1
         ],
-        "bug_message_keyword_deadlock": [],
         "bug_message_keyword_defect": [],
         "bug_message_keyword_disabl": [
             1
@@ -967,7 +897,6 @@
         "bug_message_keyword_properli": [
             1
         ],
-        "bug_message_keyword_race|condit": [],
         "bug_message_keyword_repair": [],
         "bug_message_keyword_resolv": [
             1
@@ -1002,12 +931,10 @@
             0
         ],
         "bugless_message_keyword_baselin": [],
-        "bugless_message_keyword_beautification": [],
         "bugless_message_keyword_benchmark": [],
         "bugless_message_keyword_better": [
             0
         ],
-        "bugless_message_keyword_bump": [],
         "bugless_message_keyword_chang|log": [],
         "bugless_message_keyword_clean": [
             0
@@ -1054,9 +981,6 @@
             0
         ],
         "bugless_message_keyword_forget": [],
-        "bugless_message_keyword_format": [
-            0
-        ],
         "bugless_message_keyword_gitignor": [
             0
         ],
@@ -1129,12 +1053,8 @@
         "bugless_message_keyword_refin": [
             0
         ],
-        "bugless_message_keyword_reformat": [
-            0
-        ],
         "bugless_message_keyword_regress|test": [],
         "bugless_message_keyword_reimplement": [],
-        "bugless_message_keyword_release": [],
         "bugless_message_keyword_remov": [
             0
         ],
@@ -1188,15 +1108,6 @@
             0
         ],
         "bugless_message_keyword_unnecessari": [
-            0
-        ],
-        "bugless_message_keyword_updat": [
-            0
-        ],
-        "bugless_message_keyword_upgrad": [
-            0
-        ],
-        "bugless_message_keyword_version": [
             0
         ]
     }
